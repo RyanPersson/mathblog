@@ -1,0 +1,7 @@
+{{- $id := .Get "id" -}}
+{{- $text := .Get "text" | default $id -}}
+<a class="knowl"
+   href="/glossary/{{ $id }}/"
+   data-knowl="/glossary/{{ $id }}/"
+   role="button"
+   aria-expanded="false">{{ $text }}</a>

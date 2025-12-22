@@ -1,0 +1,47 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Math Blog'
+theme = 'PaperMod'
+
+# Build-time math rendering (KaTeX via transform.ToMath)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+
+# PaperMod theme settings
+[params]
+  # Dark/light mode toggle
+  defaultTheme = "auto"  # auto, light, or dark
+  disableThemeToggle = false
+
+  # Show reading time, word count, etc.
+  ShowReadingTime = true
+  ShowWordCount = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  # For math blog - show full content in list pages
+  ShowFullTextinRSS = true
+
+  [params.homeInfoParams]
+    Title = "Math Blog"
+    Content = "A mathematics blog with collapsible definitions."
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "glossary"
+    name = "Glossary"
+    url = "/glossary/"
+    weight = 20

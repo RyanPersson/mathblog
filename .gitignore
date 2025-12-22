@@ -1,0 +1,21 @@
+# Research notes (not for public repo)
+/research
+#themes we will decide on one later
+/themes
+
+# Hugo build output
+/public/
+/.hugo_build.lock
+/resources/_gen/
+
+# macOS
+.DS_Store
+
+# Editor/IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db

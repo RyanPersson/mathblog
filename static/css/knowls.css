@@ -1,0 +1,94 @@
+/* Knowl trigger links */
+.knowl {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary);
+  cursor: pointer;
+}
+
+.knowl:hover {
+  border-bottom-style: solid;
+}
+
+.knowl[aria-expanded="true"] {
+  font-weight: 600;
+}
+
+/* Knowl panel */
+.knowl-panel {
+  margin: 1rem 0;
+  padding: 0;
+  border-left: 3px solid var(--primary);
+  background: var(--code-bg);
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.knowl-panel-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Knowl content structure */
+.knowl-content {
+  padding: 0;
+}
+
+.knowl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--tertiary);
+  border-bottom: 1px solid var(--border);
+}
+
+.knowl-header strong {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.knowl-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 0 0.25rem;
+}
+
+.knowl-close:hover {
+  opacity: 0.7;
+}
+
+.knowl-body {
+  padding: 1rem;
+}
+
+.knowl-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Loading and error states */
+.knowl-loading,
+.knowl-error {
+  padding: 1rem;
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.knowl-error a {
+  color: var(--primary);
+}
+
+/* Nested knowls - visual distinction */
+.knowl-panel .knowl-panel {
+  margin-left: 0.5rem;
+  border-left-color: var(--secondary);
+  background: var(--theme);
+}
