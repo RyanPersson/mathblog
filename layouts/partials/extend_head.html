@@ -1,8 +1,5 @@
-{{- /* Preconnect to KaTeX CDN for faster loading */ -}}
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-
-{{- /* KaTeX CSS + copy-tex extension */ -}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+{{- /* KaTeX CSS (self-hosted) + copy-tex extension (CDN, deferred) */ -}}
+<link rel="stylesheet" href="{{ "css/katex.min.css" | relURL }}">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" crossorigin="anonymous"></script>
 
 {{- /* Knowls system - CSS inlined to eliminate render-blocking request */ -}}
