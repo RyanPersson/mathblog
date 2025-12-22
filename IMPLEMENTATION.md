@@ -270,9 +270,26 @@ jobs:
 
 ---
 
+## Current Status
+
+### Completed
+- [x] Hugo + PaperMod theme setup
+- [x] Build-time KaTeX math rendering
+- [x] Knowl system (unlimited depth, alternating shading, close buttons)
+- [x] GitHub Actions deployment workflow
+- [x] Glossary with mathematical definitions
+
+### TODO
+- [ ] **Comments (Giscus + Formspree)** - Template exists in `layouts/partials/comments.html` but is commented out. To enable:
+  1. Enable GitHub Discussions on the repo
+  2. Install Giscus app: https://github.com/apps/giscus
+  3. Configure at https://giscus.app/ to get repo ID and category ID
+  4. Sign up at https://formspree.io for the fallback form
+  5. Uncomment the template and fill in the placeholders
+- [ ] Set `baseURL` in `hugo.toml` (currently `https://example.org/`)
+- [ ] Custom domain setup (optional)
+
 ## Open Items to Decide
 
-- [ ] Theme: Use existing Hugo theme or build minimal custom?
 - [ ] Form service: Formspree vs Formspark vs other?
-- [ ] Knowl depth policy: Max 2 levels? 3? Visual cue instead of hard limit?
 - [ ] Domain: Use `username.github.io` or custom domain?

@@ -19,7 +19,6 @@
   margin: 1rem 0;
   padding: 0;
   border-left: 3px solid var(--primary);
-  background: var(--code-bg);
   border-radius: 0 8px 8px 0;
   overflow: hidden;
   opacity: 0;
@@ -74,6 +73,16 @@
   margin-bottom: 0;
 }
 
+.knowl-content {
+  position: relative;
+}
+
+.knowl-footer {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
 /* Loading and error states */
 .knowl-loading,
 .knowl-error {
@@ -86,9 +95,15 @@
   color: var(--primary);
 }
 
-/* Nested knowls - visual distinction */
+/* Nested knowls - alternating shading (works at any depth) */
 .knowl-panel .knowl-panel {
   margin-left: 0.5rem;
-  border-left-color: var(--secondary);
+}
+
+.knowl-depth-even {
+  background: var(--code-bg);
+}
+
+.knowl-depth-odd {
   background: var(--theme);
 }

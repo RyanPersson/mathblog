@@ -6,14 +6,13 @@
   'use strict';
 
   const cache = new Map();
-  const MAX_DEPTH = 2;
 
   function getKnowlDepth(element) {
     let depth = 0;
-    let parent = element.closest('.knowl-content');
+    let parent = element.closest('.knowl-panel');
     while (parent) {
       depth++;
-      parent = parent.parentElement?.closest('.knowl-content');
+      parent = parent.parentElement?.closest('.knowl-panel');
     }
     return depth;
   }
@@ -57,18 +56,11 @@
       return;
     }
 
-    // Check depth limit
-    const depth = getKnowlDepth(trigger);
-    if (depth >= MAX_DEPTH) {
-      // Fall back to navigation
-      window.location.href = trigger.href;
-      return;
-    }
-
     // Create panel
     const panelId = 'knowl-' + Math.random().toString(36).substr(2, 9);
+    const depth = getKnowlDepth(trigger);
     const panel = document.createElement('div');
-    panel.className = 'knowl-panel';
+    panel.className = 'knowl-panel knowl-depth-' + (depth % 2 === 0 ? 'even' : 'odd');
     panel.id = panelId;
     panel.setAttribute('role', 'region');
     panel.setAttribute('aria-label', 'Definition');
@@ -102,11 +94,10 @@
 
       panel.innerHTML = html;
 
-      // Add close button handler
-      const closeBtn = panel.querySelector('.knowl-close');
-      if (closeBtn) {
-        closeBtn.addEventListener('click', () => closeKnowl(panel));
-      }
+      // Add close button handlers (header and footer)
+      panel.querySelectorAll('.knowl-close').forEach(btn => {
+        btn.addEventListener('click', () => closeKnowl(panel));
+      });
 
       // Animate in
       requestAnimationFrame(() => {

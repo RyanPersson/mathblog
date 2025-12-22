@@ -1,10 +1,10 @@
 ---
 title: "Glossary"
 description: "Mathematical definitions and concepts"
-_build:
+build:
   list: local
 cascade:
-  _build:
+  build:
     list: local
 ---
 
