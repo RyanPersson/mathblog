@@ -99,17 +99,35 @@
         btn.addEventListener('click', () => closeKnowl(panel));
       });
 
-      // Animate in
-      requestAnimationFrame(() => {
-        panel.classList.add('knowl-panel-open');
-      });
-
     } catch (error) {
       panel.innerHTML = `<div class="knowl-error">Failed to load definition. <a href="${trigger.href}">View full page</a></div>`;
     }
   }
 
+  // Preload on hover
+  async function preloadKnowl(event) {
+    const trigger = event.target.closest('.knowl');
+    if (!trigger) return;
+
+    const url = trigger.dataset.knowl;
+    if (cache.has(url)) return; // Already cached
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const html = await response.text();
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const content = doc.querySelector('.knowl-content');
+      cache.set(url, content ? content.outerHTML : html);
+    } catch (error) {
+      // Silently fail - click will retry
+    }
+  }
+
   // Event delegation
+  document.addEventListener('mouseover', preloadKnowl);
   document.addEventListener('click', toggleKnowl);
 
   // Close on Escape key
