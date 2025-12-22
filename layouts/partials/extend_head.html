@@ -1,7 +1,28 @@
+{{- /* Preconnect to KaTeX CDN for faster loading */ -}}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
 {{- /* KaTeX CSS + copy-tex extension */ -}}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" crossorigin="anonymous"></script>
 
-{{- /* Knowls system */ -}}
-<link rel="stylesheet" href="{{ "css/knowls.css" | relURL }}">
+{{- /* Knowls system - CSS inlined to eliminate render-blocking request */ -}}
+<style>
+.knowl{color:var(--primary);text-decoration:none;border-bottom:1px dotted var(--primary);cursor:pointer}
+.knowl:hover{border-bottom-style:solid}
+.knowl[aria-expanded="true"]{font-weight:600}
+.knowl-panel{margin:1rem 0;padding:0;border-left:3px solid var(--primary);border-radius:0 8px 8px 0;overflow:hidden}
+.knowl-content{padding:0;position:relative}
+.knowl-header{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--tertiary);border-bottom:1px solid var(--border)}
+.knowl-header strong{font-size:.9rem;text-transform:uppercase;letter-spacing:.05em}
+.knowl-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--primary);padding:0 .25rem}
+.knowl-close:hover{opacity:.7}
+.knowl-body{padding:1rem}
+.knowl-body p:last-child{margin-bottom:0}
+.knowl-footer{position:absolute;bottom:.5rem;right:.5rem}
+.knowl-loading,.knowl-error{padding:1rem;color:var(--secondary);font-style:italic}
+.knowl-error a{color:var(--primary)}
+.knowl-panel .knowl-panel{margin-left:.5rem}
+.knowl-depth-even{background:var(--code-bg)}
+.knowl-depth-odd{background:var(--theme)}
+</style>
 <script defer src="{{ "js/knowls.js" | relURL }}"></script>
