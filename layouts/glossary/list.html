@@ -17,8 +17,8 @@
       {{- range .Pages.ByTitle }}
       <li>
         <a class="knowl"
-           href="{{ .Permalink }}"
-           data-knowl="{{ .Permalink }}"
+           href="{{ .RelPermalink }}"
+           data-knowl="{{ .RelPermalink }}"
            role="button"
            aria-expanded="false">{{ .Title }}</a>
         {{- if .Description }}
