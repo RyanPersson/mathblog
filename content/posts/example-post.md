@@ -57,16 +57,6 @@ theorem dual_dual_iso (K : Type*) (V : Type*) [Field K] [AddCommGroup V] [Module
   simp [DualSpace, LinearMap.finrank_linearMap]
 ```
 
-## Circular Knowl Test
-
-Here's a test of circular references between knowls. Click through and see how deep you can go:
-
-- {{< knowl id="concept-a" text="Concept A" >}} references B and C
-- {{< knowl id="concept-b" text="Concept B" >}} references C and A
-- {{< knowl id="concept-c" text="Concept C" >}} references A and B
-
-The knowl system should handle this gracefully—each click opens a new panel, and you can nest arbitrarily deep even with circular references.
-
 ## Lorem Ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
