@@ -4,17 +4,17 @@ date: 2025-12-21
 summary: "A test post demonstrating math, code blocks, knowls, and more."
 ---
 
-This post tests various features of the blog.
+This post tests various functionality.
 
 ## Mathematics
 
-Let's start with some inline math: the Euler identity $e^{i\pi} + 1 = 0$ is often called the most beautiful equation in mathematics.
+Let's start with some inline math $e^{i\pi} + 1 = 0$.
 
 Here's a display equation—the Cauchy-Schwarz inequality in a {{< knowl id="hilbert-space" text="Hilbert space" >}}:
 
 $$|\langle x, y \rangle|^2 \leq \langle x, x \rangle \cdot \langle y, y \rangle$$
 
-And a more complex example, the definition of the operator norm in a {{< knowl id="banach-space" text="Banach space" >}}:
+The definition of the operator norm in a {{< knowl id="banach-space" text="Banach space" >}}:
 
 $$\|T\| = \sup_{\|x\| \leq 1} \|Tx\| = \sup_{x \neq 0} \frac{\|Tx\|}{\|x\|}$$
 
@@ -41,7 +41,7 @@ Q = gram_schmidt(V)
 print(Q @ Q.T)  # Should be approximately identity
 ```
 
-### Lean 4
+
 
 ```lean
 /-- A vector space over a field K -/
