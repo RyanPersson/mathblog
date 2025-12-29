@@ -14,7 +14,7 @@ Let $f:I\to\mathbb{R}$ be twice {{< knowl id="differentiability-one-variable" te
 
 ### Multivariable Hessian test
 
-Let $U\subseteq\mathbb{R}^n$ be {{< knowl id="open-set" text="open" >}} and let $f:U\to\mathbb{R}$ be {{< knowl id="class-ck-map" text="$C^2$" >}}. Let $a\in U$ be a {{< knowl id="critical-point" text="critical point" >}}, i.e. $\nabla f(a)=0$, and let $H={{< knowl id="hessian-matrix" text="$\\nabla^2 f(a)$" >}}$ be the Hessian matrix at $a$.
+Let $U\subseteq\mathbb{R}^n$ be {{< knowl id="open-set" text="open" >}} and let $f:U\to\mathbb{R}$ be {{< knowl id="class-ck-map" text="$C^2$" >}}. Let $a\in U$ be a {{< knowl id="critical-point" text="critical point" >}}, i.e. ${{< knowl id="gradient" text="$\\nabla f(a)$" >}}=0$, and let $H={{< knowl id="hessian-matrix" text="$\\nabla^2 f(a)$" >}}$ be the Hessian matrix at $a$.
 
 **Proposition (multivariable)**:
 - If $H$ is **positive definite** (i.e., $v^{\mathsf T}Hv>0$ for all $v\neq 0$), then $a$ is a strict local minimum.

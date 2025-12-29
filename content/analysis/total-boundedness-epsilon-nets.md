@@ -7,7 +7,7 @@ Let $(X,d)$ be a {{< knowl id="metric-space" text="metric space" >}} and let $E\
 
 An **$\varepsilon$-net** for $E$ is a finite set $\{x_1,\dots,x_N\}\subseteq X$ such that
 $
-E\subseteq \bigcup_{j=1}^N B(x_j,\varepsilon).
+E\subseteq \bigcup_{j=1}^N {{< knowl id="open-ball" text="B" >}}(x_j,\varepsilon).
 $
 
 **Proposition**: The following are equivalent:

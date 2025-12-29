@@ -7,7 +7,7 @@ Let $U\subseteq\mathbb{R}^n$ be {{< knowl id="open-set" text="open" >}}, let $f:
 
 **Proposition (remainder estimate form of differentiability)**: The following are equivalent:
 - $f$ is {{< knowl id="differentiable-map" text="differentiable" >}} at $a$.
-- There exists a linear map $A:\mathbb{R}^n\to\mathbb{R}^m$ such that
+- There exists a {{< knowl id="linear-map" text="linear map" >}} $A:\mathbb{R}^n\to\mathbb{R}^m$ such that
   $
   \lim_{h\to 0}\frac{\|f(a+h)-f(a)-Ah\|}{\|h\|}=0.
   $

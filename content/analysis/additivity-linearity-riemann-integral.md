@@ -29,4 +29,4 @@ $
 These are the basic algebraic rules that make integration behave like a linear functional and allow {{< knowl id="interval" text="interval" >}} decomposition.
 
 **Proof sketch**:
-Linearity follows because the corresponding Riemann (or Riemann–Stieltjes) sums are linear in the integrand, and the {{< knowl id="upper-sum-riemann" text="upper" >}}/{{< knowl id="lower-sum-riemann" text="lower" >}} sums satisfy compatible inequalities. Additivity over $[a,c]$ and $[c,b]$ follows by splitting any {{< knowl id="partition-of-interval" text="partition" >}} of $[a,b]$ at the point $c$ and observing that sums decompose as a sum over the two subintervals.
+Linearity follows because the corresponding {{< knowl id="riemann-sum" text="Riemann sums" >}} (or Riemann–Stieltjes sums) are linear in the integrand, and the {{< knowl id="upper-sum-riemann" text="upper" >}}/{{< knowl id="lower-sum-riemann" text="lower" >}} sums satisfy compatible inequalities. Additivity over $[a,c]$ and $[c,b]$ follows by splitting any {{< knowl id="partition-of-interval" text="partition" >}} of $[a,b]$ at the point $c$ and observing that sums decompose as a sum over the two subintervals.

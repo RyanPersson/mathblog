@@ -11,7 +11,7 @@ $
 This is a necessary condition for convergence of a series (but far from sufficient).
 
 **Connection to parent theorem**:
-Let $s_N=\sum_{n=1}^N a_n$ be the partial sums. If $s_N\to s$, then
+Let $s_N=\sum_{n=1}^N a_n$ be the {{< knowl id="partial-sums" text="partial sums" >}}. If $s_N\to s$, then
 $
 a_N = s_N - s_{N-1}\to s-s=0.
 $

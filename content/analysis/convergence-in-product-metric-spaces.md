@@ -3,7 +3,7 @@ title: "Convergence in product metric spaces"
 description: "A sequence in X×Y converges iff each coordinate sequence converges"
 ---
 
-Let $(X,d_X)$ and $(Y,d_Y)$ be {{< knowl id="metric-space" text="metric spaces" >}}. On the product $X\times Y$, define the metric
+Let $(X,d_X)$ and $(Y,d_Y)$ be {{< knowl id="metric-space" text="metric spaces" >}}. On the {{< knowl id="cartesian-product" text="product" >}} $X\times Y$, define the metric
 $
 d_\infty\bigl((x,y),(x',y')\bigr)=\max\{d_X(x,x'),\,d_Y(y,y')\}.
 $

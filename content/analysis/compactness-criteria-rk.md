@@ -3,7 +3,7 @@ title: "Compactness criteria in R^k"
 description: "In Euclidean space, compactness is equivalent to closed-and-bounded and to sequential compactness"
 ---
 
-Let $K\subseteq \mathbb{R}^k$ with the Euclidean metric.
+Let $K\subseteq \mathbb{R}^k$ with the {{< knowl id="euclidean-norm" text="Euclidean metric" >}}.
 
 **Proposition (equivalent characterizations)**: The following are equivalent:
 - $K$ is {{< knowl id="compact-set" text="compact" >}} (every open cover has a finite subcover).

@@ -3,7 +3,7 @@ title: "Determinant nonvanishing implies local invertibility lemma"
 description: "Invertibility is stable under small perturbations, with a quantitative bound on the inverse"
 ---
 
-Let $A:\mathbb{R}^n\to\mathbb{R}^n$ be a linear map. Saying $\det A\neq 0$ is equivalent to saying $A$ is invertible.
+Let $A:\mathbb{R}^n\to\mathbb{R}^n$ be a {{< knowl id="linear-map" text="linear map" >}}. Saying $\det A\neq 0$ is equivalent to saying $A$ is invertible.
 
 **Stability of invertibility (Neumann series lemma)**: If $A$ is invertible and $B$ is another linear map such that
 $
@@ -26,4 +26,4 @@ Write
 $
 B=A\bigl(I+E\bigr)\quad\text{where}\quad E=A^{-1}(B-A).
 $
-If $\|E\|<1$, then $(I+E)^{-1}=\sum_{k=0}^\infty (-E)^k$ {{< knowl id="convergent-series" text="converges" >}} in operator norm, so $B^{-1}=(I+E)^{-1}A^{-1}$. The norm bound follows from the {{< knowl id="geometric-series" text="geometric series" >}} estimate.
+If $\|E\|<1$, then $(I+E)^{-1}=\sum_{k=0}^\infty (-E)^k$ {{< knowl id="convergent-series" text="converges" >}} in {{< knowl id="operator-norm" text="operator norm" >}}, so $B^{-1}=(I+E)^{-1}A^{-1}$. The norm bound follows from the {{< knowl id="geometric-series" text="geometric series" >}} estimate.

@@ -14,7 +14,7 @@ $
 \|f(x)-f(y)\|\le \bigl(\|Df(a)\|+\varepsilon\bigr)\,\|x-y\|.
 $
 
-This estimate is a standard quantitative form of {{< knowl id="differentiable-map" text="differentiability" >}} used in proofs of the {{< knowl id="inverse-function-theorem-rk" text="inverse" >}} and {{< knowl id="implicit-function-theorem" text="implicit function theorems" >}}: it says that on sufficiently small scales, $f$ behaves like the linear map $Df(a)$ with a uniformly small relative error.
+This estimate is a standard quantitative form of {{< knowl id="differentiable-map" text="differentiability" >}} used in proofs of the {{< knowl id="inverse-function-theorem-rk" text="inverse" >}} and {{< knowl id="implicit-function-theorem" text="implicit function theorems" >}}: it says that on sufficiently small scales, $f$ behaves like the {{< knowl id="linear-map" text="linear map" >}} $Df(a)$ with a uniformly small relative error.
 
 **Proof sketch**:
 Using the {{< knowl id="fundamental-theorem-of-calculus" text="fundamental theorem of calculus" >}} along the segment $\gamma(t)=x+t(y-x)$,
