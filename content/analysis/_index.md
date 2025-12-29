@@ -377,58 +377,59 @@ This page tracks the completion status of all knowls in the Real Analysis (Baby 
 - [ ] equicontinuity-pointwise-convergence-dense-set-lemma
 
 ### Riemann / Riemann–Stieltjes technical lemmas
-- [ ] refinement-lemma-for-upper-and-lower-sums
-- [ ] oscillation-criterion-lemma
-- [ ] additivity-and-linearity-lemmas-for-riemann-integrals
-- [ ] bounded-variation-jordan-decomposition-lemma
+- [x] refinement-lemma-for-upper-and-lower-sums
+- [x] oscillation-criterion-lemma
+- [x] additivity-and-linearity-lemmas-for-riemann-integrals
+- [x] bounded-variation-jordan-decomposition-lemma
 
 ### Multivariable differentiability auxiliaries
-- [ ] mean-value-estimate-lemma-for-differentiable-maps
-- [ ] determinant-nonvanishing-implies-local-invertibility-lemma
+- [x] mean-value-estimate-lemma-for-differentiable-maps
+- [x] determinant-nonvanishing-implies-local-invertibility-lemma
 
 ---
 
 ## Propositions
 
 ### Sup/inf and completeness equivalences
-- [ ] uniqueness-of-supremum-and-infimum
-- [ ] basic-algebraic-properties-of-sup-and-inf
-- [ ] completeness-equivalences
+- [x] uniqueness-of-supremum-and-infimum
+- [x] basic-algebraic-properties-of-sup-and-inf
+- [x] completeness-equivalences
 
 ### Equivalent formulations of continuity and related stability properties
-- [ ] equivalent-definitions-of-continuity-in-metric-spaces
-- [ ] uniform-continuity-implies-continuity
-- [ ] uniform-continuity-preserves-cauchy-sequences
+- [x] equivalent-definitions-of-continuity-in-metric-spaces
+- [x] uniform-continuity-implies-continuity
+- [x] uniform-continuity-preserves-cauchy-sequences
 
 ### Euclidean/product structure propositions
-- [ ] convergence-in-product-metric-spaces
+- [x] convergence-in-product-metric-spaces
 
 ### Compactness and connectedness criteria in ℝ^k and ℝ
-- [ ] compactness-criteria-in-rk
-- [ ] connectedness-criteria-in-r
-- [ ] continuous-functions-on-compact-sets-are-bounded
-- [ ] continuous-functions-map-compact-sets-to-closed-and-bounded-sets
+- [x] compactness-criteria-in-rk
+- [x] connectedness-criteria-in-r
+- [x] continuous-functions-on-compact-sets-are-bounded
+- [x] continuous-functions-map-compact-sets-to-closed-and-bounded-sets
 
 ### One-variable differentiation rules and consequences
-- [ ] differentiability-rules
-- [ ] derivative-zero-implies-constant-on-an-interval
-- [ ] f-prime-bounded-implies-f-uniformly-continuous
+- [x] differentiability-rules
+- [x] derivative-zero-implies-constant-on-an-interval
+- [x] f-prime-bounded-implies-f-uniformly-continuous
 
 ### Riemann / Riemann–Stieltjes integrability closure properties
-- [ ] riemann-integrability-implies-boundedness
-- [ ] if-f-is-riemann-integrable-then-absolute-f-is-integrable
-- [ ] closure-properties-of-riemann-integrable-functions
-- [ ] composition-counterexample
-- [ ] linearity-in-integrator-for-riemann-stieltjes
-- [ ] uniform-limit-of-integrable-functions-is-integrable
-- [ ] term-by-term-integration-differentiation-propositions
+- [x] riemann-integrability-implies-boundedness
+- [x] if-f-is-riemann-integrable-then-absolute-f-is-integrable
+- [x] closure-properties-of-riemann-integrable-functions
+- [x] composition-preserves-riemann-integrability
+- [x] linearity-in-integrator-for-riemann-stieltjes
+- [x] uniform-limit-of-integrable-functions-is-integrable
+- [x] term-by-term-integration-differentiation-propositions
 
 ### Compactness/totally-bounded rephrasings
 - [ ] equivalence-of-compactness-and-sequential-compactness
-- [ ] total-boundedness-characterization-via-epsilon-nets
+- [x] total-boundedness-characterization-via-epsilon-nets
 
 ### Multivariable differentiability and extrema tests
-- [ ] differentiability-criteria-via-remainder-estimates
+- [x] differentiability-criteria-via-remainder-estimates
+- [x] second-derivative-tests
 - [ ] sufficient-conditions-for-constrained-extrema
 
 ---
@@ -436,44 +437,44 @@ This page tracks the completion status of all knowls in the Real Analysis (Baby 
 ## Corollaries
 
 ### Consequences of Bolzano–Weierstrass / compactness in ℝ^k
-- [ ] every-bounded-infinite-subset-of-rk-has-a-limit-point
-- [ ] every-bounded-sequence-in-rk-has-a-convergent-subsequence
+- [x] every-bounded-infinite-subset-of-rk-has-a-limit-point
+- [x] every-bounded-sequence-in-rk-has-a-convergent-subsequence
 
 ### Consequences of series convergence/absolute convergence
-- [ ] convergent-series-has-terms-tending-to-zero
-- [ ] absolute-convergence-implies-cauchy-criterion
+- [x] convergent-series-has-terms-tending-to-zero
+- [x] absolute-convergence-implies-cauchy-criterion
 
 ### Consequences of uniform convergence
-- [ ] uniform-convergence-implies-pointwise-convergence
-- [ ] uniform-limit-of-continuous-functions-is-continuous
+- [x] uniform-convergence-implies-pointwise-convergence
+- [x] uniform-limit-of-continuous-functions-is-continuous
 
 ### Consequences of compactness + continuity
-- [ ] continuous-function-on-compact-set-is-bounded
-- [ ] continuous-function-on-compact-set-attains-max-and-min
-- [ ] continuous-function-on-compact-set-is-uniformly-continuous
-- [ ] image-of-compact-connected-set-is-compact-interval
+- [x] continuous-function-on-compact-set-is-bounded
+- [x] continuous-function-on-compact-set-attains-max-and-min
+- [x] continuous-function-on-compact-set-is-uniformly-continuous
+- [x] image-of-compact-connected-set-is-compact-interval
 
 ### Consequences of IVT / MVT / Rolle
-- [ ] intermediate-value-property-for-continuous-functions
-- [ ] f-prime-positive-implies-f-strictly-increasing
-- [ ] f-prime-zero-implies-f-constant
+- [x] intermediate-value-property-for-continuous-functions
+- [x] f-prime-positive-implies-f-strictly-increasing
+- [x] f-prime-zero-implies-f-constant
 
 ### Consequences of the FTC and integration identities
-- [ ] ftc-implies-integration-differentiates-antiderivatives
-- [ ] integration-by-parts-for-riemann-integrals
+- [x] newton-leibniz-formula
+- [x] integration-by-parts-for-riemann-integrals
 
 ### Standard "packaged" corollaries from uniform convergence theorems
-- [ ] weierstrass-m-test-implies-uniform-convergence-and-continuity-integrability
-- [ ] uniform-convergence-uniform-boundedness-interchange-limit-and-integral
+- [x] weierstrass-m-test-implies-uniform-convergence-and-continuity-integrability
+- [x] uniform-convergence-uniform-boundedness-interchange-limit-and-integral
 
 ### Power series and smoothness corollaries
-- [ ] power-series-represent-analytic-functions
+- [x] power-series-represent-analytic-functions
 
 ### Multivariable calculus corollaries
-- [ ] equality-of-mixed-partials-under-c2
-- [ ] local-diffeomorphism-corollary
-- [ ] existence-of-local-implicit-function-parameterizations
-- [ ] change-of-variables-preserves-integrability
+- [x] equality-of-mixed-partials-under-c2
+- [x] local-diffeomorphism-corollary
+- [x] existence-of-local-implicit-function-parameterizations
+- [x] change-of-variables-preserves-integrability
 
 ---
 
@@ -481,7 +482,7 @@ This page tracks the completion status of all knowls in the Real Analysis (Baby 
 
 **Total items in list:** ~280
 
-**Completed:** 151 (all definitions through multivariable differentiation basics)
+**Completed:** 203 (all definitions through multivariable differentiation basics + lemmas, propositions, corollaries batch)
 
-**Remaining:** ~129 (remaining definitions, all axioms, theorems, lemmas, propositions, corollaries)
+**Remaining:** ~77 (remaining definitions, axioms, theorems)
 -->

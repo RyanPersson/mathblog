@@ -6,7 +6,7 @@ description: "An element of a set that is greater than or equal to every other e
 Let $(X,\le)$ be an ordered set and let $S\subseteq X$. An element $m\in S$ is a **maximum** of $S$ (written $m=\max S$) if
 $$\forall s\in S,\ s\le m.$$
 
-A maximum is an upper bound that actually lies in the set. If a maximum exists, it is unique and equals the supremum: $\max S = \sup S$.
+A maximum is an {{< knowl id="upper-bound" text="upper bound" >}} that actually lies in the set. If a maximum exists, it is unique and equals the {{< knowl id="supremum" text="supremum" >}}: $\max S = \sup S$.
 
 **Examples:**
 - In $\mathbb{R}$, $\max[0,1]=1$.

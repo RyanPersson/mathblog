@@ -6,7 +6,7 @@ description: "An element of a set that is less than or equal to every other elem
 Let $(X,\le)$ be an ordered set and let $S\subseteq X$. An element $m\in S$ is a **minimum** of $S$ (written $m=\min S$) if
 $$\forall s\in S,\ m\le s.$$
 
-A minimum is a lower bound that actually lies in the set. If a minimum exists, it is unique and equals the infimum: $\min S=\inf S$.
+A minimum is a {{< knowl id="lower-bound" text="lower bound" >}} that actually lies in the set. If a minimum exists, it is unique and equals the {{< knowl id="infimum" text="infimum" >}}: $\min S=\inf S$.
 
 **Examples:**
 - In $\mathbb{R}$, $\min[0,1]=0$.
