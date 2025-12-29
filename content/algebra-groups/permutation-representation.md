@@ -7,7 +7,7 @@ A **permutation representation** of a {{< knowl id="group" text="group" >}} $G$ 
 $$
 \rho: G \to \mathrm{Sym}(X),
 $$
-where $\mathrm{Sym}(X)$ denotes the group of all {{< knowl id="bijective-function" text="bijective" >}} maps $X\to X$ under composition. Giving such a homomorphism is equivalent to giving a {{< knowl id="group-action" text="group action" >}} via $g\cdot x := \rho(g)(x)$.
+where $\mathrm{Sym}(X)$ denotes the group of all {{< knowl id="bijective-function" section="shared-foundations" text="bijective" >}} maps $X\to X$ under composition. Giving such a homomorphism is equivalent to giving a {{< knowl id="group-action" text="group action" >}} via $g\cdot x := \rho(g)(x)$.
 
 The kernel of $\rho$ is exactly the {{< knowl id="kernel-of-action" text="kernel of the action" >}}. In particular, $\rho$ is injective iff the action is {{< knowl id="faithful-action" text="faithful" >}}, and {{< knowl id="cayleys-theorem" text="Cayley's theorem" >}} says every group has a faithful permutation representation (on itself by left multiplication).
 

@@ -3,7 +3,7 @@ title: "Group"
 description: "A monoid in which every element has an inverse"
 ---
 
-A **group** is a {{</* knowl id="set" text="set" */>}} $G$ together with a {{</* knowl id="binary-operation" text="binary operation" */>}} $\cdot : G\times G\to G$ such that:
+A **group** is a {{</* knowl id="set" section="shared-foundations" text="set" */>}} $G$ together with a {{</* knowl id="binary-operation" section="shared-foundations" text="binary operation" */>}} $\cdot : G\times G\to G$ such that:
 
 1. (**Associativity**) For all $a,b,c\in G$, $(a\cdot b)\cdot c = a\cdot(b\cdot c)$.
 2. (**Identity**) There exists an element $e\in G$ such that for all $a\in G$, $e\cdot a=a$ and $a\cdot e=a$.

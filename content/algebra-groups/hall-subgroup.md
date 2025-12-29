@@ -7,7 +7,7 @@ Let $G$ be a finite {{</* knowl id="group" text="group" */>}}. A {{</* knowl id=
 $
 \gcd(|H|,[G:H])=1,
 $
-where $\gcd$ is the {{</* knowl id="gcd" text="greatest common divisor" */>}}.
+where $\gcd$ denotes the greatest common divisor.
 
 Hall subgroups generalize {{</* knowl id="sylow-subgroup" text="Sylow subgroups" */>}}: if $|G|=p^n m$ with $p\nmid m$ and $P$ is a Sylow $p$-subgroup, then $[G:P]=m$ is coprime to $|P|=p^n$, so $P$ is a Hall subgroup. In finite {{</* knowl id="solvable-group" text="solvable" */>}} groups, Hall subgroups for prescribed sets of primes exist and enjoy conjugacy properties (Hall's theorem).
 

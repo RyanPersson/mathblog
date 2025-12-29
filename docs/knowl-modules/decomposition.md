@@ -10,52 +10,52 @@ This document decomposes the source lists into focused modules. Items appearing 
 Basic set theory, logic, and function concepts used across all mathematics.
 
 **Definitions:**
-- Set (×2) → `set.md`
-- Subset (×2) → `subset.md`
-- Proper subset (×1, but foundational) → `proper-subset.md`
-- Empty set (×1, but foundational) → `empty-set.md`
-- Union (×1, but foundational) → `union.md`
-- Intersection (×1, but foundational) → `intersection.md`
-- Set difference (×1) → `set-difference.md`
-- Complement (×1) → `complement.md`
-- Cartesian product (×2) → `cartesian-product.md`
-- Ordered pair (×1) → `ordered-pair.md`
-- Partition of a set (×2) → `partition.md`
-- Function (map) (×2) → `function.md`
-- Composition of functions (×2) → `composition.md`
-- Identity function (×1, but foundational) → `identity-function.md`
-- Domain (×1) → `domain.md`
-- Codomain (×1) → `codomain.md`
-- Image of a function (×2) → `image.md`
-- Preimage of a function (×2) → `preimage.md`
-- Injective function (×2) → `injective-function.md`
-- Surjective function (×2) → `surjective-function.md`
-- Bijective function (×2) → `bijective-function.md`
-- Inverse function (×1) → `inverse-function.md`
-- Relation (×2) → `relation.md`
-- Equivalence relation (×2) → `equivalence-relation.md`
-- Equivalence class (×2) → `equivalence-class.md`
-- Quotient set (×1) → `quotient-set.md`
-- Partial order (poset) (×2) → `partial-order.md`
-- Total order (linear order) (×2) → `total-order.md`
-- Upper bound (×2) → `upper-bound.md`
-- Lower bound (×2) → `lower-bound.md`
-- Well-ordered set (×1) → `well-ordered-set.md`
-- Cardinality (×1) → `cardinality.md`
-- Countable set (×1) → `countable-set.md`
-- Binary operation (×2) → `binary-operation.md`
+- ✓ Set (×2) → `set.md`
+- ✓ Subset (×2) → `subset.md`
+- ✓ Proper subset (×1, but foundational) → `proper-subset.md`
+- ✓ Empty set (×1, but foundational) → `empty-set.md`
+- ✓ Union (×1, but foundational) → `union.md`
+- ✓ Intersection (×1, but foundational) → `intersection.md`
+- ✓ Set difference (×1) → `set-difference.md`
+- ✓ Complement (×1) → `complement.md`
+- ✓ Cartesian product (×2) → `cartesian-product.md`
+- ✓ Ordered pair (×1) → `ordered-pair.md`
+- ✓ Partition of a set (×2) → `partition.md`
+- ✓ Function (map) (×2) → `function.md`
+- ✓ Composition of functions (×2) → `composition.md`
+- ✓ Identity function (×1, but foundational) → `identity-function.md`
+- ✓ Domain (×1) → `domain.md`
+- ✓ Codomain (×1) → `codomain.md`
+- ✓ Image of a function (×2) → `image.md`
+- ✓ Preimage of a function (×2) → `preimage.md`
+- ✓ Injective function (×2) → `injective-function.md`
+- ✓ Surjective function (×2) → `surjective-function.md`
+- ✓ Bijective function (×2) → `bijective-function.md`
+- ✓ Inverse function (×1) → `inverse-function.md`
+- ✓ Relation (×2) → `relation.md`
+- ✓ Equivalence relation (×2) → `equivalence-relation.md`
+- ✓ Equivalence class (×2) → `equivalence-class.md`
+- ✓ Quotient set (×1) → `quotient-set.md`
+- ✓ Partial order (poset) (×2) → `partial-order.md`
+- ✓ Total order (linear order) (×2) → `total-order.md`
+- ✓ Upper bound (×2) → `upper-bound.md`
+- ✓ Lower bound (×2) → `lower-bound.md`
+- ✓ Well-ordered set (×1) → `well-ordered-set.md`
+- ✓ Cardinality (×1) → `cardinality.md`
+- ✓ Countable set (×1) → `countable-set.md`
+- ✓ Binary operation (×2) → `binary-operation.md`
 
 **Axioms:**
-- Zermelo–Fraenkel axioms with Choice (ZFC) (×1, but foundational) → `zfc-axioms.md`
-- Axiom of Choice (×1) → `axiom-of-choice.md`
-- Principle of mathematical induction (×1) → `mathematical-induction.md`
+- ✓ Zermelo–Fraenkel axioms with Choice (ZFC) (×1, but foundational) → `zfc-axioms.md`
+- ✓ Axiom of Choice (×1) → `axiom-of-choice.md`
+- ✓ Principle of mathematical induction (×1) → `mathematical-induction.md`
 
 **Theorems:**
-- Well-ordering theorem (×1) → `well-ordering-theorem.md`
-- Well-ordering principle for ℕ (×1) → `well-ordering-principle.md`
+- ✓ Well-ordering theorem (×1) → `well-ordering-theorem.md`
+- ✓ Well-ordering principle for ℕ (×1) → `well-ordering-principle.md`
 
 **Lemmas:**
-- Zorn's lemma (×1, but foundational across algebra) → `zorns-lemma.md`
+- ✓ Zorn's lemma (×1, but foundational across algebra) → `zorns-lemma.md`
 
 ---
 
@@ -63,26 +63,26 @@ Basic set theory, logic, and function concepts used across all mathematics.
 Vector spaces, linear maps, and matrix theory used in both analysis and algebra.
 
 **Definitions:**
-- Vector space (×2) → `vector-space.md`
-- Linear map (×2) → `linear-map.md`
-- Linear operator (×1) → `linear-operator.md`
-- Eigenvalue (×1) → `eigenvalue.md`
-- Eigenvector (×1) → `eigenvector.md`
-- Eigenspace (×1) → `eigenspace.md`
-- Determinant (×1) → `determinant.md`
-- Trace (linear algebra) (×1) → `trace.md`
-- Characteristic polynomial (×1) → `characteristic-polynomial.md`
-- Minimal polynomial (linear operator) (×1) → `minimal-polynomial.md`
-- Euclidean space ℝ^k (×1) → `euclidean-space.md`
-- Euclidean norm (×1) → `euclidean-norm.md`
-- Inner product on ℝ^k (×1) → `inner-product.md`
-- Orthogonality (×1) → `orthogonality.md`
-- Operator norm (×1) → `operator-norm.md`
+- ✓ Vector space (×2) → `vector-space.md`
+- ✓ Linear map (×2) → `linear-map.md`
+- ✓ Linear operator (×1) → `linear-operator.md`
+- ✓ Eigenvalue (×1) → `eigenvalue.md`
+- ✓ Eigenvector (×1) → `eigenvector.md`
+- ✓ Eigenspace (×1) → `eigenspace.md`
+- ✓ Determinant (×1) → `determinant.md`
+- ✓ Trace (linear algebra) (×1) → `trace.md`
+- ✓ Characteristic polynomial (×1) → `characteristic-polynomial.md`
+- ✓ Minimal polynomial (linear operator) (×1) → `minimal-polynomial.md`
+- ✓ Euclidean space ℝ^k (×1) → `euclidean-space.md`
+- ✓ Euclidean norm (×1) → `euclidean-norm.md`
+- ✓ Inner product on ℝ^k (×1) → `inner-product.md`
+- ✓ Orthogonality (×1) → `orthogonality.md`
+- ✓ Operator norm (×1) → `operator-norm.md`
 
 **Theorems:**
-- Cayley–Hamilton theorem (×1) → `cayley-hamilton-theorem.md`
-- Rank–nullity theorem (×1) → `rank-nullity-theorem.md`
-- Existence of a basis for every vector space (×1) → `basis-existence-theorem.md`
+- ✓ Cayley–Hamilton theorem (×1) → `cayley-hamilton-theorem.md`
+- ✓ Rank–nullity theorem (×1) → `rank-nullity-theorem.md`
+- ✓ Existence of a basis for every vector space (×1) → `basis-existence-theorem.md`
 
 ---
 
@@ -94,39 +94,39 @@ The ordered field structure of ℝ and completeness properties.
 *Depends on:* `shared-foundations`
 
 **Definitions:**
-- Supremum (least upper bound) → `supremum.md`
-- Infimum (greatest lower bound) → `infimum.md`
-- Maximum → `maximum.md`
-- Minimum → `minimum.md`
-- Bounded above → `bounded-above.md`
-- Bounded below → `bounded-below.md`
-- Bounded set (in an ordered set) → `bounded-set.md`
-- Real numbers ℝ (as a complete ordered field) → `real-numbers.md`
-- Complex numbers ℂ → `complex-numbers.md`
-- Complex conjugate → `complex-conjugate.md`
-- Absolute value on ℝ → `absolute-value.md`
-- Modulus (absolute value) on ℂ → `modulus.md`
+- ✓ Supremum (least upper bound) → `supremum.md`
+- ✓ Infimum (greatest lower bound) → `infimum.md`
+- ✓ Maximum → `maximum.md`
+- ✓ Minimum → `minimum.md`
+- ✓ Bounded above → `bounded-above.md`
+- ✓ Bounded below → `bounded-below.md`
+- ✓ Bounded set (in an ordered set) → `bounded-set.md`
+- ✓ Real numbers ℝ (as a complete ordered field) → `real-numbers-r.md`
+- ✓ Complex numbers ℂ → `complex-numbers-c.md`
+- ✓ Complex conjugate → `complex-conjugate.md`
+- ✓ Absolute value on ℝ → `absolute-value-on-r.md`
+- ✓ Modulus (absolute value) on ℂ → `modulus-on-c.md`
 
 **Axioms:**
-- Field axioms (for ℝ, ℂ) → `field-axioms.md`
-- Order axioms (for ℝ as an ordered field) → `order-axioms.md`
-- Completeness axiom of ℝ (least upper bound / supremum property) → `completeness-axiom.md`
+- ✓ Field axioms (for ℝ, ℂ) → `field-axioms.md`
+- ✓ Order axioms (for ℝ as an ordered field) → `order-axioms.md`
+- ✓ Completeness axiom of ℝ (least upper bound / supremum property) → `completeness-axiom-of-r.md`
 
 **Theorems:**
-- Least upper bound theorem → `least-upper-bound-theorem.md`
-- Greatest lower bound theorem → `greatest-lower-bound-theorem.md`
-- Archimedean property of ℝ → `archimedean-property.md`
-- Density of ℚ in ℝ → `density-of-rationals.md`
-- Density of ℝ \ ℚ in ℝ → `density-of-irrationals.md`
-- Nested interval theorem → `nested-interval-theorem.md`
+- ✓ Least upper bound theorem → `least-upper-bound-theorem.md`
+- ✓ Greatest lower bound theorem → `greatest-lower-bound-theorem.md`
+- ✓ Archimedean property of ℝ → `archimedean-property-of-r.md`
+- ✓ Density of ℚ in ℝ → `density-of-q-in-r.md`
+- ✓ Density of ℝ \ ℚ in ℝ → `density-of-r-minus-q-in-r.md`
+- ✓ Nested interval theorem → `nested-interval-theorem.md`
 
 **Lemmas:**
-- Supremum approximation lemma → `supremum-approximation-lemma.md`
+- ✓ Supremum approximation lemma → `supremum-approximation-lemma.md`
 
 **Propositions:**
-- Uniqueness of supremum and infimum → `uniqueness-of-supremum.md`
-- Basic algebraic properties of sup and inf → `sup-inf-properties.md`
-- Completeness equivalences → `completeness-equivalences.md`
+- ✓ Uniqueness of supremum and infimum → `uniqueness-of-supremum-infimum.md`
+- ✓ Basic algebraic properties of sup and inf → `algebraic-properties-sup-inf.md`
+- ✓ Completeness equivalences → `completeness-equivalences.md`
 
 ---
 
@@ -482,179 +482,179 @@ Convex sets, convex functions, separation theorems, and Hahn–Banach theory in 
 *Depends on:* `shared-foundations`, `shared-linear-algebra`, `analysis-metric-topology`
 
 **Definitions (Vector Spaces & Operators):**
-- Vector space → `vector-space.md`
-- Linear subspace → `linear-subspace.md`
-- Linear combination → `linear-combination.md`
-- Linearly independent/dependent sets → `linearly-independent-and-linearly-dependent-sets.md`
-- Span (subspace generated by a set) → `subspace-generated-by-a-set-span.md`
-- Basis (Hamel basis) → `basis-hamel-basis-and-dimension.md`
-- Direct sum of subspaces → `direct-sum-of-subspaces.md`
-- Linear operator (linear transformation) → `linear-operator-linear-transformation.md`
-- Image and kernel of a linear map → `image-and-kernel-linear-isomorphism.md`
-- Self-adjoint linear operator → `self-adjoint-linear-operator.md`
-- Nonnegative (positive semidefinite) operator → `nonnegative-positive-semidefinite-operator.md`
-- Codimension → `codimension.md`
-- Quotient vector space → `quotient-vector-space-codimension.md`
+- ✓ Vector space → `vector-space.md`
+- ✓ Linear subspace → `linear-subspace.md`
+- ✓ Linear combination → `linear-combination.md`
+- ✓ Linearly independent/dependent sets → `linearly-independent-and-linearly-dependent-sets.md`
+- ✓ Span (subspace generated by a set) → `subspace-generated-by-a-set-span.md`
+- ✓ Basis (Hamel basis) → `basis-hamel-basis-and-dimension.md`
+- ✓ Direct sum of subspaces → `direct-sum-of-subspaces.md`
+- ✓ Linear operator (linear transformation) → `linear-operator-linear-transformation.md`
+- ✓ Image and kernel of a linear map → `image-and-kernel-linear-isomorphism.md`
+- ✓ Self-adjoint linear operator → `self-adjoint-linear-operator.md`
+- ✓ Nonnegative (positive semidefinite) operator → `nonnegative-positive-semidefinite-operator.md`
+- ✓ Codimension → `codimension.md`
+- ✓ Quotient vector space → `quotient-vector-space-codimension.md`
 
 **Definitions (Normed Spaces & Topology):**
-- Norm, normed vector space → `norm-normed-vector-space.md`
-- Metric, metric space → `metric-metric-space.md`
-- Open and closed balls → `open-and-closed-balls-in-a-metric-space.md`
-- Open subset → `open-subset.md`
-- Closed subset → `closed-subset.md`
-- Interior of a set → `interior-of-a-set.md`
-- Closure of a set → `closure-of-a-set.md`
-- Bounded set, bounded sequence → `bounded-set-and-bounded-sequence.md`
-- Balanced and absorbing sets → `balanced-and-absorbing-sets.md`
-- Distance function to a set → `distance-function-to-a-set.md`
-- Product space (Cartesian product) → `product-space-cartesian-product.md`
+- ✓ Norm, normed vector space → `norm-normed-vector-space.md`
+- ✓ Metric, metric space → `metric-metric-space.md`
+- ✓ Open and closed balls → `open-and-closed-balls-in-a-metric-space.md`
+- ✓ Open subset → `open-subset.md`
+- ✓ Closed subset → `closed-subset.md`
+- ✓ Interior of a set → `interior-of-a-set.md`
+- ✓ Closure of a set → `closure-of-a-set.md`
+- ✓ Bounded set, bounded sequence → `bounded-set-and-bounded-sequence.md`
+- ✓ Balanced and absorbing sets → `balanced-and-absorbing-sets.md`
+- ✓ Distance function to a set → `distance-function-to-a-set.md`
+- ✓ Product space (Cartesian product) → `product-space-cartesian-product.md`
 
 **Definitions (Sequences & Completeness):**
-- Convergence of a sequence → `convergence-of-a-sequence.md`
-- Convergence in normed spaces → `convergence-in-normed-spaces.md`
-- Cauchy sequence → `cauchy-sequence.md`
-- Subsequence → `subsequence.md`
-- Complete metric space, complete subset → `complete-metric-space-complete-subset.md`
+- ✓ Convergence of a sequence → `convergence-of-a-sequence.md`
+- ✓ Convergence in normed spaces → `convergence-in-normed-spaces.md`
+- ✓ Cauchy sequence → `cauchy-sequence.md`
+- ✓ Subsequence → `subsequence.md`
+- ✓ Complete metric space, complete subset → `complete-metric-space-complete-subset.md`
 
 **Definitions (Affine Sets & Hyperplanes):**
-- Line segment in a vector space → `line-segments-in-a-vector-space.md`
-- Line connecting two points → `line-connecting-two-points.md`
-- Affine set → `affine-set.md`
-- Affine hull, affine combination → `affine-hull-affine-combination.md`
-- Parallel affine set → `parallel-affine-set.md`
-- Affine mapping → `affine-mapping.md`
-- Hyperplane → `hyperplane.md`
+- ✓ Line segment in a vector space → `line-segments-in-a-vector-space.md`
+- ✓ Line connecting two points → `line-connecting-two-points.md`
+- ✓ Affine set → `affine-set.md`
+- ✓ Affine hull, affine combination → `affine-hull-affine-combination.md`
+- ✓ Parallel affine set → `parallel-affine-set.md`
+- ✓ Affine mapping → `affine-mapping.md`
+- ✓ Hyperplane → `hyperplane.md`
 
 **Definitions (Convex Sets):**
-- Convex set → `convex-set.md`
-- Convex combination → `convex-combination.md`
-- Convex hull → `convex-hull.md`
-- Set-valued mapping (multifunction) → `set-valued-mapping-multifunction-domain-and-graph-convex-set-valued-mapping.md`
+- ✓ Convex set → `convex-set.md`
+- ✓ Convex combination → `convex-combination.md`
+- ✓ Convex hull → `convex-hull.md`
+- ✓ Set-valued mapping (multifunction) → `set-valued-mapping-multifunction-domain-and-graph-convex-set-valued-mapping.md`
 
 **Definitions (Algebraic Interior & Linear Closure):**
-- Algebraic interior (core) → `algebraic-interior-core.md`
-- Linear closure → `linear-closure.md`
+- ✓ Algebraic interior (core) → `algebraic-interior-core.md`
+- ✓ Linear closure → `linear-closure.md`
 
 **Definitions (Convex Functions):**
-- Extended real number system → `extended-real-number-system-and-conventions.md`
-- Domain and epigraph, proper function → `domain-and-epigraph-proper-function.md`
-- Convex function (via epigraph) → `convex-function-via-epigraph.md`
-- Strictly convex function → `strictly-convex-function.md`
-- Quasiconvex function → `quasiconvex-function.md`
-- Indicator function of a set → `indicator-function-of-a-set.md`
-- Marginal (optimal value) function → `marginal-optimal-value-function.md`
+- ✓ Extended real number system → `extended-real-number-system-and-conventions.md`
+- ✓ Domain and epigraph, proper function → `domain-and-epigraph-proper-function.md`
+- ✓ Convex function (via epigraph) → `convex-function-via-epigraph.md`
+- ✓ Strictly convex function → `strictly-convex-function.md`
+- ✓ Quasiconvex function → `quasiconvex-function.md`
+- ✓ Indicator function of a set → `indicator-function-of-a-set.md`
+- ✓ Marginal (optimal value) function → `marginal-optimal-value-function.md`
 
 **Definitions (Minkowski Functional & Seminorms):**
-- Minkowski function (gauge) of a set → `minkowski-function-gauge-of-a-set.md`
-- Subadditive, positively homogeneous, sublinear functions → `subadditive-positively-homogeneous-and-sublinear-functions.md`
-- Seminorm → `seminorm.md`
+- ✓ Minkowski function (gauge) of a set → `minkowski-function-gauge-of-a-set.md`
+- ✓ Subadditive, positively homogeneous, sublinear functions → `subadditive-positively-homogeneous-and-sublinear-functions.md`
+- ✓ Seminorm → `seminorm.md`
 
 **Definitions (Duality):**
-- Bounded linear functional, norm of a functional → `bounded-linear-functional-norm-of-a-functional.md`
-- Dual space and duality pairing → `dual-space-and-duality-pairing.md`
+- ✓ Bounded linear functional, norm of a functional → `bounded-linear-functional-norm-of-a-functional.md`
+- ✓ Dual space and duality pairing → `dual-space-and-duality-pairing.md`
 
 **Theorems:**
-- Norm induces a metric (and conversely) → `norm-induces-a-metric-and-conversely.md`
-- Existence of a basis (Hamel basis) → `existence-of-a-basis-hamel-basis.md`
-- Extension of a linearly independent set to a basis → `extension-of-a-linearly-independent-set-to-a-basis.md`
-- Isomorphism theorem and dimension formula → `isomorphism-theorem-and-dimension-formula-for-linear-operators.md`
-- Completeness of ℝ^k → `completeness-of-rk.md`
-- Affine sets are translates of subspaces → `affine-sets-are-translates-of-subspaces.md`
-- Hyperplanes are level sets of nonzero linear functionals → `hyperplanes-are-level-sets-of-nonzero-linear-functionals.md`
-- Convex hull is the smallest convex set containing → `convex-hull-is-the-smallest-convex-set-containing.md`
-- Convex hull via convex combinations → `convex-hull-via-convex-combinations.md`
-- Interior and closure of a convex set are convex → `interior-and-closure-of-a-convex-set-are-convex.md`
-- Core equals interior for convex sets in normed spaces → `core-equals-interior-for-convex-sets-in-normed-spaces.md`
-- Equivalent characterizations of convex functions → `equivalent-characterizations-of-convex-functions.md`
-- Convexity characterized by monotonicity of derivative → `convexity-characterized-by-monotonicity-of-derivative.md`
-- Convexity via nonnegative second derivative → `convexity-via-nonnegative-second-derivative.md`
-- Convexity characterized by positive semidefinite Hessian → `convexity-characterized-by-positive-semidefinite-hessian.md`
-- Convexity of the marginal optimal value function → `convexity-of-the-marginal-optimal-value-function.md`
-- Hahn–Banach theorem (real vector spaces) → `hahn-banach-theorem-in-real-vector-spaces.md`
-- Hahn–Banach extension dominated by a seminorm (real case) → `hahn-banach-extension-dominated-by-a-seminorm-real-case.md`
-- Hahn–Banach theorem (complex vector spaces) → `hahn-banach-theorem-in-complex-vector-spaces.md`
-- Hahn–Banach theorem (normed spaces) → `hahn-banach-theorem-in-normed-spaces.md`
-- Separation of a point from a convex set via the core → `separation-of-a-point-from-a-convex-set-via-the-core.md`
-- Separation of two convex sets via the core condition → `separation-of-two-convex-sets-via-the-core-condition.md`
-- Separation by a closed hyperplane → `separation-by-a-closed-hyperplane.md`
-- Strict separation with an open convex set → `strict-separation-with-an-open-convex-set.md`
-- Strict separation by a closed hyperplane → `strict-separation-by-a-closed-hyperplane.md`
-- Strict separation of compact and closed convex sets → `strict-separation-of-compact-and-closed-convex-sets.md`
+- ✓ Norm induces a metric (and conversely) → `norm-induces-a-metric-and-conversely.md`
+- ✓ Existence of a basis (Hamel basis) → `existence-of-a-basis-hamel-basis.md`
+- ✓ Extension of a linearly independent set to a basis → `extension-of-a-linearly-independent-set-to-a-basis.md`
+- ✓ Isomorphism theorem and dimension formula → `isomorphism-theorem-and-dimension-formula-for-linear-operators.md`
+- ✓ Completeness of ℝ^k → `completeness-of-rk.md`
+- ✓ Affine sets are translates of subspaces → `affine-sets-are-translates-of-subspaces.md`
+- ✓ Hyperplanes are level sets of nonzero linear functionals → `hyperplanes-are-level-sets-of-nonzero-linear-functionals.md`
+- ✓ Convex hull is the smallest convex set containing → `convex-hull-is-the-smallest-convex-set-containing.md`
+- ✓ Convex hull via convex combinations → `convex-hull-via-convex-combinations.md`
+- ✓ Interior and closure of a convex set are convex → `interior-and-closure-of-a-convex-set-are-convex.md`
+- ✓ Core equals interior for convex sets in normed spaces → `core-equals-interior-for-convex-sets-in-normed-spaces.md`
+- ✓ Equivalent characterizations of convex functions → `equivalent-characterizations-of-convex-functions.md`
+- ✓ Convexity characterized by monotonicity of derivative → `convexity-characterized-by-monotonicity-of-derivative.md`
+- ✓ Convexity via nonnegative second derivative → `convexity-via-nonnegative-second-derivative.md`
+- ✓ Convexity characterized by positive semidefinite Hessian → `convexity-characterized-by-positive-semidefinite-hessian.md`
+- ✓ Convexity of the marginal optimal value function → `convexity-of-the-marginal-optimal-value-function.md`
+- ✓ Hahn–Banach theorem (real vector spaces) → `hahn-banach-theorem-in-real-vector-spaces.md`
+- ✓ Hahn–Banach extension dominated by a seminorm (real case) → `hahn-banach-extension-dominated-by-a-seminorm-real-case.md`
+- ✓ Hahn–Banach theorem (complex vector spaces) → `hahn-banach-theorem-in-complex-vector-spaces.md`
+- ✓ Hahn–Banach theorem (normed spaces) → `hahn-banach-theorem-in-normed-spaces.md`
+- ✓ Separation of a point from a convex set via the core → `separation-of-a-point-from-a-convex-set-via-the-core.md`
+- ✓ Separation of two convex sets via the core condition → `separation-of-two-convex-sets-via-the-core-condition.md`
+- ✓ Separation by a closed hyperplane → `separation-by-a-closed-hyperplane.md`
+- ✓ Strict separation with an open convex set → `strict-separation-with-an-open-convex-set.md`
+- ✓ Strict separation by a closed hyperplane → `strict-separation-by-a-closed-hyperplane.md`
+- ✓ Strict separation of compact and closed convex sets → `strict-separation-of-compact-and-closed-convex-sets.md`
 
 **Lemmas:**
-- Subspace test (closure under addition and scalar multiplication) → `subspace-test-closure-under-addition-and-scalar-multiplication.md`
-- Basis characterized by maximal linear independence → `basis-characterized-by-maximal-linear-independence.md`
-- Characterization of direct sums → `characterization-of-direct-sums.md`
-- Reverse triangle inequality → `reverse-triangle-inequality.md`
-- Convergent sequences are bounded → `convergent-sequences-are-bounded.md`
-- Convergent sequences are Cauchy → `convergent-sequences-are-cauchy.md`
-- Cauchy sequences are bounded → `cauchy-sequences-are-bounded.md`
-- Cauchy sequence with a convergent subsequence converges → `cauchy-sequence-with-a-convergent-subsequence-converges.md`
-- Subsequences of convergent sequences converge to the same limit → `subsequences-of-convergent-sequences-converge-to-the-same-limit.md`
-- Characterization of affine mappings → `characterization-of-affine-mappings.md`
-- Convex sets characterized by closure under convex combinations → `convex-sets-characterized-by-closure-under-convex-combinations.md`
-- Segments from interior points stay in the interior → `segments-from-interior-points-stay-in-the-interior.md`
-- Segments from core points stay in the core → `segments-from-core-points-stay-in-the-core.md`
-- Core characterized by absorbing translations → `core-characterized-by-absorbing-translations.md`
-- Core of a convex set is convex → `core-of-a-convex-set-is-convex.md`
-- Idempotence of the core operator → `idempotence-of-the-core-operator.md`
-- Linear closure of a convex set is convex → `linear-closure-of-a-convex-set-is-convex.md`
-- Linear closure equals closure for solid convex sets → `linear-closure-equals-closure-for-solid-convex-sets.md`
-- Slope inequalities for convex functions → `slope-inequalities-for-convex-functions.md`
-- Properties of the Minkowski functional of a convex set → `properties-of-the-minkowski-functional-of-a-convex-set.md`
-- Continuity and level sets of the Minkowski functional → `continuity-and-level-sets-of-the-minkowski-functional.md`
-- Kernel of a nonzero linear functional has codimension one → `kernel-of-a-nonzero-linear-functional-has-codimension-one.md`
-- Codimension one subspaces yield direct sum decompositions → `codimension-one-subspaces-yield-direct-sum-decompositions.md`
-- Auxiliary separation lemma for disjoint convex sets with nonempty core → `auxiliary-separation-lemma-for-disjoint-convex-sets-with-nonempty-core.md`
-- Continuity of linear functionals via closed level sets → `continuity-of-linear-functionals-via-closed-level-sets.md`
+- ✓ Subspace test (closure under addition and scalar multiplication) → `subspace-test-closure-under-addition-and-scalar-multiplication.md`
+- ✓ Basis characterized by maximal linear independence → `basis-characterized-by-maximal-linear-independence.md`
+- ✓ Characterization of direct sums → `characterization-of-direct-sums.md`
+- ✓ Reverse triangle inequality → `reverse-triangle-inequality.md`
+- ✓ Convergent sequences are bounded → `convergent-sequences-are-bounded.md`
+- ✓ Convergent sequences are Cauchy → `convergent-sequences-are-cauchy.md`
+- ✓ Cauchy sequences are bounded → `cauchy-sequences-are-bounded.md`
+- ✓ Cauchy sequence with a convergent subsequence converges → `cauchy-sequence-with-a-convergent-subsequence-converges.md`
+- ✓ Subsequences of convergent sequences converge to the same limit → `subsequences-of-convergent-sequences-converge-to-the-same-limit.md`
+- ✓ Characterization of affine mappings → `characterization-of-affine-mappings.md`
+- ✓ Convex sets characterized by closure under convex combinations → `convex-sets-characterized-by-closure-under-convex-combinations.md`
+- ✓ Segments from interior points stay in the interior → `segments-from-interior-points-stay-in-the-interior.md`
+- ✓ Segments from core points stay in the core → `segments-from-core-points-stay-in-the-core.md`
+- ✓ Core characterized by absorbing translations → `core-characterized-by-absorbing-translations.md`
+- ✓ Core of a convex set is convex → `core-of-a-convex-set-is-convex.md`
+- ✓ Idempotence of the core operator → `idempotence-of-the-core-operator.md`
+- ✓ Linear closure of a convex set is convex → `linear-closure-of-a-convex-set-is-convex.md`
+- ✓ Linear closure equals closure for solid convex sets → `linear-closure-equals-closure-for-solid-convex-sets.md`
+- ✓ Slope inequalities for convex functions → `slope-inequalities-for-convex-functions.md`
+- ✓ Properties of the Minkowski functional of a convex set → `properties-of-the-minkowski-functional-of-a-convex-set.md`
+- ✓ Continuity and level sets of the Minkowski functional → `continuity-and-level-sets-of-the-minkowski-functional.md`
+- ✓ Kernel of a nonzero linear functional has codimension one → `kernel-of-a-nonzero-linear-functional-has-codimension-one.md`
+- ✓ Codimension one subspaces yield direct sum decompositions → `codimension-one-subspaces-yield-direct-sum-decompositions.md`
+- ✓ Auxiliary separation lemma for disjoint convex sets with nonempty core → `auxiliary-separation-lemma-for-disjoint-convex-sets-with-nonempty-core.md`
+- ✓ Continuity of linear functionals via closed level sets → `continuity-of-linear-functionals-via-closed-level-sets.md`
 
 **Propositions:**
-- Span equals the set of all finite linear combinations → `span-equals-the-set-of-all-finite-linear-combinations.md`
-- Intersection of subspaces is a subspace → `intersection-of-subspaces-is-a-subspace.md`
-- Sum of subspaces equals span of the union → `sum-of-subspaces-equals-span-of-the-union.md`
-- Images and preimages of subspaces under linear operators → `images-and-preimages-of-subspaces-under-linear-operators.md`
-- Basic properties of open sets → `basic-properties-of-open-sets.md`
-- Basic properties of closed sets → `basic-properties-of-closed-sets.md`
-- Basic properties of the interior operator → `basic-properties-of-the-interior-operator.md`
-- Basic properties of the closure operator → `basic-properties-of-the-closure-operator.md`
-- Open balls are open sets → `open-balls-are-open-sets.md`
-- Closed balls are closed sets → `closed-balls-are-closed-sets.md`
-- Interior characterized by existence of a ball → `interior-characterized-by-existence-of-a-ball.md`
-- Closure characterized by ball intersections → `closure-characterized-by-ball-intersections.md`
-- Closure characterized by convergent sequences → `closure-characterized-by-convergent-sequences.md`
-- Closed sets characterized by sequences → `closed-sets-characterized-by-sequences-version-i.md`
-- Uniqueness of limits in metric spaces → `uniqueness-of-limits-in-metric-spaces.md`
-- Uniqueness of limits and boundedness in normed spaces → `uniqueness-of-limits-and-boundedness-in-normed-spaces.md`
-- Convergence implies convergence of norms → `convergence-implies-convergence-of-norms.md`
-- Algebra of limits in normed spaces → `algebra-of-limits-in-normed-spaces.md`
-- Completeness implies closedness; closed subsets of complete spaces are complete → `completeness-implies-closedness-closed-subsets-of-complete-spaces-are-complete.md`
-- Properties of affine sets and affine hulls → `properties-of-affine-sets-and-affine-hulls.md`
-- Parallel subspace to an affine set → `parallel-subspace-to-an-affine-set-is.md`
-- Affine images and preimages of convex sets are convex → `affine-images-and-preimages-of-convex-sets-are-convex.md`
-- Intersections of convex sets are convex → `intersections-of-convex-sets-are-convex.md`
-- Sums and scalar multiples of convex sets are convex → `sums-and-scalar-multiples-of-convex-sets-are-convex.md`
-- Cartesian product of convex sets is convex → `cartesian-product-of-convex-sets-is-convex.md`
-- Interior and closure relations for convex sets with nonempty interior → `interior-and-closure-relations-for-convex-sets-with-nonempty-interior.md`
-- Closure of intersections under interior point condition → `closure-of-intersections-under-interior-point-condition.md`
-- Convexity on a convex subset via extension → `convexity-on-a-convex-subset-via-extension.md`
-- Domain of a convex function is convex → `domain-of-a-convex-function-is-convex.md`
-- Quasiconvexity characterized by convex sublevel sets → `quasiconvexity-characterized-by-convex-sublevel-sets.md`
-- Basic operations preserving convexity → `basic-operations-preserving-convexity.md`
-- Convexity preserved under monotone convex composition → `convexity-preserved-under-monotone-convex-composition.md`
-- Convexity preserved under affine composition → `convexity-preserved-under-affine-composition.md`
-- Supremum of convex functions is convex → `supremum-of-convex-functions-is-convex.md`
-- Separation by a hyperplane → `separation-by-a-hyperplane.md`
-- Separation by hyperplanes via sup/inf inequality → `separation-by-hyperplanes-via-supinf-inequality.md`
-- Separation of a point and a subspace → `separation-of-a-point-and-a-subspace.md`
-- Complex separation theorem (real parts) → `complex-separation-theorem-real-parts.md`
-- Separation by closed hyperplane under interior condition → `separation-by-closed-hyperplane-under-interior-condition.md`
-- Existence of a functional attaining its norm at a point → `existence-of-a-functional-attaining-its-norm-at-a-point.md`
+- ✓ Span equals the set of all finite linear combinations → `span-equals-the-set-of-all-finite-linear-combinations.md`
+- ✓ Intersection of subspaces is a subspace → `intersection-of-subspaces-is-a-subspace.md`
+- ✓ Sum of subspaces equals span of the union → `sum-of-subspaces-equals-span-of-the-union.md`
+- ✓ Images and preimages of subspaces under linear operators → `images-and-preimages-of-subspaces-under-linear-operators.md`
+- ✓ Basic properties of open sets → `basic-properties-of-open-sets.md`
+- ✓ Basic properties of closed sets → `basic-properties-of-closed-sets.md`
+- ✓ Basic properties of the interior operator → `basic-properties-of-the-interior-operator.md`
+- ✓ Basic properties of the closure operator → `basic-properties-of-the-closure-operator.md`
+- ✓ Open balls are open sets → `open-balls-are-open-sets.md`
+- ✓ Closed balls are closed sets → `closed-balls-are-closed-sets.md`
+- ✓ Interior characterized by existence of a ball → `interior-characterized-by-existence-of-a-ball.md`
+- ✓ Closure characterized by ball intersections → `closure-characterized-by-ball-intersections.md`
+- ✓ Closure characterized by convergent sequences → `closure-characterized-by-convergent-sequences.md`
+- ✓ Closed sets characterized by sequences → `closed-sets-characterized-by-sequences-version-i.md`
+- ✓ Uniqueness of limits in metric spaces → `uniqueness-of-limits-in-metric-spaces.md`
+- ✓ Uniqueness of limits and boundedness in normed spaces → `uniqueness-of-limits-and-boundedness-in-normed-spaces.md`
+- ✓ Convergence implies convergence of norms → `convergence-implies-convergence-of-norms.md`
+- ✓ Algebra of limits in normed spaces → `algebra-of-limits-in-normed-spaces.md`
+- ✓ Completeness implies closedness; closed subsets of complete spaces are complete → `completeness-implies-closedness-closed-subsets-of-complete-spaces-are-complete.md`
+- ✓ Properties of affine sets and affine hulls → `properties-of-affine-sets-and-affine-hulls.md`
+- ✓ Parallel subspace to an affine set → `parallel-subspace-to-an-affine-set-is.md`
+- ✓ Affine images and preimages of convex sets are convex → `affine-images-and-preimages-of-convex-sets-are-convex.md`
+- ✓ Intersections of convex sets are convex → `intersections-of-convex-sets-are-convex.md`
+- ✓ Sums and scalar multiples of convex sets are convex → `sums-and-scalar-multiples-of-convex-sets-are-convex.md`
+- ✓ Cartesian product of convex sets is convex → `cartesian-product-of-convex-sets-is-convex.md`
+- ✓ Interior and closure relations for convex sets with nonempty interior → `interior-and-closure-relations-for-convex-sets-with-nonempty-interior.md`
+- ✓ Closure of intersections under interior point condition → `closure-of-intersections-under-interior-point-condition.md`
+- ✓ Convexity on a convex subset via extension → `convexity-on-a-convex-subset-via-extension.md`
+- ✓ Domain of a convex function is convex → `domain-of-a-convex-function-is-convex.md`
+- ✓ Quasiconvexity characterized by convex sublevel sets → `quasiconvexity-characterized-by-convex-sublevel-sets.md`
+- ✓ Basic operations preserving convexity → `basic-operations-preserving-convexity.md`
+- ✓ Convexity preserved under monotone convex composition → `convexity-preserved-under-monotone-convex-composition.md`
+- ✓ Convexity preserved under affine composition → `convexity-preserved-under-affine-composition.md`
+- ✓ Supremum of convex functions is convex → `supremum-of-convex-functions-is-convex.md`
+- ✓ Separation by a hyperplane → `separation-by-a-hyperplane.md`
+- ✓ Separation by hyperplanes via sup/inf inequality → `separation-by-hyperplanes-via-supinf-inequality.md`
+- ✓ Separation of a point and a subspace → `separation-of-a-point-and-a-subspace.md`
+- ✓ Complex separation theorem (real parts) → `complex-separation-theorem-real-parts.md`
+- ✓ Separation by closed hyperplane under interior condition → `separation-by-closed-hyperplane-under-interior-condition.md`
+- ✓ Existence of a functional attaining its norm at a point → `existence-of-a-functional-attaining-its-norm-at-a-point.md`
 
 **Corollaries:**
-- Young's inequality → `youngs-inequality.md`
-- Weighted arithmetic–geometric mean inequality → `weighted-arithmeticgeometric-mean-inequality.md`
-- Hölder inequality (finite sums) → `holder-inequality-finite-sums.md`
-- Hölder inequality (integrals) → `holder-inequality-integrals.md`
+- ✓ Young's inequality → `youngs-inequality.md`
+- ✓ Weighted arithmetic–geometric mean inequality → `weighted-arithmeticgeometric-mean-inequality.md`
+- ✓ Hölder inequality (finite sums) → `holder-inequality-finite-sums.md`
+- ✓ Hölder inequality (integrals) → `holder-inequality-integrals.md`
 
 ---
 
@@ -666,145 +666,145 @@ Group theory through Sylow theorems and structure.
 *Depends on:* `shared-foundations`
 
 **Definitions:**
-- Semigroup → `semigroup.md`
-- Monoid → `monoid.md`
-- Group → `group.md`
-- Abelian group → `abelian-group.md`
-- Subgroup → `subgroup.md`
-- Trivial subgroup → `trivial-subgroup.md`
-- Proper subgroup → `proper-subgroup.md`
-- Cyclic subgroup → `cyclic-subgroup.md`
-- Generated subgroup → `generated-subgroup.md`
-- Normal subgroup → `normal-subgroup.md`
-- Characteristic subgroup → `characteristic-subgroup.md`
-- Simple group → `simple-group.md`
-- Solvable group → `solvable-group.md`
-- Nilpotent group → `nilpotent-group.md`
-- Perfect group → `perfect-group.md`
-- Center of a group → `center-of-group.md`
-- Centralizer → `centralizer.md`
-- Normalizer → `normalizer.md`
-- Conjugate element → `conjugate-element.md`
-- Conjugacy class → `conjugacy-class.md`
-- Class function → `class-function.md`
-- Commutator of elements → `commutator.md`
-- Commutator subgroup (derived subgroup) → `commutator-subgroup.md`
-- Derived series → `derived-series.md`
-- Lower central series → `lower-central-series.md`
-- Upper central series → `upper-central-series.md`
-- p-group → `p-group.md`
-- Sylow p-subgroup → `sylow-subgroup.md`
-- Hall subgroup → `hall-subgroup.md`
-- Composition series (group) → `composition-series-group.md`
-- Subnormal series → `subnormal-series.md`
-- Chief series → `chief-series.md`
-- Group homomorphism → `group-homomorphism.md`
-- Group monomorphism → `group-monomorphism.md`
-- Group epimorphism → `group-epimorphism.md`
-- Group isomorphism → `group-isomorphism.md`
-- Kernel (group homomorphism) → `kernel-group.md`
-- Image (group homomorphism) → `image-group.md`
-- Coset (left/right) → `coset.md`
-- Index of a subgroup → `index-of-subgroup.md`
-- Quotient group → `quotient-group.md`
-- Direct product of groups → `direct-product-groups.md`
-- Direct sum of groups → `direct-sum-groups.md`
-- Internal direct product → `internal-direct-product.md`
-- Semidirect product → `semidirect-product.md`
-- Internal semidirect product → `internal-semidirect-product.md`
-- Group action → `group-action.md`
-- Orbit → `orbit.md`
-- Stabilizer → `stabilizer.md`
-- Fixed-point set → `fixed-point-set.md`
-- Kernel of an action → `kernel-of-action.md`
-- Faithful action → `faithful-action.md`
-- Free action → `free-action.md`
-- Transitive action → `transitive-action.md`
-- Regular action → `regular-action.md`
-- Permutation representation → `permutation-representation.md`
-- Conjugation action → `conjugation-action.md`
-- Automorphism group → `automorphism-group.md`
-- Inner automorphism → `inner-automorphism.md`
-- Outer automorphism group → `outer-automorphism-group.md`
-- Group presentation → `group-presentation.md`
-- Generating set → `generating-set.md`
-- Free group → `free-group.md`
-- Normal closure → `normal-closure.md`
-- Group extension → `group-extension.md`
-- Split extension → `split-extension.md`
-- Central extension → `central-extension.md`
-- Exact sequence of groups → `exact-sequence-groups.md`
+- ✓ Semigroup → `semigroup.md`
+- ✓ Monoid → `monoid.md`
+- ✓ Group → `group.md`
+- ✓ Abelian group → `abelian-group.md`
+- ✓ Subgroup → `subgroup.md`
+- ✓ Trivial subgroup → `trivial-subgroup.md`
+- ✓ Proper subgroup → `proper-subgroup.md`
+- ✓ Cyclic subgroup → `cyclic-subgroup.md`
+- ✓ Generated subgroup → `generated-subgroup.md`
+- ✓ Normal subgroup → `normal-subgroup.md`
+- ✓ Characteristic subgroup → `characteristic-subgroup.md`
+- ✓ Simple group → `simple-group.md`
+- ✓ Solvable group → `solvable-group.md`
+- ✓ Nilpotent group → `nilpotent-group.md`
+- ✓ Perfect group → `perfect-group.md`
+- ✓ Center of a group → `center-of-group.md`
+- ✓ Centralizer → `centralizer.md`
+- ✓ Normalizer → `normalizer.md`
+- ✓ Conjugate element → `conjugate-element.md`
+- ✓ Conjugacy class → `conjugacy-class.md`
+- ✓ Class function → `class-function.md`
+- ✓ Commutator of elements → `commutator.md`
+- ✓ Commutator subgroup (derived subgroup) → `commutator-subgroup.md`
+- ✓ Derived series → `derived-series.md`
+- ✓ Lower central series → `lower-central-series.md`
+- ✓ Upper central series → `upper-central-series.md`
+- ✓ p-group → `p-group.md`
+- ✓ Sylow p-subgroup → `sylow-subgroup.md`
+- ✓ Hall subgroup → `hall-subgroup.md`
+- ✓ Composition series (group) → `composition-series-group.md`
+- ✓ Subnormal series → `subnormal-series.md`
+- ✓ Chief series → `chief-series.md`
+- ✓ Group homomorphism → `group-homomorphism.md`
+- ✓ Group monomorphism → `group-monomorphism.md`
+- ✓ Group epimorphism → `group-epimorphism.md`
+- ✓ Group isomorphism → `group-isomorphism.md`
+- ✓ Kernel (group homomorphism) → `kernel-group.md`
+- ✓ Image (group homomorphism) → `image-group.md`
+- ✓ Coset (left/right) → `coset.md`
+- ✓ Index of a subgroup → `index-of-subgroup.md`
+- ✓ Quotient group → `quotient-group.md`
+- ✓ Direct product of groups → `direct-product-groups.md`
+- ✓ Direct sum of groups → `direct-sum-groups.md`
+- ✓ Internal direct product → `internal-direct-product.md`
+- ✓ Semidirect product → `semidirect-product.md`
+- ✓ Internal semidirect product → `internal-semidirect-product.md`
+- ✓ Group action → `group-action.md`
+- ✓ Orbit → `orbit.md`
+- ✓ Stabilizer → `stabilizer.md`
+- ✓ Fixed-point set → `fixed-point-set.md`
+- ✓ Kernel of an action → `kernel-of-action.md`
+- ✓ Faithful action → `faithful-action.md`
+- ✓ Free action → `free-action.md`
+- ✓ Transitive action → `transitive-action.md`
+- ✓ Regular action → `regular-action.md`
+- ✓ Permutation representation → `permutation-representation.md`
+- ✓ Conjugation action → `conjugation-action.md`
+- ✓ Automorphism group → `automorphism-group.md`
+- ✓ Inner automorphism → `inner-automorphism.md`
+- ✓ Outer automorphism group → `outer-automorphism-group.md`
+- ✓ Group presentation → `group-presentation.md`
+- ✓ Generating set → `generating-set.md`
+- ✓ Free group → `free-group.md`
+- ✓ Normal closure → `normal-closure.md`
+- ✓ Group extension → `group-extension.md`
+- ✓ Split extension → `split-extension.md`
+- ✓ Central extension → `central-extension.md`
+- ✓ Exact sequence of groups → `exact-sequence-groups.md`
 
 **Theorems:**
-- First isomorphism theorem (groups) → `first-isomorphism-theorem-groups.md`
-- Second isomorphism theorem (groups) → `second-isomorphism-theorem-groups.md`
-- Third isomorphism theorem (groups) → `third-isomorphism-theorem-groups.md`
-- Correspondence theorem (groups) → `correspondence-theorem-groups.md`
-- Cayley's theorem → `cayleys-theorem.md`
-- Lagrange's theorem → `lagranges-theorem.md`
-- Cauchy's theorem (finite groups) → `cauchys-theorem-groups.md`
-- Orbit–stabilizer theorem → `orbit-stabilizer-theorem.md`
-- Class equation → `class-equation.md`
-- Burnside's lemma → `burnsides-lemma.md`
-- Sylow's first theorem → `sylows-first-theorem.md`
-- Sylow's second theorem → `sylows-second-theorem.md`
-- Sylow's third theorem → `sylows-third-theorem.md`
-- Jordan–Hölder theorem (groups) → `jordan-holder-theorem-groups.md`
-- Schreier refinement theorem → `schreier-refinement-theorem.md`
-- Fundamental theorem of finitely generated abelian groups → `fundamental-theorem-fg-abelian-groups.md`
-- Nielsen–Schreier theorem → `nielsen-schreier-theorem.md`
-- Schur–Zassenhaus theorem → `schur-zassenhaus-theorem.md`
-- Burnside's p^a q^b theorem → `burnsides-pq-theorem.md`
-- Krull–Remak–Schmidt theorem (groups) → `krull-remak-schmidt-theorem-groups.md`
+- ✓ First isomorphism theorem (groups) → `first-isomorphism-theorem-groups.md`
+- ✓ Second isomorphism theorem (groups) → `second-isomorphism-theorem-groups.md`
+- ✓ Third isomorphism theorem (groups) → `third-isomorphism-theorem-groups.md`
+- ✓ Correspondence theorem (groups) → `correspondence-theorem-groups.md`
+- ✓ Cayley's theorem → `cayleys-theorem.md`
+- ✓ Lagrange's theorem → `lagranges-theorem.md`
+- ✓ Cauchy's theorem (finite groups) → `cauchys-theorem-groups.md`
+- ✓ Orbit–stabilizer theorem → `orbit-stabilizer-theorem.md`
+- ✓ Class equation → `class-equation.md`
+- ✓ Burnside's lemma → `burnsides-lemma.md`
+- ✓ Sylow's first theorem → `sylows-first-theorem.md`
+- ✓ Sylow's second theorem → `sylows-second-theorem.md`
+- ✓ Sylow's third theorem → `sylows-third-theorem.md`
+- ✓ Jordan–Hölder theorem (groups) → `jordan-holder-theorem-groups.md`
+- ✓ Schreier refinement theorem → `schreier-refinement-theorem.md`
+- ✓ Fundamental theorem of finitely generated abelian groups → `fundamental-theorem-fg-abelian-groups.md`
+- ✓ Nielsen–Schreier theorem → `nielsen-schreier-theorem.md`
+- ✓ Schur–Zassenhaus theorem → `schur-zassenhaus-theorem.md`
+- ✓ Burnside's p^a q^b theorem → `burnsides-pq-theorem.md`
+- ✓ Krull–Remak–Schmidt theorem (groups) → `krull-remak-schmidt-theorem-groups.md`
 
 **Lemmas:**
-- Subgroup test (one-step) → `subgroup-test-one-step.md`
-- Subgroup test (two-step) → `subgroup-test-two-step.md`
-- Normal subgroup criterion → `normal-subgroup-criterion.md`
-- Subgroup of index 2 is normal → `index-2-normal.md`
-- p-group has nontrivial center → `p-group-nontrivial-center.md`
-- Orbit decomposition lemma → `orbit-decomposition-lemma.md`
-- Conjugacy class size lemma → `conjugacy-class-size-lemma.md`
-- Sylow conjugacy lemma → `sylow-conjugacy-lemma.md`
-- Frattini argument → `frattini-argument.md`
-- Schreier's lemma → `schreiers-lemma.md`
-- Cosets partition a group → `cosets-partition.md`
-- Universal property of quotient groups → `quotient-group-universal-property.md`
-- Kernels are normal subgroups → `kernels-are-normal.md`
+- ✓ Subgroup test (one-step) → `subgroup-test-one-step.md`
+- ✓ Subgroup test (two-step) → `subgroup-test-two-step.md`
+- ✓ Normal subgroup criterion → `normal-subgroup-criterion.md`
+- ✓ Subgroup of index 2 is normal → `index-2-normal.md`
+- ✓ p-group has nontrivial center → `p-group-nontrivial-center.md`
+- ✓ Orbit decomposition lemma → `orbit-decomposition-lemma.md`
+- ✓ Conjugacy class size lemma → `conjugacy-class-size-lemma.md`
+- ✓ Sylow conjugacy lemma → `sylow-conjugacy-lemma.md`
+- ✓ Frattini argument → `frattini-argument.md`
+- ✓ Schreier's lemma → `schreiers-lemma.md`
+- ✓ Cosets partition a group → `cosets-partition.md`
+- ✓ Universal property of quotient groups → `quotient-group-universal-property.md`
+- ✓ Kernels are normal subgroups → `kernels-are-normal.md`
 
 **Propositions:**
-- Uniqueness of identity → `uniqueness-of-identity-group.md`
-- Uniqueness of inverses → `uniqueness-of-inverses-group.md`
-- Cancellation laws → `cancellation-laws-group.md`
-- Subgroups closed under inverses and products → `subgroups-closed.md`
-- Intersection of subgroups is a subgroup → `intersection-of-subgroups.md`
-- Product of normal subgroups is normal → `product-of-normal-subgroups.md`
-- Center is characteristic → `center-is-characteristic.md`
-- Kernel is normal → `kernel-is-normal.md`
-- Image is a subgroup → `image-is-subgroup.md`
-- G/ker(f) ≅ im(f) → `first-isomorphism-consequence-groups.md`
-- Conjugation preserves order → `conjugation-preserves-order.md`
-- Subgroups of cyclic groups are cyclic → `subgroups-of-cyclic-are-cyclic.md`
-- Finite cyclic group ≅ ℤ/nℤ → `finite-cyclic-isomorphic-zn.md`
-- Aut(cyclic of order n) ≅ (ℤ/nℤ)× → `automorphism-group-cyclic.md`
-- Group acts on itself by left multiplication → `left-multiplication-action.md`
-- Group acts on itself by conjugation → `conjugation-action-self.md`
-- Class equation decomposition → `class-equation-decomposition.md`
-- |G| prime implies G cyclic → `prime-order-cyclic.md`
-- |G| = p² implies G abelian → `p-squared-abelian.md`
-- Abelian implies all subgroups normal → `abelian-all-subgroups-normal.md`
-- Finite p-group has subgroups of every order p^k → `p-group-subgroups-all-orders.md`
-- n_p = 1 implies Sylow p-subgroup is normal → `sylow-normal-criterion.md`
-- Semidirect product from splitting exact sequence → `semidirect-product-splitting.md`
+- ✓ Uniqueness of identity → `uniqueness-of-identity-group.md`
+- ✓ Uniqueness of inverses → `uniqueness-of-inverses-group.md`
+- ✓ Cancellation laws → `cancellation-laws-group.md`
+- ✓ Subgroups closed under inverses and products → `subgroups-closed.md`
+- ✓ Intersection of subgroups is a subgroup → `intersection-of-subgroups.md`
+- ✓ Product of normal subgroups is normal → `product-of-normal-subgroups.md`
+- ✓ Center is characteristic → `center-is-characteristic.md`
+- ✓ Kernel is normal → `kernel-is-normal.md`
+- ✓ Image is a subgroup → `image-is-subgroup.md`
+- ✓ G/ker(f) ≅ im(f) → `first-isomorphism-consequence-groups.md`
+- ✓ Conjugation preserves order → `conjugation-preserves-order.md`
+- ✓ Subgroups of cyclic groups are cyclic → `subgroups-of-cyclic-are-cyclic.md`
+- ✓ Finite cyclic group ≅ ℤ/nℤ → `finite-cyclic-isomorphic-zn.md`
+- ✓ Aut(cyclic of order n) ≅ (ℤ/nℤ)× → `automorphism-group-cyclic.md`
+- ✓ Group acts on itself by left multiplication → `left-multiplication-action.md`
+- ✓ Group acts on itself by conjugation → `conjugation-action-self.md`
+- ✓ Class equation decomposition → `class-equation-decomposition.md`
+- ✓ |G| prime implies G cyclic → `prime-order-cyclic.md`
+- ✓ |G| = p² implies G abelian → `p-squared-abelian.md`
+- ✓ Abelian implies all subgroups normal → `abelian-all-subgroups-normal.md`
+- ✓ Finite p-group has subgroups of every order p^k → `p-group-subgroups-all-orders.md`
+- ✓ n_p = 1 implies Sylow p-subgroup is normal → `sylow-normal-criterion.md`
+- ✓ Semidirect product from splitting exact sequence → `semidirect-product-splitting.md`
 
 **Corollaries:**
-- Fermat's little theorem → `fermats-little-theorem.md`
-- Euler's theorem → `eulers-theorem.md`
-- Order of element divides order of group → `order-divides-group-order.md`
-- Finite p-group has nontrivial center → `p-group-nontrivial-center-corollary.md`
-- n_p ≡ 1 mod p → `sylow-congruence.md`
-- Classification of finite abelian groups → `classification-finite-abelian-groups.md`
-- Jordan–Hölder uniqueness → `jordan-holder-uniqueness.md`
+- ✓ Fermat's little theorem → `fermats-little-theorem.md`
+- ✓ Euler's theorem → `eulers-theorem.md`
+- ✓ Order of element divides order of group → `order-divides-group-order.md`
+- ✓ Finite p-group has nontrivial center → `p-group-nontrivial-center-corollary.md`
+- ✓ n_p ≡ 1 mod p → `sylow-congruence.md`
+- ✓ Classification of finite abelian groups → `classification-finite-abelian-groups.md`
+- ✓ Jordan–Hölder uniqueness → `jordan-holder-uniqueness.md`
 
 ---
 

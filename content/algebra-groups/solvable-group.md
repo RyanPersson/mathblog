@@ -7,7 +7,7 @@ A **solvable group** is a {{</* knowl id="group" text="group" */>}} $G$ whose {{
 - $G^{(0)}=G$, and
 - $G^{(k+1)}=[G^{(k)},G^{(k)}]$ is the {{</* knowl id="commutator-subgroup" text="commutator subgroup" */>}} of $G^{(k)}$.
 
-Equivalently, $G$ is solvable iff it has a finite subnormal series whose successive quotients are {{</* knowl id="abelian-group" text="abelian" */>}}.
+Equivalently, $G$ is solvable iff it has a finite {{</* knowl id="subnormal-series" text="subnormal series" */>}} whose successive quotients are {{</* knowl id="abelian-group" text="abelian" */>}}.
 
 **Examples:**
 - Every abelian group is solvable (the derived series hits $\{e\}$ in at most two steps).

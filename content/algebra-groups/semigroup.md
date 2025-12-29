@@ -3,7 +3,7 @@ title: "Semigroup"
 description: "A set equipped with an associative binary operation"
 ---
 
-A **semigroup** is a {{</* knowl id="set" text="set" */>}} $S$ together with an associative {{</* knowl id="binary-operation" text="binary operation" */>}} $\cdot : S \times S \to S$, meaning that for all $a,b,c \in S$,
+A **semigroup** is a {{</* knowl id="set" section="shared-foundations" text="set" */>}} $S$ together with an associative {{</* knowl id="binary-operation" section="shared-foundations" text="binary operation" */>}} $\cdot : S \times S \to S$, meaning that for all $a,b,c \in S$,
 $
 (a\cdot b)\cdot c \;=\; a\cdot(b\cdot c).
 $

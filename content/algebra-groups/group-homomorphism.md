@@ -3,7 +3,7 @@ title: "Group homomorphism"
 description: "A map between groups that preserves the group operation"
 ---
 
-Let $G,H$ be {{</* knowl id="group" text="groups" */>}}. A **group homomorphism** is a {{</* knowl id="function" text="function" */>}} $\varphi\colon G\to H$ such that for all $x,y\in G$,
+Let $G,H$ be {{</* knowl id="group" text="groups" */>}}. A **group homomorphism** is a {{</* knowl id="function" section="shared-foundations" text="function" */>}} $\varphi\colon G\to H$ such that for all $x,y\in G$,
 $
 \varphi(xy)=\varphi(x)\varphi(y).
 $
