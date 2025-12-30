@@ -3,7 +3,7 @@ title: "Minkowski Function (Gauge)"
 description: "A set-generated sublinear functional pΩ(x)=inf{t≥0 : x∈tΩ}."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$ be nonempty.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$ be nonempty.
 
 The **Minkowski function** (or **Minkowski gauge**) of $\Omega$ is the function $p_\Omega:X\to[0,\infty]$ defined by
 $$

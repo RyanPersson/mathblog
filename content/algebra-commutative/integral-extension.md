@@ -1,33 +1,31 @@
 ---
 title: "Integral extension"
-description: "A ring extension S/R in which every element of S is integral over R."
+description: "A ring extension A→B is integral if every element of B is integral over A."
 ---
 
-## Definition (integral extension)
-Let \(R \subseteq S\) be a ring extension (commutative, with \(1\)). The extension is **integral** if every element \(s\in S\) is {{< knowl id="integral-element" text="integral over R" >}}, i.e. each \(s\) satisfies some monic polynomial in \(R[t]\).
+Let $A\to B$ be a homomorphism of {{< knowl id="commutative-ring" section="algebra-rings" text="commutative rings" >}}. The map (or the extension) is called **integral** if every element $b\in B$ is {{< knowl id="integral-element" text="integral over A" >}}; equivalently, for each $b\in B$ there is a monic polynomial in $A[T]$ having $b$ as a root.
 
-## Useful equivalent criteria
-- If \(S\) is finitely generated as an \(R\)-{{< knowl id="module" section="algebra-modules" text="module" >}}, then \(S\) is integral over \(R\). (A “finite” extension is automatically integral.)
-- If \(S = R[s_1,\dots,s_n]\) and each \(s_i\) is integral over \(R\), then \(S\) is a finite \(R\)-module (so in particular the extension is integral).
+A frequently used sufficient condition is:
 
-Integral extensions have strong prime-ideal behavior; key theorems include {{< knowl id="lying-over-theorem" text="lying over" >}} and {{< knowl id="going-up-theorem" text="going up" >}}.
+**Finite algebra implies integral.**  
+If $B$ is finitely generated as an $A$-module, then $A\to B$ is integral.
 
-## Examples
-1. **\(\mathbb Z \subset \mathbb Z[i]\).**  
-   Every element \(a+bi\in \mathbb Z[i]\) is integral over \(\mathbb Z\) because it satisfies a monic polynomial over \(\mathbb Z\) (e.g. \(t^2-2at+(a^2+b^2)=0\)). Hence \(\mathbb Z[i]\) is integral over \(\mathbb Z\).
+Integral extensions behave well with localization: localizing an integral extension at any multiplicative set preserves integrality (compare {{< knowl id="localization-ring" text="localization" >}}). They also satisfy strong prime ideal behavior, formalized by results such as {{< knowl id="lying-over-theorem" text="lying over" >}} and {{< knowl id="going-up-theorem" text="going up" >}}.
 
-2. **A hypersurface example.**  
-   Let \(k\) be a field and consider
+### Examples
+
+1. **Adjoining a root of a monic polynomial.**  
+   For any ring $A$ and monic $f(T)\in A[T]$, the quotient
    \[
-   R = k[x] \subset S = k[x,y]/(y^2-x).
+   B := A[T]/(f)
    \]
-   The class of \(y\) in \(S\) satisfies \(t^2-x=0\), a monic polynomial in \(R[t]\). Thus \(S\) is integral over \(R\).
+   is integral over $A$: the class of $T$ in $B$ satisfies the monic equation $f(T)=0$.
 
-3. **Non-example: \(\mathbb Z \subset \mathbb Q\).**  
-   The extension is not integral, since \(1/2\in \mathbb Q\) is not integral over \(\mathbb Z\) (see {{< knowl id="integral-element" text="integral element" >}}).
+2. **Classical quadratic extensions.**  
+   The inclusion $\mathbb{Z}\subseteq \mathbb{Z}[i]$ is integral since $i$ satisfies $T^2+1=0$ over $\mathbb{Z}$, and every element of $\mathbb{Z}[i]$ is a polynomial in $i$ with integer coefficients.
 
-## Related knowls
-- Elementwise notion: {{< knowl id="integral-element" text="integral element" >}}
-- Integral closure: {{< knowl id="integral-closure" text="integral closure" >}}, {{< knowl id="integrally-closed-domain" text="integrally closed domain" >}}
-- Prime behavior: {{< knowl id="lying-over-theorem" text="lying over theorem" >}}, {{< knowl id="going-up-theorem" text="going up theorem" >}}, {{< knowl id="going-down-theorem" text="going down theorem" >}}
-- Spectrum viewpoint: {{< knowl id="prime-spectrum" text="prime spectrum" >}}
+3. **A cusp subring inside a polynomial ring.**  
+   Let $k$ be a field, $A=k[x^2,x^3]\subseteq B=k[x]$. Then $B$ is integral over $A$ because $x\in B$ satisfies the monic equation $T^2-x^2=0$ with $x^2\in A$, and hence every polynomial in $x$ is integral over $A$.
+
+4. **Non-example: polynomial extensions are not integral.**  
+   The inclusion $A\subseteq A[x]$ is typically not integral: the element $x$ does not satisfy any monic polynomial with coefficients in $A$.

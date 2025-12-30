@@ -4,7 +4,7 @@ description: "A Cauchy sequence converges if one of its subsequences converges"
 ---
 
 **Proposition.**
-Let $(X,d)$ be a {{< knowl id="metric-metric-space" text="metric space" >}}. If $(x_n)$ is a {{< knowl id="cauchy-sequence" text="Cauchy sequence" >}} and has a {{< knowl id="subsequence" text="subsequence" >}} $(x_{n_k})$ that {{< knowl id="convergence-of-a-sequence" text="converges" >}} to some $a\in X$, then the entire sequence converges to $a$.
+Let $(X,d)$ be a {{< knowl id="metric-metric-space" text="metric space" >}}. If $(x_n)$ is a {{< knowl id="cauchy-sequence" section="analysis" text="Cauchy sequence" >}} and has a {{< knowl id="subsequence" section="analysis" text="subsequence" >}} $(x_{n_k})$ that {{< knowl id="convergence-of-a-sequence" text="converges" >}} to some $a\in X$, then the entire sequence converges to $a$.
 
 **Context.** This result is often used to prove convergence once one can identify a candidate limit via a subsequence. It is also a standard step in showing completeness-type statements.
 

@@ -3,7 +3,7 @@ title: "Codimension"
 description: "The dimension of the quotient space X/L for a subspace L⊂X."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $L\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}. The **codimension** of $L$ in $X$ is
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $L\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}. The **codimension** of $L$ in $X$ is
 $$
 \operatorname{codim}(L):=\dim(X/L),
 $$

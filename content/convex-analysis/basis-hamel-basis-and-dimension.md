@@ -3,7 +3,7 @@ title: "Basis and dimension"
 description: "A Hamel basis is a linearly independent set that spans the whole vector space"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $K$, and let $B\subset X$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $K$, and let $B\subset X$.
 
 A set $B$ is a **basis** (also called a **Hamel basis**) of $X$ if:
 

@@ -3,7 +3,7 @@ title: "Linear Closure"
 description: "The algebraic analogue of closure for subsets of vector spaces"
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$.
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$.
 
 The **linear closure** of $\Omega$ is
 $$

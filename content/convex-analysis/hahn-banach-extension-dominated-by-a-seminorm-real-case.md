@@ -3,7 +3,7 @@ title: "Hahn–Banach Extension Dominated by a Seminorm (Real Case)"
 description: "A real linear functional bounded by a seminorm extends with the same bound."
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="subspace" >}}, and let $p:X\to\mathbb{R}$ be a {{< knowl id="seminorm" text="seminorm" >}}.
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="subspace" >}}, and let $p:X\to\mathbb{R}$ be a {{< knowl id="seminorm" text="seminorm" >}}.
 
 **Theorem**: If $f:Y\to\mathbb{R}$ is linear and satisfies
 $$

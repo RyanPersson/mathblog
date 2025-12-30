@@ -1,47 +1,41 @@
 ---
-title: "Lasker–Noether Theorem"
-description: "Every ideal in a Noetherian ring admits a finite primary decomposition."
+title: "Lasker–Noether theorem"
+description: "Every ideal in a Noetherian ring can be written as a finite intersection of primary ideals."
 ---
 
-## Statement
+In a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}} $A$, an ideal $Q$ is *primary* if $ab\in Q$ implies $a\in Q$ or $b^n\in Q$ for some $n\ge 1$; equivalently, the zero-divisors in $A/Q$ are nilpotent. If $Q$ is primary and $\sqrt{Q}=\mathfrak p$ is prime, then $Q$ is called $\mathfrak p$-*primary*. A representation of an ideal as an intersection of primary ideals is a {{< knowl id="primary-decomposition" text="primary decomposition" >}}.
 
-Let \(R\) be a {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and \(I\subseteq R\) an {{< knowl id="ideal" section="algebra-rings" text="ideal" >}}.
-Then there exist {{< knowl id="primary-ideal" section="algebra-rings" text="primary ideals" >}} \(Q_1,\dots,Q_r\) such that
+**Theorem (Lasker–Noether).**  
+Let $A$ be a {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and let $I\subseteq A$ be an ideal. Then there exist finitely many primary ideals $Q_1,\dots,Q_r\subseteq A$ such that
 \[
-I = Q_1 \cap \cdots \cap Q_r.
+I=\bigcap_{i=1}^r Q_i.
 \]
-Moreover, for each \(i\), the radical \( \sqrt{Q_i}\) is a {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}:
+Moreover, one can choose the decomposition so that the radicals $\mathfrak p_i=\sqrt{Q_i}$ are distinct prime ideals; in such a *minimal* primary decomposition, the set of primes $\{\mathfrak p_i\}$ is uniquely determined by $I$ (it is the set of prime ideals minimal over $I$).
+
+Via the {{< knowl id="zariski-topology" text="Zariski topology" >}} on the {{< knowl id="prime-spectrum" text="prime spectrum" >}} $\operatorname{Spec}(A)$, the identity $I=\bigcap Q_i$ translates to the geometric union
 \[
-\sqrt{Q_i} \text{ is prime.}
+V(I)=\bigcup_{i=1}^r V(Q_i),
 \]
+so primary decomposition packages the "irreducible pieces" of $V(I)$.
 
-This is the existence of **primary decomposition** in Noetherian rings.
-
-## Cross-links
-
-- Primary decomposition as a concept: {{< knowl id="primary-decomposition" text="primary decomposition" >}}
-- Radicals and primes: {{< knowl id="radical-of-ideal" section="algebra-rings" text="radical of an ideal" >}}, {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}
-- Noetherian hypothesis: {{< knowl id="noetherian-ring" text="Noetherian ring" >}}
-
-## Examples
-
-1. **Squarefree monomial ideal.**  
-   In \(R=k[x,y]\),
+### Examples
+1. **Integers: prime-power pieces.**  
+   In $A=\mathbb Z$, every ideal is principal. For $I=(12)$ one has
    \[
-   (xy) = (x)\cap (y).
+   (12)=(4)\cap (3).
    \]
-   Both \((x)\) and \((y)\) are prime, hence primary, so this is a primary decomposition.
+   Here $(4)$ is $(2)$-primary and $(3)$ is $(3)$-primary.
 
-2. **A non-prime primary component appears.**  
-   In \(R=k[x,y]\),
+2. **A union of coordinate axes.**  
+   In $A=k[x,y]$ (with $k$ a {{< knowl id="field" section="algebra-rings" text="field" >}}), the ideal $I=(xy)$ decomposes as
    \[
-   (x^2,xy) = (x)\cap (x^2,y).
+   (xy)=(x)\cap (y).
    \]
-   Here \((x)\) is prime. The ideal \((x^2,y)\) is \((x,y)\)-primary because \(\sqrt{(x^2,y)}=(x,y)\) is maximal (hence prime), and powers of \((x,y)\) control nilpotence mod \((x^2,y)\).
+   Both $(x)$ and $(y)$ are prime (hence primary), corresponding to the two axes in $V(xy)$.
 
-3. **Integers (PID case).**  
-   In \(R=\mathbb Z\),
+3. **A primary component with embedded nilpotents.**  
+   In $A=k[x,y]$, the ideal $I=(x^2,xy)$ admits the decomposition
    \[
-   (12) = (4)\cap (3).
+   (x^2,xy)=(x)\cap (x^2,y).
    \]
-   The ideal \((4)\) is \((2)\)-primary and \((3)\) is \((3)\)-primary (indeed prime), giving a primary decomposition of \((12)\).
+   The ideal $(x)$ is prime, while $(x^2,y)$ is $(x,y)$-primary since its radical is $(x,y)$ and $x$ becomes nilpotent modulo $(x^2,y)$.

@@ -1,41 +1,42 @@
 ---
 title: "Primary decomposition in Noetherian rings"
-description: "In a Noetherian ring, every ideal is a finite intersection of primary ideals (Lasker–Noether)."
+description: "In a Noetherian ring, every ideal is a finite intersection of primary ideals."
 ---
 
-**Theorem (Noetherian primary decomposition).**  
-Let \(R\) be a {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and let \(I\subseteq R\) be an {{< knowl id="ideal" section="algebra-rings" text="ideal" >}}. Then there exist {{< knowl id="primary-ideal" section="algebra-rings" text="primary ideals" >}} \(Q_1,\dots,Q_r\) such that
+Primary decomposition is a way to express an ideal as an intersection of “power-of-a-prime” pieces. The phenomenon is special to {{< knowl id="noetherian-ring" text="Noetherian rings" >}} and is formalized by the {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}}. See also {{< knowl id="primary-decomposition" text="primary decomposition" >}} for the general language.
+
+## Definition (primary ideal)
+Let \(R\) be a commutative ring and let \(Q \subsetneq R\) be an ideal.  
+\(Q\) is **primary** if whenever \(ab \in Q\) and \(a \notin Q\), there exists \(n \ge 1\) such that \(b^n \in Q\).
+
+Equivalently, in \(R/Q\) every zero-divisor is nilpotent.
+
+## Theorem (Noetherian primary decomposition)
+Let \(R\) be a commutative {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and let \(I \subseteq R\) be an ideal. Then there exist primary ideals \(Q_1,\dots,Q_r\) such that
 \[
-I \;=\; \bigcap_{i=1}^r Q_i.
+I = Q_1 \cap \cdots \cap Q_r .
 \]
-Writing \(\mathfrak p_i=\sqrt{Q_i}\) (the {{< knowl id="radical-of-ideal" section="algebra-rings" text="radical" >}}), each \(\mathfrak p_i\) is a {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}. One can choose a **minimal** primary decomposition in which the primes \(\mathfrak p_i\) are distinct; in that case the set \(\{\mathfrak p_i\}\) is uniquely determined by \(I\).
-
-This is commonly packaged as the {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}}, together with the definition of {{< knowl id="primary-decomposition" text="primary decomposition" >}}.
-
-**Related knowls.**
-- {{< knowl id="primary-decomposition" text="Primary decomposition" >}}
-- {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}}
-- {{< knowl id="primary-ideal" section="algebra-rings" text="Primary ideal" >}}
+One can choose the decomposition so that the radicals \(\sqrt{Q_i}\) are distinct {{< knowl id="prime-spectrum" text="prime ideals" >}}. In any *minimal* primary decomposition (no redundant components and with distinct radicals), the set of prime ideals \(\{\sqrt{Q_1},\dots,\sqrt{Q_r}\}\) depends only on \(I\), not on the choice of decomposition.
 
 ## Examples
-
-1. **In \(\mathbb{Z}\): factorization into primary components.**  
-   In \(R=\mathbb{Z}\),
+1. **A reduced principal ideal in a polynomial ring.**  
+   In \(k[x,y]\), the ideal \((xy)\) decomposes as
    \[
-   (12) \;=\; (4)\cap(3).
+   (xy) = (x) \cap (y).
    \]
-   Here \((4)\) is \((2)\)-primary and \((3)\) is \((3)\)-primary. (In a PID, \((a)\cap(b)=(\mathrm{lcm}(a,b))\).)
+   Here \((x)\) and \((y)\) are prime ideals (hence primary).
 
-2. **A squarefree monomial ideal.**  
+2. **A decomposition with an embedded component.**  
    In \(k[x,y]\),
    \[
-   (xy) \;=\; (x)\cap(y).
+   (x^2,xy) = (x) \cap (x^2,y).
    \]
-   Both \((x)\) and \((y)\) are prime (hence primary), so this is a primary decomposition.
+   Indeed, if \(f \in (x) \cap (x^2,y)\), then \(f=xg\) and \(xg \in (x^2,y)\) forces \(g \in (x,y)\), so \(f \in (x^2,xy)\).  
+   The ideal \((x)\) is prime, and \((x^2,y)\) is \((x,y)\)-primary since its radical is \((x,y)\).
 
-3. **A nontrivial primary decomposition with the same radical.**  
-   In \(k[x,y]\),
+3. **In the integers.**  
+   In \(\mathbb Z\),
    \[
-   (x^2,xy,y^2) \;=\; (x^2,y)\;\cap\;(x,y^2).
+   (12) = (4) \cap (3).
    \]
-   The ideals \((x^2,y)\) and \((x,y^2)\) are both \((x,y)\)-primary (their radicals are \((x,y)\)), and their intersection gives \((x,y)^2=(x^2,xy,y^2)\).
+   The ideal \((4)\) is \((2)\)-primary and \((3)\) is prime (hence primary).

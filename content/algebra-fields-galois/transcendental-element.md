@@ -1,19 +1,19 @@
 ---
 title: "Transcendental element"
-description: "An element α is transcendental over K if no nonzero polynomial in K[x] vanishes at α."
+description: "An element α is transcendental over F if it satisfies no nonzero polynomial in F[x]."
 ---
 
-**Definition.** Let \(L/K\) be a {{< knowl id="field-extension" text="field extension" >}} and \(\alpha\in L\). The element \(\alpha\) is **transcendental over \(K\)** if
+Let \(E/F\) be a {{< knowl id="field-extension" text="field extension" >}} and let \(\alpha\in E\). The element \(\alpha\) is **transcendental over \(F\)** if there is no nonzero polynomial \(f(x)\in F[x]\) such that \(f(\alpha)=0\). Equivalently, \(\alpha\) is transcendental over \(F\) iff \(\alpha\) is not {{< knowl id="algebraic-element" text="algebraic over F" >}}.
+
+A useful equivalent condition is: \(\alpha\) is transcendental over \(F\) iff the evaluation map
 \[
-f(\alpha)\neq 0 \quad \text{for every nonzero } f(x)\in K[x].
+\operatorname{ev}_\alpha:F[x]\to E,\quad f\mapsto f(\alpha),
 \]
-Equivalently, \(\alpha\) is **not** {{< knowl id="algebraic-element" text="algebraic over K" >}}.
+is injective. When \(\alpha\) is transcendental, the simple extension \(F(\alpha)/F\) is a {{< knowl id="transcendental-extension" text="transcendental extension" >}} and has infinite {{< knowl id="degree-of-extension" text="degree" >}}.
 
-If \(t\) is transcendental over \(K\), the field \(K(t)\) of rational functions behaves like a “field of fractions” of the polynomial ring \(K[t]\) (compare {{< knowl id="fraction-field" section="algebra-rings" text="fraction fields" >}}).
+Transcendence depends on the base field: an element may be transcendental over \(F\) but algebraic over a larger intermediate field \(K\) with \(F\subseteq K\subseteq E\) (see {{< knowl id="intermediate-field" text="intermediate field" >}}).
 
-**See also.** {{< knowl id="transcendental-extension" text="transcendental extension" >}}, {{< knowl id="fg-field-extension" text="finitely generated extension" >}}.
-
-**Examples.**
-1. If \(t\) is an indeterminate, then \(t\) is transcendental over any field \(K\), and \(K(t)\) is the rational function field.
-2. The numbers \(\pi\) and \(e\) are transcendental over \(\mathbb{Q}\), hence also transcendental over any subfield of \(\mathbb{C}\) contained in \(\overline{\mathbb{Q}}\).
-3. In \(\mathbb{F}_p(t)\), the element \(t\) is transcendental over \(\mathbb{F}_p\).
+### Examples
+1. If \(t\) is an indeterminate, then \(t\) is transcendental over \(\mathbb{Q}\) inside \(\mathbb{Q}(t)\): no nonzero polynomial in \(\mathbb{Q}[x]\) vanishes at \(t\).
+2. The classical constants \(\pi\) and \(e\) are transcendental over \(\mathbb{Q}\) (deep theorems, e.g. Lindemann–Weierstrass).
+3. Let \(t\) be an indeterminate. Then \(t\) is transcendental over \(\mathbb{Q}\), but \(t\) is algebraic over the intermediate field \(\mathbb{Q}(t^2)\subseteq \mathbb{Q}(t)\), because \(t\) satisfies the polynomial \(x^2-t^2=0\) with coefficients in \(\mathbb{Q}(t^2)[x]\).

@@ -3,7 +3,7 @@ title: "Supremum of Convex Functions"
 description: "The pointwise supremum of any family of convex functions is convex"
 ---
 
-**Supremum of Convex Functions**: Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\{f_i:X\to\overline{\mathbb{R}}\}_{i\in I}$ be a family of {{< knowl id="convex-function-via-epigraph" text="convex functions" >}} indexed by a nonempty set $I$. Define
+**Supremum of Convex Functions**: Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\{f_i:X\to\overline{\mathbb{R}}\}_{i\in I}$ be a family of {{< knowl id="convex-function-via-epigraph" text="convex functions" >}} indexed by a nonempty set $I$. Define
 $$
 f(x):=\sup_{i\in I} f_i(x).
 $$

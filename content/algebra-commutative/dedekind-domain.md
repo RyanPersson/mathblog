@@ -1,30 +1,32 @@
 ---
 title: "Dedekind domain"
-description: "A Noetherian, integrally closed domain of Krull dimension one."
+description: "A Noetherian, integrally closed domain of Krull dimension one; equivalently, a domain with unique factorization of ideals into primes."
 ---
 
-Let \(R\) be a commutative ring.
+A **Dedekind domain** is a central object in commutative algebra and algebraic number theory.
 
 ## Definition
-A **Dedekind domain** is an {{< knowl id="integral-domain" section="algebra-rings" text="integral domain" >}} \(R\) that is **not** a field and satisfies:
-1. \(R\) is {{< knowl id="noetherian-ring" text="Noetherian" >}};
-2. \(R\) is {{< knowl id="integrally-closed-domain" text="integrally closed" >}} (i.e. equals its {{< knowl id="integral-closure" text="integral closure" >}});
-3. Every nonzero {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}} is {{< knowl id="maximal-ideal" section="algebra-rings" text="maximal" >}} (equivalently, \(\dim R=1\) in the sense of {{< knowl id="krull-dimension" text="Krull dimension" >}}).
+An integral domain $R$ is a **Dedekind domain** if:
+1. $R$ is a {{< knowl id="noetherian-ring" text="Noetherian ring" >}};
+2. $R$ is an {{< knowl id="integrally-closed-domain" text="integrally closed domain" >}};
+3. $R$ has {{< knowl id="krull-dimension" text="Krull dimension" >}} $1$ (equivalently, every nonzero prime ideal has {{< knowl id="height-of-prime" text="height" >}} $1$, hence is maximal).
 
-A fundamental consequence is that every nonzero ideal factors uniquely as a product of prime ideals.
+Condition (3) can be read as: “the only prime ideals properly contained in a nonzero prime are $(0)$.”
 
-## Key local property
-If \(R\) is Dedekind and \(\mathfrak p\neq 0\) is prime, then the localization {{< knowl id="localization-at-prime" text="at \(\mathfrak p\)" >}} is a {{< knowl id="dvr" text="DVR" >}}:
-\[
-R_{\mathfrak p} \text{ is a discrete valuation ring.}
-\]
+## Equivalent and characteristic properties
+For a domain $R$, the following are standard characterizations of Dedekind domains:
+- Every nonzero proper ideal factors as a product of prime ideals, and this factorization is unique up to ordering.
+- For every nonzero prime ideal $\mathfrak p$, the localization $R_\mathfrak p$ (see {{< knowl id="localization-at-prime" text="localization at a prime" >}}) is a {{< knowl id="dvr" text="discrete valuation ring" >}}. In fact, this local DVR structure controls the prime-power factorization of ideals.
 
 ## Examples
-1. **\(\mathbb{Z}\).**  
-   \(\mathbb{Z}\) is a Dedekind domain (it is a PID, hence Noetherian and integrally closed, and its nonzero primes are maximal).
+1. **The integers.**  
+   $\mathbb{Z}$ is a Dedekind domain: it is Noetherian, integrally closed in $\mathbb{Q}$, and has dimension $1$. (More generally, any PID that is not a field is Dedekind; for instance, any {{< knowl id="euclidean-domain" section="algebra-rings" text="Euclidean domain" >}} is a PID by {{< knowl id="euclidean-implies-pid" section="algebra-rings" text="Euclidean ⇒ PID" >}} and hence Dedekind.)
 
-2. **Ring of integers in a number field.**  
-   If \(K/\mathbb{Q}\) is a number field and \(\mathcal O_K\) its ring of integers, then \(\mathcal O_K\) is a Dedekind domain.
+2. **A principal ideal domain of dimension one.**  
+   For a field $k$, the polynomial ring $k[t]$ is a PID, hence Dedekind.
 
-3. **A PID (not a field).**  
-   Any {{< knowl id="pid" section="algebra-rings" text="PID" >}} that is not a field (e.g. \(k[t]\)) is Dedekind.
+3. **Rings of integers in number fields.**  
+   If $K/\mathbb{Q}$ is a number field and $\mathcal O_K$ is its ring of integers, then $\mathcal O_K$ is a Dedekind domain (a key reason prime ideal factorization replaces unique factorization of elements).
+
+## Non-example
+- $k[x,y]$ (two variables over a field $k$) is Noetherian and integrally closed, but it has Krull dimension $2$, so it is not Dedekind.

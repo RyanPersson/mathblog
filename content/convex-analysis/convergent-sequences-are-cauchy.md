@@ -4,7 +4,7 @@ description: "Convergence implies the Cauchy property in any metric space"
 ---
 
 **Proposition.**
-If $(x_n)$ is a convergent sequence in a metric space, then it is a {{< knowl id="cauchy-sequence" text="Cauchy sequence" >}}.
+If $(x_n)$ is a convergent sequence in a metric space, then it is a {{< knowl id="cauchy-sequence" section="analysis" text="Cauchy sequence" >}}.
 
 **Proof sketch.** If $x_n\to a$, then for $\varepsilon>0$ choose $N$ such that $d(x_n,a)<\varepsilon/2$ for all $n\ge N$. For $m,n\ge N$,
 $$

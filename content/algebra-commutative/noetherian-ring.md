@@ -1,34 +1,45 @@
 ---
 title: "Noetherian ring"
-description: "A ring in which every ideal is finitely generated (equivalently, ideals satisfy ACC)."
+description: "A ring in which ascending chains of ideals stabilize (equivalently, every ideal is finitely generated)."
 ---
 
-Let \(R\) be a commutative ring.
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}}.
 
 ## Definition
-\(R\) is **Noetherian** if it satisfies the **ascending chain condition** (ACC) on {{< knowl id="ideal" section="algebra-rings" text="ideals" >}}: every chain
+$R$ is **Noetherian** if it satisfies the *ascending chain condition* (ACC) on ideals: for every chain
 \[
 I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
 \]
-stabilizes (i.e., \(I_n=I_{n+1}=\cdots\) for \(n\gg 0\)).
+there exists $N$ such that $I_n=I_N$ for all $n\ge N$.
 
-Equivalently (and very useful in practice): **every ideal of \(R\) is finitely generated.**
+## Equivalent characterizations
+The following are equivalent:
+1. $R$ is Noetherian (ACC on ideals).
+2. Every ideal of $R$ is finitely generated.
+3. Every nonempty set of ideals of $R$ has a maximal element under inclusion.
+
+The equivalence of (1) and (2) is the most used in practice.
 
 ## Standard permanence properties
-- If \(R\) is Noetherian and \(I\subseteq R\) is an ideal, then \(R/I\) is Noetherian.
-- If \(R\) is Noetherian, then \(R[x]\) is Noetherian ({{< knowl id="hilbert-basis-theorem" section="algebra-rings" text="Hilbert basis theorem" >}}); hence so is \(R[x_1,\dots,x_n]\).
-- If \(R\) is Noetherian and \(S\) is a {{< knowl id="multiplicative-set" text="multiplicative set" >}}, then the {{< knowl id="localization-ring" text="localization" >}} \(S^{-1}R\) is Noetherian ({{< knowl id="localization-noetherian" text="localization is Noetherian" >}}).
+- If $R$ is Noetherian and $I\subseteq R$ is an ideal, then $R/I$ is Noetherian.
+- If $R$ is Noetherian and $S$ is a {{< knowl id="multiplicative-set" text="multiplicative set" >}}, then the localization $S^{-1}R$ is Noetherian; see {{< knowl id="localization-noetherian" text="localization preserves Noetherianity" >}}.
+- If $R$ is Noetherian, then $R[x_1,\dots,x_n]$ is Noetherian (Hilbert basis theorem); a common formulation appears as {{< knowl id="hilbert-basis-corollary" text="Hilbert basis corollary" >}}.
+
+Noetherian hypotheses are the natural setting for finiteness results such as {{< knowl id="primary-decomposition" text="primary decomposition" >}} via the {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}}.
 
 ## Examples
-1. **Basic examples.**  
-   Any field is Noetherian, and \(\mathbb{Z}\) is Noetherian (in fact a {{< knowl id="pid" section="algebra-rings" text="PID" >}}).
+1. **Basic arithmetic and algebra.**  
+   $\mathbb{Z}$ is Noetherian (every ideal is principal). If $k$ is a {{< knowl id="field" section="algebra-rings" text="field" >}}, then $k[x_1,\dots,x_n]$ is Noetherian.
 
-2. **Polynomial rings in finitely many variables.**  
-   If \(k\) is a field, then \(k[x_1,\dots,x_n]\) is Noetherian by the Hilbert basis theorem.
+2. **Quotients and finitely generated algebras.**  
+   If $R$ is Noetherian, then so is $R/I$ for any ideal $I$, and so is any finitely generated $R$-algebra of the form $R[x_1,\dots,x_n]/J$.
 
-3. **A non-example (infinitely many variables).**  
-   The ring \(k[x_1,x_2,x_3,\dots]\) is not Noetherian: the chain
-   \[
-   (x_1)\subset (x_1,x_2)\subset (x_1,x_2,x_3)\subset \cdots
-   \]
-   never stabilizes.
+3. **Localizations.**  
+   $\mathbb{Z}_{(p)}$ (localization of $\mathbb{Z}$ at the prime $(p)$, i.e. inverting all integers not divisible by $p$) is Noetherian by {{< knowl id="localization-ring" text="localization" >}} and the permanence above.
+
+## Non-example
+- The polynomial ring in countably many variables $k[x_1,x_2,x_3,\dots]$ is not Noetherian: the chain of ideals
+  \[
+  (x_1) \subset (x_1,x_2) \subset (x_1,x_2,x_3) \subset \cdots
+  \]
+  never stabilizes.

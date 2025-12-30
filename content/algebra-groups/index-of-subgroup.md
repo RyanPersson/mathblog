@@ -3,7 +3,7 @@ title: "Index of a Subgroup"
 description: "The number of cosets of a subgroup in a group"
 ---
 
-Let $H$ be a {{< knowl id="subgroup" text="subgroup" >}} of a {{< knowl id="group" text="group" >}} $G$. The **index** of $H$ in $G$, denoted $[G:H]$, is the {{< knowl id="cardinality" text="cardinality" >}} of the set of left {{< knowl id="coset" text="cosets" >}} of $H$ in $G$:
+Let $H$ be a {{< knowl id="subgroup" text="subgroup" >}} of a {{< knowl id="group" text="group" >}} $G$. The **index** of $H$ in $G$, denoted $[G:H]$, is the {{< knowl id="cardinality" section="shared-foundations" text="cardinality" >}} of the set of left {{< knowl id="coset" text="cosets" >}} of $H$ in $G$:
 $$
 [G:H] := \bigl|\{gH : g\in G\}\bigr|.
 $$

@@ -6,7 +6,7 @@ description: "Subgroups of G containing N correspond to subgroups of the quotien
 **Correspondence Theorem (Groups).**
 Let $G$ be a {{< knowl id="group" text="group" >}} and let $N \trianglelefteq G$ be a {{< knowl id="normal-subgroup" text="normal subgroup" >}}. Let $\pi: G \to G/N$ be the canonical projection. Then the assignments
 - $A \mapsto A/N := \{aN : a \in A\}$, for {{< knowl id="subgroup" text="subgroups" >}} $A$ with $N \subseteq A \subseteq G$, and
-- $B \mapsto \pi^{-1}(B)$ (the {{< knowl id="preimage" text="preimage" >}}) for subgroups $B \le G/N$,
+- $B \mapsto \pi^{-1}(B)$ (the {{< knowl id="preimage" section="shared-foundations" text="preimage" >}}) for subgroups $B \le G/N$,
 
 are inverse, inclusion-preserving bijections between:
 1. subgroups $A$ of $G$ with $N \subseteq A$, and

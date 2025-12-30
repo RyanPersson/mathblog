@@ -170,8 +170,13 @@ For each slug below, generate a markdown file with:
 4. 2-3 concrete examples where applicable
 
 **CROSS-LINK SYNTAX:**
-- For slugs in the CURRENT module: `{{</* knowl id="slug" text="display" */>}}`
-- For slugs in OTHER modules: `{{</* knowl id="slug" section="section-name" text="display" */>}}`
+- For slugs in the CURRENT module: `{{< knowl id="slug" text="display" >}}`
+- For slugs in OTHER modules: `{{< knowl id="slug" section="section-name" text="display" >}}`
+
+**CRITICAL RULES:**
+- DO NOT include a "Related" or "Related knowls" section at the end
+- DO NOT put knowl shortcodes inside LaTeX math blocks (keep shortcodes in prose only)
+- All cross-links must be woven naturally into the prose
 
 **Available slugs by section (use section parameter when linking):**
 {prereqs}
@@ -190,7 +195,7 @@ title: "Title"
 description: "One-line description"
 ---
 
-Content with cross-links...
+Content with natural cross-links woven into prose...
 ```
 '''
 
@@ -210,19 +215,50 @@ for i, batch in enumerate(batches, 1):
 ~/.oracle/oracle-parallel.sh \
   -pf /tmp/batch1.md \
   -pf /tmp/batch2.md \
-  -pf /tmp/batch3.md
+  -pf /tmp/batch3.md \
+  -pf /tmp/batch4.md \
+  -pf /tmp/batch5.md \
+  -pf /tmp/batch6.md \
+  --sessions-file /tmp/sessions.txt
 ```
 
-This runs up to 6 batches in parallel. Each batch takes ~10-18 minutes.
+This runs up to 6 batches in parallel. **Each batch takes 20-40 minutes.**
 
 **Session outputs are saved to:** `~/.oracle/sessions/*/output.log`
 
-The session names are auto-generated from the prompt's first words. Find them with:
+#### Session Name Discovery (Automatic)
+
+The script now automatically tracks which sessions were created and outputs them:
+
+```
+=== Sessions created ===
+you-are-creating-knowls-short-41
+you-are-creating-knowls-short-42
+...
+
+SESSIONS:you-are-creating-knowls-short-41:you-are-creating-knowls-short-42:...
+```
+
+**Options for retrieving session names:**
+1. **`--sessions-file /tmp/sessions.txt`** - Writes session names to file (one per line)
+2. **Parse `SESSIONS:` line** - Always printed at end, colon-separated
+3. **Manual:** `ls -lt ~/.oracle/sessions/ | head -10`
+
+#### Monitoring Long-Running Tasks
+
+Oracle tasks take 20-40 minutes. When using Claude Code's TaskOutput:
+- **Set timeout to 600000ms (10 min max)** and poll multiple times
+- **Alternative:** Run in background and manually check completion
+
 ```bash
-ls -lt ~/.oracle/sessions/ | head -10
+# Check if sessions file exists (indicates completion)
+while [ ! -f /tmp/sessions.txt ]; do sleep 60; done
+cat /tmp/sessions.txt
 ```
 
 ### Step 5: Parse Outputs and Create Files
+
+**IMPORTANT:** GPT output format varies. Use multiple regex patterns to catch all formats.
 
 ```python
 import re
@@ -236,22 +272,38 @@ session_files = [
     "~/.oracle/sessions/SESSION-NAME-2/output.log",
 ]
 
-pattern = r'\*\*`?([a-z0-9-]+\.md)`?\*\*\s*\n+```markdown\n(---\n.*?)\n```'
+# Multiple patterns to handle format variations:
+# Pattern 1: **`slug.md`** or **slug.md**
+# Pattern 2: ## `slug.md` (alternative heading format)
+patterns = [
+    r'\*\*`?([a-z0-9-]+\.md)`?\*\*\s*\n+```markdown\n(---\n.*?)\n```',
+    r'## `([a-z0-9-]+\.md)`\s*\n+```markdown\n(---\n.*?)\n```',
+]
 
+created = []
 for session_file in session_files:
     with open(os.path.expanduser(session_file), 'r') as f:
         content = f.read()
-    
-    matches = re.findall(pattern, content, re.DOTALL)
-    for filename, body in matches:
-        # Fix malformed shortcodes
-        body = re.sub(r'\{<\/\*', r'{{</*', body)
-        body = re.sub(r'\*\/>}', r'*/>}}', body)
-        body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
-        
-        with open(os.path.join(output_dir, filename), 'w') as f:
-            f.write(body + '\n')
+
+    for pattern in patterns:
+        matches = re.findall(pattern, content, re.DOTALL)
+        for filename, body in matches:
+            # Fix malformed shortcodes (GPT sometimes outputs {< instead of {{<)
+            body = re.sub(r'\{< knowl', r'{{< knowl', body)
+            body = re.sub(r' >\}', r' >}}', body)
+            body = re.sub(r'\{<\/\*', r'{{</*', body)
+            body = re.sub(r'\*\/>}}', r'*/>}}', body)
+            # Remove .md from knowl id references
+            body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
+
+            with open(os.path.join(output_dir, filename), 'w') as f:
+                f.write(body + '\n')
+            created.append(filename)
+
+print(f"Created {len(created)} files")
 ```
+
+**Verify file count matches expected slugs.** If count is low, check session logs for format variations.
 
 ### Step 6: Create _index.md (Structured with text parameter)
 
@@ -398,31 +450,53 @@ For convenience, here's a complete script that does steps 5-8 after oracle compl
 #!/usr/bin/env python3
 """
 Run after oracle-parallel completes.
-Usage: python3 process-knowls.py SECTION-NAME SESSION1 SESSION2 ...
+Usage: python3 process-knowls.py SECTION-NAME [SESSION1 SESSION2 ...]
+       python3 process-knowls.py SECTION-NAME --sessions-file /tmp/sessions.txt
 """
 import re, os, sys
 
 section = sys.argv[1]  # e.g., "algebra-fields-galois"
-sessions = sys.argv[2:]  # e.g., "you-are-creating-knowls-short" ...
+
+# Get sessions from file or command line
+if '--sessions-file' in sys.argv:
+    idx = sys.argv.index('--sessions-file')
+    with open(sys.argv[idx + 1], 'r') as f:
+        sessions = [s.strip() for s in f.readlines() if s.strip()]
+else:
+    sessions = sys.argv[2:]  # e.g., "you-are-creating-knowls-short-29" ...
 
 output_dir = f"content/{section}"
 os.makedirs(output_dir, exist_ok=True)
 
-# Parse all sessions
-pattern = r'\*\*`?([a-z0-9-]+\.md)`?\*\*\s*\n+```markdown\n(---\n.*?)\n```'
+# Multiple patterns to handle GPT output format variations
+patterns = [
+    r'\*\*`?([a-z0-9-]+\.md)`?\*\*\s*\n+```markdown\n(---\n.*?)\n```',  # **`slug.md`**
+    r'## `([a-z0-9-]+\.md)`\s*\n+```markdown\n(---\n.*?)\n```',          # ## `slug.md`
+]
+
 created = []
 
 for session in sessions:
     path = os.path.expanduser(f"~/.oracle/sessions/{session}/output.log")
     with open(path, 'r') as f:
         content = f.read()
-    for filename, body in re.findall(pattern, content, re.DOTALL):
-        body = re.sub(r'\{<\/\*', r'{{</*', body)
-        body = re.sub(r'\*\/>}', r'*/>}}', body)
-        body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
-        with open(os.path.join(output_dir, filename), 'w') as f:
-            f.write(body + '\n')
-        created.append(filename[:-3])
+
+    for pattern in patterns:
+        for filename, body in re.findall(pattern, content, re.DOTALL):
+            if filename in [f + '.md' for f in created]:
+                continue  # Skip duplicates
+
+            # Fix malformed shortcodes
+            body = re.sub(r'\{< knowl', r'{{< knowl', body)
+            body = re.sub(r' >\}', r' >}}', body)
+            body = re.sub(r'\{<\/\*', r'{{</*', body)
+            body = re.sub(r'\*\/>}}', r'*/>}}', body)
+            # Remove .md from knowl id references
+            body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
+
+            with open(os.path.join(output_dir, filename), 'w') as f:
+                f.write(body + '\n')
+            created.append(filename[:-3])
 
 print(f"Created {len(created)} knowl files")
 

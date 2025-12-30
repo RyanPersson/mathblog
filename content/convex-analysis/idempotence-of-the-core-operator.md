@@ -3,7 +3,7 @@ title: "Idempotence of the Core Operator"
 description: "Taking the core twice gives the same set: core(core(Ω))=core(Ω)."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
 
 **Corollary**:
 $$

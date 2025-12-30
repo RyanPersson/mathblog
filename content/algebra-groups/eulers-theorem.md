@@ -3,14 +3,14 @@ title: "Euler's Theorem"
 description: "If gcd(a,n)=1 then a^{φ(n)} ≡ 1 (mod n)."
 ---
 
-**Euler's Theorem**: Let $n\ge 1$ and let $a\in\mathbb{Z}$. If the {{< knowl id="gcd" text="greatest common divisor" >}} of $a$ and $n$ is $1$ (written $\gcd(a,n)=1$), then
+**Euler's Theorem**: Let $n\ge 1$ and let $a\in\mathbb{Z}$. If the {{< knowl id="gcd" section="algebra-rings" text="greatest common divisor" >}} of $a$ and $n$ is $1$ (written $\gcd(a,n)=1$), then
 $$a^{\varphi(n)} \equiv 1 \pmod n,$$
 where $\varphi(n)$ is Euler's totient function, defined by
 $$\varphi(n)=\bigl|\{\,k\in\{1,2,\dots,n\}: \gcd(k,n)=1\,\}\bigr|.$$
 
 As usual, $x \equiv y \pmod n$ means $n$ divides $x-y$.
 
-This follows immediately from {{< knowl id="lagranges-theorem" text="Lagrange's theorem" >}} applied to the {{< knowl id="group-of-units" text="group of units" >}} $(\mathbb{Z}/n\mathbb{Z})^\times$, a finite {{< knowl id="group" text="group" >}} with $|(\mathbb{Z}/n\mathbb{Z})^\times|=\varphi(n)$. The special case $n=p$ prime is {{< knowl id="fermats-little-theorem" text="Fermat's little theorem" >}}.
+This follows immediately from {{< knowl id="lagranges-theorem" text="Lagrange's theorem" >}} applied to the {{< knowl id="group-of-units" section="algebra-rings" text="group of units" >}} $(\mathbb{Z}/n\mathbb{Z})^\times$, a finite {{< knowl id="group" text="group" >}} with $|(\mathbb{Z}/n\mathbb{Z})^\times|=\varphi(n)$. The special case $n=p$ prime is {{< knowl id="fermats-little-theorem" text="Fermat's little theorem" >}}.
 
 **Proof sketch** *(group-theoretic)*: If $\gcd(a,n)=1$, then the residue class of $a$ is an element of $(\mathbb{Z}/n\mathbb{Z})^\times$. In any finite group, $x^{|G|}=e$ for all $x\in G$ (by Lagrange), so $a^{\varphi(n)}\equiv 1 \pmod n$.
 

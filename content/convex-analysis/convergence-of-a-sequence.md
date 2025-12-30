@@ -9,7 +9,7 @@ $$
 $$
 We write $\lim_{n\to\infty}x_n=a$ or $x_n\to a$.
 
-Convergence in metric spaces is the foundation for defining {{< knowl id="closure-characterized-by-convergent-sequences" text="closure via sequences" >}} and for studying {{< knowl id="cauchy-sequence" text="Cauchy sequences" >}}.
+Convergence in metric spaces is the foundation for defining {{< knowl id="closure-characterized-by-convergent-sequences" text="closure via sequences" >}} and for studying {{< knowl id="cauchy-sequence" section="analysis" text="Cauchy sequences" >}}.
 
 **Examples:**
 - In $\mathbb{R}$, $x_n=1/n$ converges to $0$.

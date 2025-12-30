@@ -3,7 +3,7 @@ title: "Parallel Affine Set"
 description: "An affine set Ω is parallel to a subspace L if Ω=ω+L for some ω∈Ω."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}}. An {{< knowl id="affine-set" text="affine set" >}} $\Omega\subset X$ is said to be **parallel** to a {{< knowl id="linear-subspace" text="linear subspace" >}} $L\subset X$ if
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}. An {{< knowl id="affine-set" text="affine set" >}} $\Omega\subset X$ is said to be **parallel** to a {{< knowl id="linear-subspace" text="linear subspace" >}} $L\subset X$ if
 $$
 \Omega=\omega+L
 $$

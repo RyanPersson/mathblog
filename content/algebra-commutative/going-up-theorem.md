@@ -1,45 +1,27 @@
 ---
-title: "Going-Up Theorem"
-description: "In an integral extension, chains of prime ideals lift upward."
+title: "Going-up theorem"
+description: "Along an integral extension, prime ideals can be lifted to extend prime chains."
 ---
 
-## Statement
+Let $A\subseteq B$ be an {{< knowl id="integral-extension" text="integral extension" >}} of {{< knowl id="commutative-ring" section="algebra-rings" text="commutative rings" >}}. The {{< knowl id="lying-over-theorem" text="lying-over theorem" >}} ensures that primes of $A$ occur as contractions of primes of $B$; going-up strengthens this by lifting *inclusions* of primes.
 
-Let \(A \subseteq B\) be an {{< knowl id="integral-extension" text="integral extension" >}} (equivalently, every \(b\in B\) is {{< knowl id="integral-element" text="integral" >}} over \(A\)).
-
-Suppose \( \mathfrak p \subseteq \mathfrak q\) are {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideals" >}} of \(A\), and let \( \mathfrak P\) be a prime ideal of \(B\) with
+**Theorem (Going up).**  
+Assume $A\subseteq B$ is an {{< knowl id="integral-extension" text="integral extension" >}}. Let $\mathfrak p\subseteq \mathfrak p'$ be prime ideals of $A$, and let $\mathfrak q\in \operatorname{Spec}(B)$ satisfy $\mathfrak q\cap A=\mathfrak p$. Then there exists a prime ideal $\mathfrak q'\subseteq B$ such that
 \[
-\mathfrak P \cap A = \mathfrak p.
+\mathfrak q\subseteq \mathfrak q'
+\qquad\text{and}\qquad
+\mathfrak q'\cap A=\mathfrak p'.
 \]
-Then there exists a prime ideal \( \mathfrak Q \subseteq B\) such that
-\[
-\mathfrak P \subseteq \mathfrak Q
-\quad\text{and}\quad
-\mathfrak Q \cap A = \mathfrak q.
-\]
+More generally, for any chain of prime ideals $\mathfrak p_0\subseteq \cdots \subseteq \mathfrak p_n$ in $A$ and any prime $\mathfrak q_0$ of $B$ lying over $\mathfrak p_0$, there is a chain $\mathfrak q_0\subseteq \cdots \subseteq \mathfrak q_n$ in $B$ with $\mathfrak q_i\cap A=\mathfrak p_i$ for all $i$.
 
-Equivalently: for the map on spectra
-\[
-{{< knowl id="prime-spectrum" text="Spec" >}}(B)\to {{< knowl id="prime-spectrum" text="Spec" >}}(A),
-\]
-prime chains in \(A\) can be lifted to prime chains in \(B\) once you start with a prime lying over the first one.
+In terms of the {{< knowl id="prime-spectrum" text="prime spectrum" >}}, going-up says the contraction map $\operatorname{Spec}(B)\to \operatorname{Spec}(A)$ has the property that prime inclusions downstairs can be realized upstairs, provided one starts with a prime lying over the smaller one.
 
-## Cross-links
+### Examples
+1. **A chain in $\mathbb Z$ lifted to $\mathbb Z[i]$.**  
+   The extension $\mathbb Z\subset \mathbb Z[i]$ is integral. Consider the chain $(0)\subset (5)$ in $\mathbb Z$. The prime $(0)\subset \mathbb Z[i]$ lies over $(0)$. Going-up produces a prime $\mathfrak q'\subset \mathbb Z[i]$ with $(0)\subset \mathfrak q'$ and $\mathfrak q'\cap \mathbb Z=(5)$; one choice is $\mathfrak q'=(2+i)$.
 
-- Existence of primes above a given prime: {{< knowl id="lying-over-theorem" text="lying-over theorem" >}}
-- The opposite direction statement: {{< knowl id="going-down-theorem" text="going-down theorem" >}}
-- Integrality: {{< knowl id="integral-extension" text="integral extension" >}}, {{< knowl id="integral-element" text="integral element" >}}
+2. **From $k[t^2]$ to $k[t]$.**  
+   With $A=k[t^2]\subset B=k[t]$ integral, the chain $(0)\subset (t^2)$ in $A$ lifts starting from $(0)\subset B$: going-up gives the chain $(0)\subset (t)$ in $B$, where $(t)\cap A=(t^2)$.
 
-## Examples
-
-1. **Gaussian integers.**  
-   Take \(A=\mathbb Z \subseteq B=\mathbb Z[i]\), an integral extension.  
-   Consider the chain \((0)\subset (5)\) in \(\mathbb Z\). Start with \(\mathfrak P=(0)\subset \mathbb Z[i]\) lying over \((0)\).  
-   Going-up produces a prime \(\mathfrak Q\supset (0)\) lying over \((5)\); concretely, \((5)\) factors in \(\mathbb Z[i]\) and one can take \(\mathfrak Q=(2+i)\) (or \((2-i)\)).
-
-2. **A simple normalization map.**  
-   Let \(A=k[t^2]\subseteq B=k[t]\). This is integral since \(t\) satisfies \(T^2-t^2=0\) over \(A\).  
-   The chain \((0)\subset (t^2)\) in \(A\) lifts: starting with \(\mathfrak P=(0)\) in \(B\) lying over \((0)\), going-up gives \(\mathfrak Q=(t)\) in \(B\) lying over \((t^2)\), and indeed \((t)\cap k[t^2]=(t^2)\).
-
-3. **General picture in terms of spectra.**  
-   If \(A\subseteq B\) is integral, then the induced map {{< knowl id="prime-spectrum" text="Spec" >}}(B)\(\to\){{< knowl id="prime-spectrum" text="Spec" >}}(A) is surjective ({{< knowl id="lying-over-theorem" text="lying-over" >}}) and satisfies going-up: specializations in \(A\) lift to specializations in \(B\).
+3. **Adjoining a square root of $x$.**  
+   Let $A=k[x]\subset B=k[x,y]/(y^2-x)$, which is integral. The chain $(0)\subset (x)$ in $A$ lifts starting from the prime $(0)\subset B$ to the chain $(0)\subset (x,y)$ in $B$, since $(x,y)\cap A=(x)$.

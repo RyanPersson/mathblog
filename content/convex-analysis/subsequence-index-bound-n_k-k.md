@@ -11,4 +11,4 @@ $$
 
 **Proof.** By induction. For $k=1$, $n_1\ge 1$. Assume $n_k\ge k$. Then $n_{k+1}>n_k\ge k$, hence $n_{k+1}\ge k+1$.
 
-This estimate is often used when transferring "eventually" statements from a sequence to a {{< knowl id="subsequence" text="subsequence" >}} (e.g., to compare thresholds $N$ and $K$).
+This estimate is often used when transferring "eventually" statements from a sequence to a {{< knowl id="subsequence" section="analysis" text="subsequence" >}} (e.g., to compare thresholds $N$ and $K$).

@@ -3,7 +3,7 @@ title: "Linear Closure of a Convex Set is Convex"
 description: "The set lin(Ω) is convex whenever Ω is convex."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
 
 **Proposition**: The {{< knowl id="linear-closure" text="linear closure" >}} $\operatorname{lin}(\Omega)$ is convex.
 

@@ -3,7 +3,7 @@ title: "Linear independence and dependence"
 description: "A set is linearly independent if only the trivial finite linear combination equals zero"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $K$, and let $M\subset X$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $K$, and let $M\subset X$.
 
 The set $M$ is **linearly independent** if for every finite subset $\{x_1,\dots,x_m\}\subset M$ and every choice of scalars $\alpha_1,\dots,\alpha_m\in K$,
 $$

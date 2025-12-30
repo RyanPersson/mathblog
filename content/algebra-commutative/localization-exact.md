@@ -1,58 +1,60 @@
 ---
-title: "Localization is Exact"
-description: "Localizing modules at a multiplicative set preserves exact sequences."
+title: "Exactness of localization"
+description: "Localizing a sequence of modules at a multiplicative set preserves exactness."
 ---
 
-## Statement
+Localization is not just a way to invert elements in a ring {{< knowl id="localization-ring" text="(localization of rings)" >}}; it is also a well-behaved operation on modules {{< knowl id="localization-module" text="(localization of modules)" >}}. One of its most important formal properties is that it preserves exact sequences.
 
-Let \(R\) be a commutative ring and \(S\subseteq R\) a {{< knowl id="multiplicative-set" text="multiplicative set" >}}. For any \(R\)-module \(M\), its {{< knowl id="localization-module" text="localization" >}} is
-\[
-S^{-1}M.
-\]
+## Theorem
 
-**Theorem (Exactness of localization).**  
-If
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}}, let $S$ be a {{< knowl id="multiplicative-set" text="multiplicative set" >}} in $R$, and let
 \[
-0 \to A \to B \to C \to 0
+0 \longrightarrow A \xrightarrow{f} B \xrightarrow{g} C \longrightarrow 0
 \]
-is a short exact sequence of \(R\)-modules (see {{< knowl id="short-exact-sequence" section="algebra-modules" text="short exact sequence" >}}), then
+be an {{< knowl id="exact-sequence-modules" section="algebra-modules" text="exact sequence of $R$-modules" >}}. Then the localized sequence
 \[
-0 \to S^{-1}A \to S^{-1}B \to S^{-1}C \to 0
+0 \longrightarrow S^{-1}A \xrightarrow{S^{-1}f} S^{-1}B \xrightarrow{S^{-1}g} S^{-1}C \longrightarrow 0
 \]
-is a short exact sequence of \(S^{-1}R\)-modules.
+is exact as a sequence of $S^{-1}R$-modules.
 
-Equivalently,
-\[
-S^{-1}M \cong M \otimes_R S^{-1}R
-\]
-(using {{< knowl id="tensor-product" section="algebra-modules" text="tensor product" >}}), so localization is exact because \(S^{-1}R\) is a {{< knowl id="flat-module" section="algebra-modules" text="flat" >}} \(R\)-module.
+Equivalently, for any $R$-linear map $h\colon M\to N$,
+- $S^{-1}(\ker h)=\ker(S^{-1}h)$,
+- $S^{-1}(\operatorname{im} h)=\operatorname{im}(S^{-1}h)$,
+so localization commutes with kernels and images.
 
-See also: {{< knowl id="localization-ring" text="localization of rings" >}}.
+One convenient conceptual reformulation is that localization is {{< knowl id="extension-of-scalars" text="extension of scalars" >}} along the ring map $R\to S^{-1}R$:
+\[
+S^{-1}M \cong M\otimes_R S^{-1}R,
+\]
+and this tensor description is what makes the exactness behave so cleanly.
 
 ## Examples
 
-1. **Killing torsion away from a prime.**  
-   The sequence
+1. **Localizing a short exact sequence over $\mathbb Z$.**  
+   Consider
    \[
-   0 \to \mathbb Z \xrightarrow{\cdot n} \mathbb Z \to \mathbb Z/n\mathbb Z \to 0
+   0\to \mathbb Z \xrightarrow{\times n} \mathbb Z \to \mathbb Z/n\mathbb Z \to 0.
    \]
-   is exact. Localize at the prime \(p\) (i.e. take \(S=\mathbb Z\setminus p\mathbb Z\), giving \(\mathbb Z_{(p)}\)).  
-   If \(p\nmid n\), then \(n\) becomes a unit in \(\mathbb Z_{(p)}\), so multiplication by \(n\) is an isomorphism after localization. Exactness forces
+   Localize at $S=\mathbb Z\setminus (p)$ (so $S^{-1}\mathbb Z=\mathbb Z_{(p)}$). Exactness says
    \[
-   (\mathbb Z/n\mathbb Z)_{(p)} = 0.
+   0\to \mathbb Z_{(p)} \xrightarrow{\times n} \mathbb Z_{(p)} \to (\mathbb Z/n\mathbb Z)_{(p)} \to 0
    \]
+   is exact. Concretely:
+   - if $p\nmid n$, then multiplication by $n$ becomes an isomorphism on $\mathbb Z_{(p)}$, so $(\mathbb Z/n\mathbb Z)_{(p)}=0$;
+   - if $n=p^k m$ with $p\nmid m$, then $m$ becomes invertible in $\mathbb Z_{(p)}$, and the cokernel is “the $p$-primary part,” isomorphic to $\mathbb Z/p^k\mathbb Z$ as a $\mathbb Z_{(p)}$-module.
 
-2. **Localizing at an element makes it invertible.**  
-   In \(R=k[x]\), the sequence
+2. **Localization can kill torsion.**  
+   Let $R=k[x]$ and consider the exact sequence
    \[
-   0 \to R \xrightarrow{\cdot x} R \to R/(x) \to 0
+   0\to R \xrightarrow{\times x} R \to R/(x)\to 0.
    \]
-   is exact. Localize at \(S=\{1,x,x^2,\dots\}\), obtaining \(R_x\).  
-   Since \(x\) is a unit in \(R_x\), the map \(\cdot x: R_x\to R_x\) is an isomorphism, so exactness gives
+   Localize at $S=\{1,x,x^2,\dots\}$, so $S^{-1}R=R_x$. Then $x$ becomes a unit in $R_x$, hence multiplication by $x$ on $R_x$ is an isomorphism. Exactness forces
    \[
-   (R/(x))_x = 0.
+   (R/(x))_x = 0,
    \]
+   which reflects that $R/(x)$ is “$x$-torsion.”
 
-3. **Injectivity can be checked after localization (common use).**  
-   If \(f:M\to N\) is a map of \(R\)-modules and \(S^{-1}f\) is injective, then \(\ker(f)\) localizes to \(0\).  
-   Exactness identifies \(\ker(S^{-1}f)=S^{-1}\ker(f)\), so injectivity after localization is equivalent to \(\ker(f)\) being “\(S\)-torsion” (every element killed by some \(s\in S\)).
+3. **Exactness on kernels and images.**  
+   Let $R=\mathbb Z$, $h\colon \mathbb Z\to\mathbb Z$ be multiplication by $6$, and localize at $S=\{1,2,2^2,\dots\}$. Then $\ker h=0$ and exactness implies $\ker(S^{-1}h)=0$ as well. Meanwhile $\operatorname{im} h=6\mathbb Z$ localizes to $6\mathbb Z[1/2]$, which equals the image of the localized map $\mathbb Z[1/2]\xrightarrow{\times 6}\mathbb Z[1/2]$.
+
+Exactness is also a key input to the prime correspondence under localization; see {{< knowl id="localization-prime-correspondence" text="prime correspondence under localization" >}}.

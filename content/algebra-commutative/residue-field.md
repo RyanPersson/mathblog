@@ -1,40 +1,37 @@
 ---
 title: "Residue field"
-description: "For a local ring (R,m), the residue field is the quotient R/m."
+description: "For a local ring (R,m), the field R/m obtained by modding out by the maximal ideal."
 ---
 
-Let $(R,\mathfrak m)$ be a {{< knowl id="local-ring" text="local ring" >}} (so $\mathfrak m$ is its unique {{< knowl id="maximal-ideal-local-ring" text="maximal ideal" >}}).
-
-## Definition
-
-The **residue field** of $(R,\mathfrak m)$ is the quotient ring
+Let $(R,\mathfrak m)$ be a {{< knowl id="local-ring" text="local ring" >}}. The **residue field** of $R$ is the quotient ring
 \[
-k = R/\mathfrak m.
+k(R):=R/\mathfrak m.
 \]
-Because $\mathfrak m$ is maximal, $k$ is a {{< knowl id="field" section="algebra-rings" text="field" >}} (see also {{< knowl id="quotient-ring" section="algebra-rings" text="quotient ring" >}}).
+Because $\mathfrak m$ is maximal (see {{< knowl id="maximal-ideal-local-ring" text="maximal ideal of a local ring" >}}), the quotient $R/\mathfrak m$ is a {{< knowl id="field" section="algebra-rings" text="field" >}}.
 
-For a {{< knowl id="localization-at-prime" text="localization at a prime ideal" >}} $R_{\mathfrak p}$, the residue field is often denoted
+The canonical surjection
 \[
-\kappa(\mathfrak p)=R_{\mathfrak p}/\mathfrak pR_{\mathfrak p}.
+R \twoheadrightarrow R/\mathfrak m
 \]
+is sometimes called the **residue map**.
 
-## Useful observation
+More generally, for a prime ideal $\mathfrak p\subset R$ one often sets
+\[
+\kappa(\mathfrak p):=R_{\mathfrak p}/\mathfrak pR_{\mathfrak p},
+\]
+where $R_{\mathfrak p}$ is the {{< knowl id="localization-at-prime" text="localization at p" >}}; this recovers the same construction after passing to that local ring.
 
-An element $u\in R$ is a {{< knowl id="unit" section="algebra-rings" text="unit" >}} iff its image $\bar u\in k$ is nonzero. Equivalently, $u$ is a unit iff $u\notin\mathfrak m$.
+### Examples
 
-## Examples
-
-1. **Integers localized at $p$.**  
-   For $R=\mathbb Z_{(p)}$, the maximal ideal is $p\mathbb Z_{(p)}$, so
+1. **$\mathbb Z_{(p)}$.** For the local ring $\mathbb Z_{(p)}$, the maximal ideal is $p\mathbb Z_{(p)}$, and
    \[
-   R/\mathfrak m \cong \mathbb F_p.
+   \mathbb Z_{(p)}/p\mathbb Z_{(p)}\cong \mathbb F_p.
    \]
 
-2. **Formal power series.**  
-   For $R=k[[x]]$ with $\mathfrak m=(x)$,
+2. **$k[x]_{(x)}$.** In $R=k[x]_{(x)}$, the maximal ideal is $(x)R$, so
    \[
-   k[[x]]/(x)\cong k.
+   k[x]_{(x)}/(x)\ \cong\ k
    \]
+   via evaluation at $x=0$.
 
-3. **A local ring at a point.**  
-   Let $R=k[x,y]_{(x-a,y-b)}$. Then the residue field is $k$ (the images of $x,y$ become $a,b$).
+3. **$k[x,y]_{(x,y)}$.** In the local ring $k[x,y]_{(x,y)}$, the maximal ideal is $(x,y)$, and the residue field is again $k$.

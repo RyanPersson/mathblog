@@ -3,7 +3,7 @@ title: "Operations Preserving Convexity"
 description: "Nonnegative scaling, finite sums, and finite maxima preserve convexity"
 ---
 
-**Operations Preserving Convexity**: Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $f,f_i:X\to\overline{\mathbb{R}}$ be {{< knowl id="convex-function-via-epigraph" text="convex functions" >}} for $i=1,\dots,m$. Then:
+**Operations Preserving Convexity**: Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $f,f_i:X\to\overline{\mathbb{R}}$ be {{< knowl id="convex-function-via-epigraph" text="convex functions" >}} for $i=1,\dots,m$. Then:
 
 1. (**Nonnegative scaling**) For any $\lambda\ge 0$, the function $\lambda f$ is convex.
 2. (**Finite sums**) The function $\sum_{i=1}^m f_i$ is convex.

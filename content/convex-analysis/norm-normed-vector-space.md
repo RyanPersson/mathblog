@@ -3,7 +3,7 @@ title: "Norm and normed vector space"
 description: "A norm assigns lengths to vectors and induces a metric"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $\mathbb{R}$ (or $\mathbb{C}$). A **norm** on $X$ is a function $\|\cdot\|:X\to[0,\infty)$ such that for all $x,y\in X$ and scalars $\alpha$:
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $\mathbb{R}$ (or $\mathbb{C}$). A **norm** on $X$ is a function $\|\cdot\|:X\to[0,\infty)$ such that for all $x,y\in X$ and scalars $\alpha$:
 
 1. **Positive definiteness:** $\|x\|=0$ iff $x=0$.
 2. **Absolute homogeneity:** $\|\alpha x\|=|\alpha|\,\|x\|$.

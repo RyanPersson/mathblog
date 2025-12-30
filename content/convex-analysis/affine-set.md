@@ -3,7 +3,7 @@ title: "Affine Set"
 description: "A set containing the entire line through any two of its points."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}}. A subset $\Omega\subset X$ is **affine** if for all $a,b\in\Omega$ we have
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}. A subset $\Omega\subset X$ is **affine** if for all $a,b\in\Omega$ we have
 $$
 L[a,b]\subset \Omega,
 $$

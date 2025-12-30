@@ -1,19 +1,19 @@
 ---
 title: "Primitive root of unity"
-description: "A root of unity ζ with multiplicative order exactly n (i.e., ζ^n=1 but ζ^d≠1 for d<n)."
+description: "An element ζ with ζ^n = 1 whose multiplicative order is exactly n."
 ---
 
-**Definition.** Let \(L\) be a field and let \(n\ge 1\). An element \(\zeta\in L^\times\) is an **n-th root of unity** if \(\zeta^n=1\). It is **primitive** if its multiplicative order is exactly \(n\), i.e.
+Let \(F\) be a {{< knowl id="field" section="algebra-rings" text="field" >}} and let \(\overline{F}\) be an {{< knowl id="algebraic-closure" text="algebraic closure" >}}. An element \(\zeta\in\overline{F}\) is an **\(n\)-th root of unity** if \(\zeta^n=1\). It is a **primitive \(n\)-th root of unity** if its multiplicative order is exactly \(n\), i.e.
 \[
-\zeta^n=1 \quad\text{and}\quad \zeta^d\neq 1 \text{ for every } 1\le d<n.
+\zeta^n=1 \quad\text{and}\quad \zeta^d\ne 1 \text{ for every proper divisor } d\mid n.
 \]
-Equivalently, \(\zeta\) generates the cyclic subgroup of all \(n\)-th roots of unity in \(L^\times\) (compare {{< knowl id="cyclic-subgroup" section="algebra-groups" text="cyclic subgroups" >}} and {{< knowl id="finite-field-multiplicative-group-cyclic" text="cyclicity of finite-field units" >}}).
+Equivalently, \(\zeta\) is primitive of order \(n\) if and only if it is a root of the {{< knowl id="cyclotomic-polynomial" text="cyclotomic polynomial" >}} \(\Phi_n(x)\).
 
-Primitive \(n\)-th roots are precisely the roots of the {{< knowl id="cyclotomic-polynomial" text="cyclotomic polynomial" >}} \(\Phi_n(x)\).
+When \(\mathrm{char}(F)\nmid n\), the polynomial \(x^n-1\) has distinct roots in \(\overline{F}\) (a separability phenomenon; compare {{< knowl id="separable-distinct-roots" text="distinct-root criterion" >}}), and the \(n\)-th roots of unity form a cyclic subgroup of \(\overline{F}^\times\). Adjoining a primitive \(n\)-th root produces the {{< knowl id="cyclotomic-extension" text="cyclotomic extension" >}} \(F(\zeta)/F\).
 
-**See also.** {{< knowl id="cyclotomic-extension" text="cyclotomic extension" >}}, {{< knowl id="order-divides-group-order" section="algebra-groups" text="order divides group order" >}}.
+### Examples
+1. **Complex numbers.** In \(\mathbb{C}\), \(\zeta_n=e^{2\pi i/n}\) is a primitive \(n\)-th root of unity, and all primitive \(n\)-th roots are \(\zeta_n^k\) with \(\gcd(k,n)=1\).
 
-**Examples.**
-1. In \(\mathbb{C}\), \(\zeta_n=e^{2\pi i/n}\) is a primitive \(n\)-th root of unity.
-2. \(\zeta_3=\frac{-1+i\sqrt3}{2}\) is a primitive cube root of unity; it satisfies \(x^2+x+1=0\).
-3. In a finite field \(\mathbb{F}_q\), an element of order \(n\) exists iff \(n\mid (q-1)\), since \(\mathbb{F}_q^\times\) is cyclic of order \(q-1\).
+2. **Small orders.** Primitive 3rd roots of unity are the two nontrivial roots of \(x^2+x+1\), namely \(e^{2\pi i/3}\) and \(e^{4\pi i/3}\). Primitive 4th roots of unity are \(\pm i\).
+
+3. **Finite fields.** If \(F=\mathbb{F}_q\) is a {{< knowl id="finite-field" text="finite field" >}}, then \(F^\times\) is cyclic of order \(q-1\) (see {{< knowl id="finite-field-multiplicative-group-cyclic" text="cyclic multiplicative group" >}}). Hence \(F\) contains a primitive \(n\)-th root of unity exactly when \(n\mid(q-1)\).

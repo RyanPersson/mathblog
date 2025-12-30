@@ -3,7 +3,7 @@ title: "Segments from Core Points Stay in the Core"
 description: "If a is in core(Ω) and b in Ω, then points on [a,b) remain in core(Ω)."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="convex-set" text="convex" >}}.
 
 **Proposition**: If $a\in\operatorname{core}(\Omega)$ (see {{< knowl id="algebraic-interior-core" text="core" >}}) and $b\in\Omega$, then
 $$

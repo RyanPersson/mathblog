@@ -1,49 +1,51 @@
 ---
-title: "Noether Normalization Lemma"
-description: "A finitely generated k-algebra is integral over a polynomial subalgebra in d variables."
+title: "Noether normalization lemma"
+description: "A finitely generated algebra over a field is integral over a polynomial subalgebra."
 ---
+
+Noether normalization is the foundational structural theorem for finitely generated algebras over a field: after choosing suitable “coordinates,” the algebra becomes an {{< knowl id="integral-extension" text="integral extension" >}} of a polynomial ring. It is one of the key inputs behind dimension theory (via {{< knowl id="krull-dimension" text="Krull dimension" >}}) and the algebra–geometry dictionary (via the {{< knowl id="nullstellensatz-variety-correspondence" text="Nullstellensatz correspondence" >}}).
 
 ## Statement
 
-Let \(k\) be a {{< knowl id="field" section="algebra-rings" text="field" >}} and let \(A\) be a finitely generated commutative \(k\)-algebra. Then there exist elements
+Let $k$ be a {{< knowl id="field" section="algebra-rings" text="field" >}}, and let $A$ be a finitely generated $k$-algebra. Then there exist elements
 \[
 y_1,\dots,y_d \in A
 \]
-that are algebraically independent over \(k\) such that the natural inclusion
+that are algebraically independent over $k$ such that $A$ is integral over the $k$-subalgebra $k[y_1,\dots,y_d]$.
+
+Equivalently, there exists an injective $k$-algebra homomorphism
 \[
-k[y_1,\dots,y_d] \hookrightarrow A
+k[t_1,\dots,t_d]\hookrightarrow A
 \]
-makes \(A\) an {{< knowl id="integral-extension" text="integral extension" >}}, i.e. every element of \(A\) is {{< knowl id="integral-element" text="integral" >}} over \(k[y_1,\dots,y_d]\). Equivalently, \(A\) is a finite (module-finite) \(k[y_1,\dots,y_d]\)-module.
+whose image is a polynomial subalgebra, and such that $A$ is a finitely generated module over $k[t_1,\dots,t_d]$ (i.e. $A$ is module-finite over that subring). In the language of {{< knowl id="integral-element" text="integral elements" >}}, this says every element of $A$ is integral over the subring $k[y_1,\dots,y_d]$.
 
-Consequences/interpretation:
-
-- \(k[y_1,\dots,y_d]\) is a {{< knowl id="polynomial-ring" section="algebra-rings" text="polynomial ring" >}} in \(d\) variables.
-- The integer \(d\) equals \(\dim(A)\), the {{< knowl id="krull-dimension" text="Krull dimension" >}} of \(A\) (in particular when \(A\) is a domain, \(d\) is the transcendence degree of \(\mathrm{Frac}(A)\) over \(k\)).
-- Since \(A\) is finite over a Noetherian ring, \(A\) is {{< knowl id="noetherian-ring" text="Noetherian" >}} (compare {{< knowl id="hilbert-basis-theorem" section="algebra-rings" text="Hilbert basis theorem" >}}, {{< knowl id="hilbert-basis-corollary" text="Hilbert basis corollary" >}}).
+Moreover, one can choose $d=\dim(A)$ in the sense of {{< knowl id="krull-dimension" text="Krull dimension" >}}.
 
 ## Examples
 
-1. **Polynomial ring itself.**  
-   If \(A=k[x_1,\dots,x_n]\), take \(y_i=x_i\). Then \(A=k[y_1,\dots,y_n]\), so \(A\) is (trivially) integral over the polynomial subalgebra, with \(d=n\).
+1. **Polynomial rings normalize themselves.**  
+   If $A=k[x_1,\dots,x_n]$, take $y_i=x_i$ and $d=n$. Then $A=k[y_1,\dots,y_n]$, so $A$ is integral over the chosen polynomial subalgebra in the strongest possible way (equality).
 
-2. **A parabola (finite map to \(\mathbb A^1\)).**  
+2. **A plane curve coordinate ring.**  
    Let
    \[
-   A = k[x,y]/(y-x^2).
+   A = k[x,y]/(y^2-x^3-x).
    \]
-   Set \(t=y\in A\). Then \(x\) satisfies the monic polynomial
+   Let $\bar x,\bar y$ be the residue classes of $x,y$ in $A$. Then $\bar y$ satisfies a monic polynomial over $k[\bar x]$:
    \[
-   X^2 - t = 0 \quad\text{in } A,
+   \bar y^2 - \bar x^3 - \bar x = 0.
    \]
-   so \(x\) is integral over \(k[t]\). Hence \(A\) is integral (indeed finite) over \(k[t]\), and \(d=1\).
+   Hence $\bar y$ is integral over $k[\bar x]$, and $A$ is integral over the polynomial subalgebra $k[\bar x]\cong k[t]$ (so here $d=1$).
 
-3. **Union of coordinate axes.**  
+3. **A reducible example: $k[x,y]/(xy)$.**  
    Let
    \[
    A = k[x,y]/(xy).
    \]
-   Set \(t=x+y\in A\). Then \(x\) satisfies
+   Set $u=\bar x+\bar y\in A$ (bars denote residue classes). Then $\bar x$ satisfies the monic equation
    \[
-   X^2 - tX = 0
+   T^2-uT=0
    \]
-   because \(x^2 - (x+y)x = x^2 - x^2 - xy = 0\) in \(A\). This is monic in \(X\), so \(x\) is integral over \(k[t]\), and then \(y=t-x\) is also integral. Thus \(A\) is integral over \(k[t]\), again with \(d=1\).
+   in $A[T]$ (since $\bar x^2-u\bar x=\bar x(\bar x-(\bar x+\bar y))=-\bar x\bar y=0$), so $\bar x$ is integral over $k[u]$. Similarly, $\bar y$ is integral over $k[u]$. Therefore $A$ is integral over the polynomial subalgebra $k[u]\cong k[t]$.
+
+This lemma is frequently combined with {{< knowl id="prime-avoidance-lemma" text="prime avoidance" >}} (to choose “good” linear combinations) and with localization techniques such as {{< knowl id="localization-ring" text="localization" >}} when passing to local statements.

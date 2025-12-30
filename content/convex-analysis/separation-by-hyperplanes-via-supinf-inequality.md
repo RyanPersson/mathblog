@@ -3,7 +3,7 @@ title: "Separation via Sup/Inf Inequality"
 description: "Hyperplane separation is equivalent to sup_{Ω1}f ≤ inf_{Ω2}f for some f≠0."
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}} and let $\Omega_1,\Omega_2\subset X$ be nonempty.
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega_1,\Omega_2\subset X$ be nonempty.
 
 **Proposition**: The sets $\Omega_1$ and $\Omega_2$ can be {{< knowl id="separation-by-a-hyperplane" text="separated by a hyperplane" >}} if and only if there exists a nonzero linear functional $f:X\to\mathbb{R}$ such that
 $$

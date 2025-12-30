@@ -3,7 +3,7 @@ title: "p-group"
 description: "A group whose elements have order a power of a fixed prime p"
 ---
 
-Fix a prime number $p$. A **$p$-group** is a {{< knowl id="group" text="group" >}} $G$ such that every element $g\in G$ has order $p^k$ for some integer $k\ge 0$ (depending on $g$). If $G$ is finite, this is equivalent to saying that the {{< knowl id="cardinality" text="cardinality" >}} of $G$ is a power of $p$, i.e. $|G|=p^n$ for some $n\ge 0$.
+Fix a prime number $p$. A **$p$-group** is a {{< knowl id="group" text="group" >}} $G$ such that every element $g\in G$ has order $p^k$ for some integer $k\ge 0$ (depending on $g$). If $G$ is finite, this is equivalent to saying that the {{< knowl id="cardinality" section="shared-foundations" text="cardinality" >}} of $G$ is a power of $p$, i.e. $|G|=p^n$ for some $n\ge 0$.
 
 Finite $p$-groups have strong structure properties; for instance, they have nontrivial center (see {{< knowl id="p-group-nontrivial-center" text="p-group has nontrivial center" >}}). Maximal $p$-subgroups of a finite group occur as {{< knowl id="sylow-subgroup" text="Sylow p-subgroups" >}}, central in Sylow theory.
 

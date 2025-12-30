@@ -12,7 +12,7 @@ $$
 Hg := \{hg : h\in H\}.
 $$
 
-Left cosets are the {{< knowl id="equivalence-class" text="equivalence classes" >}} of the {{< knowl id="equivalence-relation" text="equivalence relation" >}} on $G$ defined by $g\sim g'$ iff $g^{-1}g'\in H$ (equivalently, $gH=g'H$). In particular, the set of left cosets forms a {{< knowl id="partition" text="partition" >}} of $G$, and the number of distinct left cosets is the {{< knowl id="index-of-subgroup" text="index" >}} $[G:H]$. If $H$ is a {{< knowl id="normal-subgroup" text="normal subgroup" >}}, then $gH=Hg$ for all $g$, and the set of cosets is the underlying set of the {{< knowl id="quotient-group" text="quotient group" >}} $G/H$.
+Left cosets are the {{< knowl id="equivalence-class" section="shared-foundations" text="equivalence classes" >}} of the {{< knowl id="equivalence-relation" section="shared-foundations" text="equivalence relation" >}} on $G$ defined by $g\sim g'$ iff $g^{-1}g'\in H$ (equivalently, $gH=g'H$). In particular, the set of left cosets forms a {{< knowl id="partition" section="shared-foundations" text="partition" >}} of $G$, and the number of distinct left cosets is the {{< knowl id="index-of-subgroup" text="index" >}} $[G:H]$. If $H$ is a {{< knowl id="normal-subgroup" text="normal subgroup" >}}, then $gH=Hg$ for all $g$, and the set of cosets is the underlying set of the {{< knowl id="quotient-group" text="quotient group" >}} $G/H$.
 
 **Examples:**
 - In the additive group $\mathbb{Z}$ with $H=3\mathbb{Z}$, the cosets are $3\mathbb{Z}$, $1+3\mathbb{Z}$, and $2+3\mathbb{Z}$.

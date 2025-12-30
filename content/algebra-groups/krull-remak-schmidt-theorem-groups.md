@@ -14,7 +14,7 @@ G \cong H_1 \times \cdots \times H_m
 $$
 is another such decomposition with directly indecomposable normal factors, then $n=m$ and, after permuting indices, there are {{< knowl id="group-isomorphism" text="isomorphisms" >}} $G_i \cong H_i$ for all $i$.
 
-Equivalently: the multiset of isomorphism types of directly indecomposable factors in an {{< knowl id="internal-direct-product" text="internal direct product" >}} decomposition is an invariant of $G$ (under the stated chain hypotheses). This is the group analogue of {{< knowl id="krull-schmidt-azumaya-theorem" text="Krull–Schmidt–Azumaya for modules" >}}.
+Equivalently: the multiset of isomorphism types of directly indecomposable factors in an {{< knowl id="internal-direct-product" text="internal direct product" >}} decomposition is an invariant of $G$ (under the stated chain hypotheses). This is the group analogue of {{< knowl id="krull-schmidt-azumaya-theorem" section="algebra-modules" text="Krull–Schmidt–Azumaya for modules" >}}.
 
 **Proof sketch.**
 One compares projections of one decomposition onto the factors of the other, showing that indecomposability forces certain endomorphisms to be invertible or nilpotent. Chain conditions ensure termination of the resulting refinement process, yielding a bijection between indecomposable factors up to isomorphism.

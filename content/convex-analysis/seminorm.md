@@ -3,7 +3,7 @@ title: "Seminorm"
 description: "A subadditive, absolutely homogeneous function p(λx)=|λ|p(x)."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $\mathbb{R}$ or $\mathbb{C}$. A function $p:X\to\mathbb{R}$ is called a **seminorm** if:
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $\mathbb{R}$ or $\mathbb{C}$. A function $p:X\to\mathbb{R}$ is called a **seminorm** if:
 
 1. (**Subadditivity**) $p(x+y)\le p(x)+p(y)$ for all $x,y\in X$.
 2. (**Absolute homogeneity**) $p(\lambda x)=|\lambda|\,p(x)$ for all $x\in X$ and all scalars $\lambda$.

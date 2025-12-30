@@ -3,7 +3,7 @@ title: "Complete metric space and complete subset"
 description: "A metric space is complete if every Cauchy sequence converges (in the space)"
 ---
 
-A {{< knowl id="metric-metric-space" text="metric space" >}} $(X,d)$ is **complete** if every {{< knowl id="cauchy-sequence" text="Cauchy sequence" >}} $(x_n)$ in $X$ {{< knowl id="convergence-of-a-sequence" text="converges" >}} to some point $x\in X$.
+A {{< knowl id="metric-metric-space" text="metric space" >}} $(X,d)$ is **complete** if every {{< knowl id="cauchy-sequence" section="analysis" text="Cauchy sequence" >}} $(x_n)$ in $X$ {{< knowl id="convergence-of-a-sequence" text="converges" >}} to some point $x\in X$.
 
 A subset $E\subset X$ is called **complete** if the restricted metric space $(E,d|_{E\times E})$ is complete; equivalently, every Cauchy sequence in $E$ converges to a point of $E$.
 

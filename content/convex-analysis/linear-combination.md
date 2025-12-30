@@ -3,7 +3,7 @@ title: "Linear combination"
 description: "A finite sum of scalar multiples of vectors"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over a field $K$. Given vectors $x_1,\dots,x_m\in X$ and scalars $\alpha_1,\dots,\alpha_m\in K$, a **linear combination** of $x_1,\dots,x_m$ is any vector of the form
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over a field $K$. Given vectors $x_1,\dots,x_m\in X$ and scalars $\alpha_1,\dots,\alpha_m\in K$, a **linear combination** of $x_1,\dots,x_m$ is any vector of the form
 $$
 \alpha_1x_1+\cdots+\alpha_m x_m=\sum_{i=1}^m \alpha_i x_i.
 $$

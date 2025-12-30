@@ -69,6 +69,8 @@ Use the Hugo knowl shortcode:
 {{</* knowl id="[slug]" text="[display text]" */>}}
 ```
 
+**CRITICAL:** The shortcode uses **double curly braces**: `{{<` not `{<`. Single braces will not render correctly.
+
 Where:
 - `[slug]` is the filename without `.md` (e.g., `group`, `lagranges-theorem`)
 - `[display text]` is the text shown to the reader

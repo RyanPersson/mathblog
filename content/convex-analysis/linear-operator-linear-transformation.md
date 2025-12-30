@@ -16,7 +16,7 @@ T(\alpha x+\beta u)=\alpha T(x)+\beta T(u)\quad\text{for all }\alpha,\beta\in K,
 $$
 One often writes $Tx$ instead of $T(x)$.
 
-Linear operators are the morphisms of {{< knowl id="vector-space" text="vector spaces" >}}. Their {{< knowl id="image-and-kernel-linear-isomorphism" text="kernels and images" >}} give canonical subspaces, and the associated quotient describes the operator up to isomorphism.
+Linear operators are the morphisms of {{< knowl id="vector-space" section="shared-linear-algebra" text="vector spaces" >}}. Their {{< knowl id="image-and-kernel-linear-isomorphism" text="kernels and images" >}} give canonical subspaces, and the associated quotient describes the operator up to isomorphism.
 
 **Examples:**
 - Matrix multiplication $T(x)=Ax$ on $K^n$.

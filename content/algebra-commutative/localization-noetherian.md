@@ -1,29 +1,31 @@
 ---
-title: "Localization of a Noetherian Ring is Noetherian"
-description: "Localizing a Noetherian ring at any multiplicative set remains Noetherian."
+title: "Localization preserves Noetherian rings"
+description: "If a ring is Noetherian, then any localization at a multiplicative set is again Noetherian."
 ---
 
-## Statement
+Localization is a “local” operation, but it does not destroy finiteness properties: in particular, Noetherianity survives. This is indispensable when passing from global to local statements, for example by {{< knowl id="localization-at-prime" text="localizing at a prime" >}}.
 
-Let \(R\) be a {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and let \(S\subseteq R\) be a {{< knowl id="multiplicative-set" text="multiplicative set" >}}. Then the localized ring {{< knowl id="localization-ring" text="S^{-1}R" >}} is again Noetherian.
+## Theorem
 
-Equivalently: every {{< knowl id="ideal" section="algebra-rings" text="ideal" >}} of \(S^{-1}R\) is finitely generated.
+Let $R$ be a {{< knowl id="noetherian-ring" text="Noetherian ring" >}} and let $S$ be a {{< knowl id="multiplicative-set" text="multiplicative set" >}} in $R$. Then the localized ring
+\[
+S^{-1}R
+\]
+is Noetherian.
 
-A common strengthening: if \(M\) is a finitely generated \(R\)-module, then \(S^{-1}M\) is a finitely generated \(S^{-1}R\)-module (compare {{< knowl id="localization-module" text="localization of modules" >}}).
+More generally, if $M$ is a Noetherian $R$-module, then $S^{-1}M$ is a Noetherian $S^{-1}R$-module.
 
-See also: {{< knowl id="localization-noetherian-corollary" text="localization Noetherian corollary" >}}.
+This result is often paired with {{< knowl id="localization-exact" text="exactness of localization" >}}, since many Noetherian arguments proceed by short exact sequences and localization.
 
 ## Examples
 
-1. **Integers localized at a prime.**  
-   \(\mathbb Z\) is Noetherian. For a prime \(p\), the localization \(\mathbb Z_{(p)}\) (invert all integers not divisible by \(p\)) is therefore Noetherian. In fact it is a PID, so every ideal is principal.
+1. **Localizing $\mathbb Z$.**  
+   The ring $\mathbb Z$ is Noetherian, so any localization is Noetherian. For instance, the local ring $\mathbb Z_{(p)}$ (obtained by {{< knowl id="localization-at-prime" text="localizing at the prime $(p)$" >}}) is Noetherian.
 
-2. **Inverting one variable in a polynomial ring.**  
-   \(R=k[x,y]\) is Noetherian. Localizing at \(S=\{1,x,x^2,\dots\}\) gives
-   \[
-   R_x \cong k[x,x^{-1},y],
-   \]
-   which is still Noetherian.
+2. **Localizing a polynomial ring.**  
+   Let $R=k[x,y]$, which is Noetherian. Localizing at $S=\{1,x,x^2,\dots\}$ gives $R_x=k[x,y]_x$, which is still Noetherian. Geometrically, this corresponds to restricting from affine space to the principal open set where $x\neq 0$ in {{< knowl id="prime-spectrum" text="Spec" >}} with its {{< knowl id="zariski-topology" text="Zariski topology" >}}.
 
-3. **Principal open subsets stay Noetherian (geometric intuition).**  
-   If \(R\) is Noetherian and \(f\in R\), then \(R_f\) is Noetherian. Algebraically this is the special case \(S=\{1,f,f^2,\dots\}\); geometrically it corresponds to restricting to a principal open set in {{< knowl id="prime-spectrum" text="Spec(R)" >}} with the {{< knowl id="zariski-topology" text="Zariski topology" >}}.
+3. **Non-Noetherian rings can stay non-Noetherian after localization.**  
+   Let $R=k[x_1,x_2,\dots]$, which is not Noetherian. Localizing at many natural multiplicative sets (for example, inverting one variable) typically does not repair this: $R_{x_1}$ still contains an infinite strictly ascending chain of ideals $(x_2)\subsetneq(x_2,x_3)\subsetneq\cdots$. This illustrates that the theorem is one-way: localization preserves Noetherianity, but does not create it.
+
+When applying the theorem in practice, a common pattern is: start with a Noetherian ring, localize at a prime to get a Noetherian {{< knowl id="local-ring" text="local ring" >}}, then analyze invariants (dimension, depth, primary decomposition, and so on) locally.

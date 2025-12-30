@@ -3,7 +3,7 @@ title: "Convexity of the Marginal (Optimal Value) Function"
 description: "Under convexity of the objective and the set-valued map, the value function is convex"
 ---
 
-**Convexity of the Marginal Function**: Let $X$ and $Y$ be {{< knowl id="vector-space" text="vector spaces" >}}. Assume that $\varphi:X\times Y\to\overline{\mathbb{R}}$ is a {{< knowl id="convex-function-via-epigraph" text="convex function" >}} and that $F:X\rightrightarrows Y$ is a {{< knowl id="set-valued-mapping-multifunction-domain-and-graph-convex-set-valued-mapping" text="convex set-valued mapping" >}} (i.e., its graph is convex). Define the {{< knowl id="marginal-optimal-value-function" text="marginal function" >}} $\mu$ by
+**Convexity of the Marginal Function**: Let $X$ and $Y$ be {{< knowl id="vector-space" section="shared-linear-algebra" text="vector spaces" >}}. Assume that $\varphi:X\times Y\to\overline{\mathbb{R}}$ is a {{< knowl id="convex-function-via-epigraph" text="convex function" >}} and that $F:X\rightrightarrows Y$ is a {{< knowl id="set-valued-mapping-multifunction-domain-and-graph-convex-set-valued-mapping" text="convex set-valued mapping" >}} (i.e., its graph is convex). Define the {{< knowl id="marginal-optimal-value-function" text="marginal function" >}} $\mu$ by
 $$
 \mu(x)=\inf\{\varphi(x,y)\mid y\in F(x)\}.
 $$

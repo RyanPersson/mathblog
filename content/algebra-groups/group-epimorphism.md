@@ -3,7 +3,7 @@ title: "Group epimorphism"
 description: "A surjective group homomorphism"
 ---
 
-A **group epimorphism** is a {{< knowl id="group-homomorphism" text="group homomorphism" >}} $\varphi\colon G\to H$ that is surjective as a {{< knowl id="surjective-function" text="surjective function" >}}.
+A **group epimorphism** is a {{< knowl id="group-homomorphism" text="group homomorphism" >}} $\varphi\colon G\to H$ that is surjective as a {{< knowl id="surjective-function" section="shared-foundations" text="surjective function" >}}.
 
 Equivalently, $\varphi$ is an epimorphism if and only if its {{< knowl id="image-group" text="image" >}} equals all of $H$, i.e. $\varphi(G)=H$. Many natural epimorphisms arise as quotient maps: if $N\lhd G$ then the canonical projection $G\to$ {{< knowl id="quotient-group" text="quotient group" >}} $G/N$ is surjective.
 

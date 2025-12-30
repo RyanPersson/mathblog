@@ -3,7 +3,7 @@ title: "Hahn–Banach Theorem (Real Vector Spaces)"
 description: "A linear functional dominated by a sublinear function extends to the whole space."
 ---
 
-**Hahn–Banach (real version)**: Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}, and let $p:X\to\mathbb{R}$ be {{< knowl id="subadditive-positively-homogeneous-and-sublinear-functions" text="sublinear" >}}.
+**Hahn–Banach (real version)**: Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}, and let $p:X\to\mathbb{R}$ be {{< knowl id="subadditive-positively-homogeneous-and-sublinear-functions" text="sublinear" >}}.
 
 If $f:Y\to\mathbb{R}$ is a {{< knowl id="linear-operator-linear-transformation" text="linear" >}} functional satisfying
 $$

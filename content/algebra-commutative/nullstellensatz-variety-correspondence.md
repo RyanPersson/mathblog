@@ -1,65 +1,50 @@
 ---
-title: "Nullstellensatz Variety–Ideal Correspondence"
-description: "Over an algebraically closed field, radical ideals in k[x1,...,xn] correspond to affine algebraic sets in k^n."
+title: "Nullstellensatz: varieties and radical ideals"
+description: "Over an algebraically closed field, Zariski-closed subsets of affine space correspond to radical ideals in a polynomial ring."
 ---
 
-## Statement
-
-Let \(k\) be an algebraically closed {{< knowl id="field" section="algebra-rings" text="field" >}}, and let
+Let $k$ be an algebraically closed {{< knowl id="field" section="algebra-rings" text="field" >}} and let $A=k[x_1,\dots,x_n]$. For an ideal $I\subseteq A$, define its zero set
 \[
-R = k[x_1,\dots,x_n]
+V(I)=\{a\in k^n : f(a)=0 \text{ for all } f\in I\}.
 \]
-be the {{< knowl id="polynomial-ring" section="algebra-rings" text="polynomial ring" >}}.
-
-- For an ideal \(I\subseteq R\), define the affine algebraic set
-  \[
-  V(I) = \{a\in k^n : f(a)=0 \ \text{for all } f\in I\}.
-  \]
-- For a subset \(X\subseteq k^n\), define the vanishing ideal
-  \[
-  I(X)=\{f\in R : f(a)=0 \ \text{for all } a\in X\}.
-  \]
-
-Then Hilbert’s Nullstellensatz implies:
+For a subset $X\subseteq k^n$, define the ideal of functions vanishing on $X$ by
 \[
-I(V(I)) = \sqrt{I},
+I(X)=\{f\in A : f(a)=0 \text{ for all } a\in X\}.
 \]
-where \(\sqrt{I}\) is the {{< knowl id="radical-of-ideal" section="algebra-rings" text="radical of I" >}}.
+The sets $V(I)$ are exactly the closed sets of the {{< knowl id="zariski-topology" text="Zariski topology" >}} on $k^n$.
 
-Consequences:
-
-- The assignments \(I \mapsto V(I)\) and \(X \mapsto I(X)\) are inclusion-reversing.
-- \(I\) is radical iff \(I=I(V(I))\).
-- There is a bijection between **radical ideals** of \(R\) and **affine algebraic sets** in \(k^n\).
-- Under this correspondence, {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideals" >}} correspond to **irreducible** algebraic sets, and {{< knowl id="maximal-ideal" section="algebra-rings" text="maximal ideals" >}} correspond to **points**.
-
-This viewpoint is the algebra behind the {{< knowl id="zariski-topology" text="Zariski topology" >}} on \(k^n\).
-
-## Cross-links
-
-- Topology side: {{< knowl id="zariski-topology" text="Zariski topology" >}}
-- Algebra side: {{< knowl id="radical-of-ideal" section="algebra-rings" text="radical ideal" >}}, {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}, {{< knowl id="maximal-ideal" section="algebra-rings" text="maximal ideal" >}}
-- Spectral viewpoint: {{< knowl id="prime-spectrum" text="prime spectrum" >}}
-- Classical theorems: {{< knowl id="nullstellensatz-weak" section="algebra-rings" text="weak Nullstellensatz" >}}, {{< knowl id="nullstellensatz-strong" section="algebra-rings" text="strong Nullstellensatz" >}}
-
-## Examples
-
-1. **A point in the plane.**  
-   In \(k[x,y]\), the ideal \((x-a,\,y-b)\) is maximal, and
+**Theorem (Nullstellensatz, variety–ideal correspondence).**  
+With $k$ and $A$ as above, the following hold:
+1. For every ideal $I\subseteq A$, one has
    \[
-   V(x-a,y-b)=\{(a,b)\}.
+   I\bigl(V(I)\bigr)=\sqrt{I},
+   \]
+   the radical of $I$.
+2. For every Zariski-closed set $X\subseteq k^n$, one has
+   \[
+   V\bigl(I(X)\bigr)=X.
    \]
 
-2. **A curve.**  
-   In \(k[x,y]\), the ideal \((y-x^2)\) defines the parabola:
-   \[
-   V(y-x^2)=\{(t,t^2): t\in k\}.
-   \]
-   Since \((y-x^2)\) is prime, the parabola is irreducible.
+Consequently, the assignments $I\mapsto V(I)$ and $X\mapsto I(X)$ restrict to mutually inverse, inclusion-reversing bijections between:
+- radical ideals of $A$, and
+- Zariski-closed subsets of $k^n$.
 
-3. **Radical matters: same variety, different ideal.**  
-   In \(k[x,y]\),
+A useful special case is the "weak" form: maximal ideals of $A$ are exactly the ideals $(x_1-a_1,\dots,x_n-a_n)$ for points $a=(a_1,\dots,a_n)\in k^n$. In other words, the {{< knowl id="maximal-spectrum" text="maximal spectrum" >}} $\operatorname{MaxSpec}(A)$ can be identified with $k^n$, and the corresponding {{< knowl id="residue-field" text="residue field" >}} at such a maximal ideal is (canonically) $k$.
+
+### Examples
+1. **A non-radical ideal with the same zero set as its radical.**  
+   In $k[x]$, let $I=(x^2)$. Then $V(I)=\{0\}$, but
    \[
-   V(x^2)=V(x)=\{(0,y): y\in k\},
+   I\bigl(V(I)\bigr)=(x)=\sqrt{(x^2)}.
    \]
-   and indeed \(I(V(x^2))=\sqrt{(x^2)}=(x)\).
+   This illustrates that taking $V(-)$ forgets nilpotent structure, and the theorem recovers exactly the radical.
+
+2. **A point.**  
+   In $k[x,y]$, let $I=(x,y)$. Then $V(I)=\{(0,0)\}$. Conversely, for the closed set $X=\{(0,0)\}$ one has $I(X)=(x,y)$, a maximal ideal, matching the identification of {{< knowl id="maximal-spectrum" text="maximal ideals" >}} with points.
+
+3. **A reducible algebraic set.**  
+   In $k[x,y]$, let $I=(xy)$. Then $V(I)$ is the union of the two coordinate axes. The ideal of this union is
+   \[
+   I\bigl(V(I)\bigr)=(x)\cap (y)=\sqrt{(xy)},
+   \]
+   reflecting that $V(I)$ has two irreducible components.

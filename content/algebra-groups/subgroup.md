@@ -3,7 +3,7 @@ title: "Subgroup"
 description: "A subset of a group that is itself a group under the same operation"
 ---
 
-Let $G$ be a {{< knowl id="group" text="group" >}} with operation $\cdot$. A **subgroup** of $G$ is a {{< knowl id="subset" text="subset" >}} $H\subseteq G$ such that:
+Let $G$ be a {{< knowl id="group" text="group" >}} with operation $\cdot$. A **subgroup** of $G$ is a {{< knowl id="subset" section="shared-foundations" text="subset" >}} $H\subseteq G$ such that:
 
 1. $e\in H$ (where $e$ is the identity of $G$),
 2. for all $a,b\in H$ we have $a\cdot b\in H$,

@@ -3,7 +3,7 @@ title: "Separation by a Hyperplane"
 description: "Two sets are separable if a nonzero linear functional orders them."
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}} and let $\Omega_1,\Omega_2\subset X$ be nonempty.
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega_1,\Omega_2\subset X$ be nonempty.
 
 We say that $\Omega_1$ and $\Omega_2$ can be **separated by a hyperplane** if there exists a nonzero linear functional $f:X\to\mathbb{R}$ such that
 $$

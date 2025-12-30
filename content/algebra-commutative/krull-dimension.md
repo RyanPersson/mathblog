@@ -1,42 +1,33 @@
 ---
 title: "Krull dimension"
-description: "The supremum of lengths of chains of prime ideals in a ring."
+description: "The supremum of lengths of chains of prime ideals in a ring (equivalently, the dimension of its prime spectrum)."
 ---
 
-## Definition (Krull dimension)
-Let \(R\) be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}}.
-
-A **chain of prime ideals** in \(R\) is a strictly increasing sequence
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}}. The **Krull dimension** of $R$, denoted $\dim R$, is the supremum of integers $n\ge 0$ for which there exists a strictly increasing chain of prime ideals
 \[
-\mathfrak p_0 \subsetneq \mathfrak p_1 \subsetneq \cdots \subsetneq \mathfrak p_n,
-\quad \text{each } \mathfrak p_i \in {{< knowl id="prime-spectrum" text="Spec(R)" >}}.
+\mathfrak p_0 \subsetneq \mathfrak p_1 \subsetneq \cdots \subsetneq \mathfrak p_n
 \]
-Its **length** is \(n\).
+in $R$. If no such finite supremum exists, one writes $\dim R = \infty$.
 
-The **Krull dimension** of \(R\), denoted \(\dim(R)\), is
+Equivalently, $\dim R$ is the Krull dimension of the topological space {{< knowl id="prime-spectrum" text="\operatorname{Spec}(R)" >}} with its {{< knowl id="zariski-topology" text="Zariski topology" >}}.
+
+The Krull dimension can also be expressed in terms of heights: for each prime $\mathfrak p$, its {{< knowl id="height-of-prime" text="height" >}} $\operatorname{ht}(\mathfrak p)$ is the supremum of lengths of prime chains ending at $\mathfrak p$, and one has
 \[
-\dim(R)\;:=\;\sup\{\, n \mid \text{there exists a chain of prime ideals of length } n \,\}.
+\dim R = \sup_{\mathfrak p\in \operatorname{Spec}(R)} \operatorname{ht}(\mathfrak p).
 \]
-Equivalently, \(\dim(R)=\dim(\operatorname{Spec}(R))\) as a topological/poset invariant (primes ordered by inclusion).
+Moreover, $\operatorname{ht}(\mathfrak p)$ agrees with the dimension of the {{< knowl id="localization-at-prime" text="localization $R_{\mathfrak p}$" >}}.
 
-### Local and pointwise viewpoint
-For a prime \(\mathfrak p\), the **height** \( \operatorname{ht}(\mathfrak p)\) measures the length of chains ending at \(\mathfrak p\); see {{< knowl id="height-of-prime" text="height of a prime" >}}.
+### Examples
 
-## Examples
-1. **Fields have dimension 0.**  
-   If \(k\) is a field, \(\operatorname{Spec}(k)=\{(0)\}\) has no nontrivial chains, so \(\dim(k)=0\).
+1. **Fields and Artinian rings have dimension $0$.**  
+   If $k$ is a {{< knowl id="field" section="algebra-rings" text="field" >}}, the only prime ideal is $(0)$, so $\dim k=0$. More generally, if $R$ is an {{< knowl id="artinian-ring" text="Artinian ring" >}}, then every prime ideal is maximal and there are no nontrivial chains of primes, so $\dim R=0$.
 
-2. **The integers have dimension 1.**  
-   In \(\mathbb Z\), we have chains \((0)\subsetneq(p)\) for primes \(p\), but no longer chains, so \(\dim(\mathbb Z)=1\).
+2. **Dimension $1$: $\mathbb{Z}$ and $k[x]$.**  
+   In $\mathbb{Z}$ there are chains $(0)\subsetneq (p)$, but no longer chains, so $\dim \mathbb{Z}=1$. Similarly, for a field $k$, the ring $k[x]$ has chains $(0)\subsetneq (f)$ (with $f$ irreducible), but no longer ones, hence $\dim k[x]=1$.
 
-3. **Polynomial rings over a field.**  
-   For a field \(k\), the standard result is
+3. **Polynomial rings.**  
+   For a field $k$, the polynomial ring $k[x_1,\dots,x_n]$ has Krull dimension $n$. For instance, in $k[x,y]$ one has the chain
    \[
-   \dim(k[x_1,\dots,x_n]) = n.
+   (0)\subsetneq (x)\subsetneq (x,y),
    \]
-   For example, in \(k[x,y]\) there is a chain \((0)\subsetneq(x)\subsetneq(x,y)\), so \(\dim(k[x,y])\ge 2\).
-
-## Related knowls
-- Points and chains: {{< knowl id="prime-spectrum" text="prime spectrum" >}}, {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}
-- Local invariant: {{< knowl id="height-of-prime" text="height of a prime" >}}
-- Bounds and structure: {{< knowl id="krull-principal-ideal-theorem" text="Krull principal ideal theorem" >}}
+   showing $\dim k[x,y]\ge 2$, and in fact equality holds.

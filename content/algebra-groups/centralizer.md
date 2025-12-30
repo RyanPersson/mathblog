@@ -3,7 +3,7 @@ title: "Centralizer"
 description: "The subgroup of elements commuting with a given subset"
 ---
 
-Let $G$ be a {{< knowl id="group" text="group" >}} and let $S\subseteq G$ be a {{< knowl id="subset" text="subset" >}}. The **centralizer of $S$ in $G$** is
+Let $G$ be a {{< knowl id="group" text="group" >}} and let $S\subseteq G$ be a {{< knowl id="subset" section="shared-foundations" text="subset" >}}. The **centralizer of $S$ in $G$** is
 $
 C_G(S) \;=\; \{\,g\in G : gs=sg \text{ for all } s\in S\,\}.
 $

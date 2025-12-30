@@ -1,38 +1,29 @@
 ---
-title: "Lying-Over Theorem"
-description: "In an integral extension, every prime ideal has at least one prime lying above it."
+title: "Lying-over theorem"
+description: "In an integral extension, every prime ideal downstairs is the contraction of some prime ideal upstairs."
 ---
 
-## Statement
+Let $A\subseteq B$ be an extension of {{< knowl id="commutative-ring" section="algebra-rings" text="commutative rings" >}}. The extension is an {{< knowl id="integral-extension" text="integral extension" >}} if every element of $B$ is integral over $A$.
 
-Let \(A \subseteq B\) be an {{< knowl id="integral-extension" text="integral extension" >}}.
-
-For every {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}} \(\mathfrak p \subseteq A\), there exists a prime ideal \(\mathfrak P \subseteq B\) such that
+**Theorem (Lying over).**  
+Assume $A\subseteq B$ is an {{< knowl id="integral-extension" text="integral extension" >}}. Then for every prime ideal $\mathfrak p\subseteq A$ there exists a prime ideal $\mathfrak q\subseteq B$ such that
 \[
-\mathfrak P \cap A = \mathfrak p.
+\mathfrak q\cap A=\mathfrak p.
 \]
-Equivalently, the induced map on prime spectra
+Equivalently, the natural map of {{< knowl id="prime-spectrum" text="prime spectra" >}}
 \[
-{{< knowl id="prime-spectrum" text="Spec" >}}(B)\longrightarrow {{< knowl id="prime-spectrum" text="Spec" >}}(A)
+\operatorname{Spec}(B)\longrightarrow \operatorname{Spec}(A),\qquad \mathfrak q\mapsto \mathfrak q\cap A
 \]
-is **surjective**.
+is surjective. In particular, every maximal ideal of $A$ is the contraction of some maximal ideal of $B$, so the induced map on {{< knowl id="maximal-spectrum" text="maximal spectra" >}} is also surjective.
 
-## Cross-links
+Lying-over is frequently used as the existence input for {{< knowl id="going-up-theorem" text="going up" >}} and, under extra hypotheses, for {{< knowl id="going-down-theorem" text="going down" >}}.
 
-- Integrality: {{< knowl id="integral-extension" text="integral extension" >}}
-- Lifting chains after choosing a prime above: {{< knowl id="going-up-theorem" text="going-up theorem" >}}
-- Prime spectra viewpoint: {{< knowl id="prime-spectrum" text="prime spectrum" >}}
+### Examples
+1. **Gaussian integers over the integers.**  
+   The inclusion $\mathbb Z\subset \mathbb Z[i]$ is integral (since $i$ satisfies $T^2+1=0$). For the prime ideal $(5)\subset\mathbb Z$, lying-over guarantees a prime $\mathfrak q\subset \mathbb Z[i]$ with $\mathfrak q\cap\mathbb Z=(5)$. Concretely, one can take $\mathfrak q=(2+i)$ (or $\mathfrak q=(2-i)$), both lying over $(5)$.
 
-## Examples
+2. **A simple subring of a polynomial ring.**  
+   Let $k$ be a {{< knowl id="field" section="algebra-rings" text="field" >}} and set $A=k[t^2]\subset B=k[t]$. The element $t$ is integral over $A$ (it satisfies $T^2-t^2=0$), so $A\subset B$ is integral. The prime ideal $(t^2)\subset A$ is the contraction of the prime ideal $(t)\subset B$.
 
-1. **Gaussian integers again.**  
-   \( \mathbb Z \subseteq \mathbb Z[i]\) is integral.  
-   For the prime \((5)\subset \mathbb Z\), there are primes in \(\mathbb Z[i]\) lying over it, e.g. \((2+i)\) and \((2-i)\), each contracting to \((5)\).
-
-2. **Square map subring.**  
-   With \(A=k[t^2]\subseteq B=k[t]\), every prime of \(A\) has a prime above it in \(B\).  
-   For instance, \((t^2)\subset A\) has the lying-over prime \((t)\subset B\), since \((t)\cap k[t^2]=(t^2)\).
-
-3. **Adjoining an integral element.**  
-   Let \(B=A[\alpha]\) where \(\alpha\) is {{< knowl id="integral-element" text="integral" >}} over \(A\) (so \(A\subseteq B\) is integral).  
-   Then every \(\mathfrak p\in {{< knowl id="prime-spectrum" text="Spec" >}}(A)\) arises as the contraction of some \(\mathfrak P\in {{< knowl id="prime-spectrum" text="Spec" >}}(B)\).
+3. **Adjoining a square root.**  
+   Let $A=k[x]$ and $B=k[x,y]/(y^2-x)$. The image of $y$ is integral over $A$ (it satisfies $T^2-x=0$), hence $A\subset B$ is integral. The prime ideal $(x)\subset A$ is the contraction of the prime ideal $(x,y)\subset B$.

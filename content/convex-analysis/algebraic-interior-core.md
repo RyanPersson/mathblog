@@ -3,7 +3,7 @@ title: "Algebraic Interior (Core)"
 description: "The algebraic analogue of interior for subsets of vector spaces"
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$.
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$.
 
 The **algebraic interior** (or **core**) of $\Omega$ is
 $$

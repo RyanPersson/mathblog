@@ -3,7 +3,7 @@ title: "Direct Product of Groups"
 description: "The product group with componentwise multiplication"
 ---
 
-Given {{< knowl id="group" text="groups" >}} $G$ and $H$, their (external) **direct product** is the set {{< knowl id="cartesian-product" text="Cartesian product" >}} $G\times H$ equipped with componentwise multiplication:
+Given {{< knowl id="group" text="groups" >}} $G$ and $H$, their (external) **direct product** is the set {{< knowl id="cartesian-product" section="shared-foundations" text="Cartesian product" >}} $G\times H$ equipped with componentwise multiplication:
 $$
 (g_1,h_1)\cdot(g_2,h_2) := (g_1g_2,\;h_1h_2).
 $$

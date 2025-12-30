@@ -66,7 +66,7 @@ This chapter presents definitions, examples, and basic properties of vector spac
 - the addition $+:X\times X\to X$ which maps each element $(x,y)\in X\times X$ to $x+y$, and
 - the scalar multiplication $\cdot:K\times X\to X$ which maps each element $(\lambda,x)\in K\times X$ to $\lambda\cdot x$ (or simply $\lambda x$).
 
-We say that $(X,+,\cdot)$ is a {{< knowl id="vector-space" text="vector space / linear space" >}} over the field $K$ if the following properties are satisfied:
+We say that $(X,+,\cdot)$ is a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space / linear space" >}} over the field $K$ if the following properties are satisfied:
 
 (i) $x+y=y+x$ for all $x,y\in X$.
 (ii) $(x+y)+z=x+(y+z)$ for all $x,y,z\in X$.
@@ -510,7 +510,7 @@ Conversely, suppose that whenever $(a_n)$ is a sequence in $A$ that converges to
 
 Conversely, suppose that whenever $(a_n)$ is a sequence in $A$ converging to $a$, we have $a\in A$. Let us show that $A$ is closed, or equivalently, $A^c$ is open. Assume by contradiction that $A^c$ is not open. Then there exists $a\in A^c$ such that $B(a;\varepsilon)\cap A\neq\varnothing$ for every $\varepsilon>0$. For each $n\in\mathbb{N}$, let $\varepsilon=1/n>0$, so there exists $a_n\in B(a;1/n)\cap A$. It follows that $d(a_n,a)<1/n$ and $a_n\in A$ for all $n$. However, $(a_n)$ converges to $a\notin A$, a contradiction. $\square$
 
-**Definition 1.55 (Cauchy sequence).** Let $(X,d)$ be a metric space. A sequence $(x_n)$ in $X$ is called a {{< knowl id="cauchy-sequence" text="Cauchy sequence" >}} if for each $\varepsilon>0$, there exists $N\in\mathbb{N}$ such that $d(x_m,x_n)<\varepsilon$ for all $m,n\ge N$.
+**Definition 1.55 (Cauchy sequence).** Let $(X,d)$ be a metric space. A sequence $(x_n)$ in $X$ is called a {{< knowl id="cauchy-sequence" section="analysis" text="Cauchy sequence" >}} if for each $\varepsilon>0$, there exists $N\in\mathbb{N}$ such that $d(x_m,x_n)<\varepsilon$ for all $m,n\ge N$.
 
 **Proposition 1.56.** ({{< knowl id="convergent-sequences-are-cauchy" text="Convergent sequences are Cauchy" >}}) If $(x_n)$ is a convergent sequence in a metric space, then it is a Cauchy sequence.
 
@@ -536,7 +536,7 @@ Then $x_n\in B'(x_N;r)$ for all $n\in\mathbb{N}$, and hence the sequence is boun
 $$
 n_1<n_2<n_3<\cdots.
 $$
-Then $(x_{n_k})_{k}$ is a sequence in $X$ and it is called a {{< knowl id="subsequence" text="subsequence" >}} of $(x_n)$.
+Then $(x_{n_k})_{k}$ is a sequence in $X$ and it is called a {{< knowl id="subsequence" section="analysis" text="subsequence" >}} of $(x_n)$.
 
 **Example 1.59.** Consider the sequence $x_n=(-1)^n$. Then $(x_{2k})$ is a subsequence of $(x_n)$ and $x_{2k}=1$ for all $k$. Similarly, $(x_{2k+1})$ is also a subsequence of $(x_n)$ and $x_{2k+1}=-1$ for all $k$.
 
@@ -621,7 +621,7 @@ d(\lambda x,\lambda y)=\|\lambda x-\lambda y\|=\|\lambda(x-y)\|=|\lambda|\,\|x-y
 $$
 The converse implication is left for the reader as an exercise. $\square$
 
-**Proposition 1.68.** ({{< knowl id="reverse-triangle-inequality" text="Reverse triangle inequality" >}}) Let $(X,\|\cdot\|)$ be a normed space. Then
+**Proposition 1.68.** ({{< knowl id="reverse-triangle-inequality" section="analysis" text="Reverse triangle inequality" >}}) Let $(X,\|\cdot\|)$ be a normed space. Then
 $$
 \big|\|x\|-\|y\|\big|\le \|x-y\|\quad\text{for all }x,y\in X. \qquad (1.4)
 $$
@@ -2008,7 +2008,7 @@ Let $X$ be a vector space, let $Y$ be a {{< knowl id="linear-subspace" text="lin
 
 #### 3.2.1 Hahn-Banach theorem in real vector spaces
 
-**Theorem 3.11.** ({{< knowl id="hahn-banach-theorem-in-real-vector-spaces" text="Hahn-Banach theorem in real vector spaces" >}}) Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}}, let $Y$ be a subspace of $X$, and let $p: X \to \mathbb{R}$ be a {{< knowl id="subadditive-positively-homogeneous-and-sublinear-functions" text="sublinear function" >}} on $X$. Consider a linear functional $f : Y \to \mathbb{R}$ which satisfies the condition
+**Theorem 3.11.** ({{< knowl id="hahn-banach-theorem-in-real-vector-spaces" text="Hahn-Banach theorem in real vector spaces" >}}) Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}, let $Y$ be a subspace of $X$, and let $p: X \to \mathbb{R}$ be a {{< knowl id="subadditive-positively-homogeneous-and-sublinear-functions" text="sublinear function" >}} on $X$. Consider a linear functional $f : Y \to \mathbb{R}$ which satisfies the condition
 
 $$
 f(y) \le p(y) \quad \text{for all } y \in Y.

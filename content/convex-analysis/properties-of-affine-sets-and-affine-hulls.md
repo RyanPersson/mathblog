@@ -3,7 +3,7 @@ title: "Properties of Affine Sets and Affine Hulls"
 description: "Characterizations and closure properties of affine sets; representation of aff(Ω)."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$.
 
 **Proposition** (key properties):
 1. $\Omega$ is {{< knowl id="affine-set" text="affine" >}} iff it contains all {{< knowl id="affine-hull-affine-combination" text="affine combinations" >}} of its elements.

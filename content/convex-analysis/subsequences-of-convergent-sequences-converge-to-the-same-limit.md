@@ -4,7 +4,7 @@ description: "Any subsequence of a convergent sequence converges to the same lim
 ---
 
 **Proposition (Subsequence inherits the limit).**
-Let $(X,d)$ be a {{< knowl id="metric-metric-space" text="metric space" >}}, and let $(x_n)$ be a sequence in $X$ that {{< knowl id="convergence-of-a-sequence" text="converges" >}} to $a\in X$. If $(x_{n_k})$ is a {{< knowl id="subsequence" text="subsequence" >}} of $(x_n)$, then $x_{n_k}\to a$.
+Let $(X,d)$ be a {{< knowl id="metric-metric-space" text="metric space" >}}, and let $(x_n)$ be a sequence in $X$ that {{< knowl id="convergence-of-a-sequence" text="converges" >}} to $a\in X$. If $(x_{n_k})$ is a {{< knowl id="subsequence" section="analysis" text="subsequence" >}} of $(x_n)$, then $x_{n_k}\to a$.
 
 **Context.** This is the basic "stability" property of limits under passing to subsequences. It is used constantly in compactness arguments and in extracting limits from sequences.
 

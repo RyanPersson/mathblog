@@ -3,7 +3,7 @@ title: "Operations on subsets of a vector space"
 description: "Set addition, scalar multiplication, and difference inside a vector space"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $M,N\subset X$ be nonempty subsets, with $\alpha\in K$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $M,N\subset X$ be nonempty subsets, with $\alpha\in K$.
 
 Define:
 

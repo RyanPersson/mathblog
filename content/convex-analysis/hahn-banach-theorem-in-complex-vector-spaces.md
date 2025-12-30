@@ -3,7 +3,7 @@ title: "Hahn–Banach Theorem (Complex Vector Spaces)"
 description: "Complex linear functionals dominated by a seminorm extend to the whole space."
 ---
 
-Let $X$ be a complex {{< knowl id="vector-space" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}, and let $p:X\to\mathbb{R}$ be a {{< knowl id="seminorm" text="seminorm" >}}.
+Let $X$ be a complex {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}, let $Y\subset X$ be a {{< knowl id="linear-subspace" text="linear subspace" >}}, and let $p:X\to\mathbb{R}$ be a {{< knowl id="seminorm" text="seminorm" >}}.
 
 **Theorem**: If $f:Y\to\mathbb{C}$ is complex-linear and satisfies
 $$

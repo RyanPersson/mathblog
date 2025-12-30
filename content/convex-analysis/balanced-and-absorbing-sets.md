@@ -3,7 +3,7 @@ title: "Balanced and absorbing sets"
 description: "Two scaling properties of subsets in a vector space"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $K\in\{\mathbb{R},\mathbb{C}\}$, and let $M\subset X$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $K\in\{\mathbb{R},\mathbb{C}\}$, and let $M\subset X$.
 
 - $M$ is **balanced** if $\lambda M\subset M$ whenever $\lambda\in K$ and $|\lambda|\le 1$. (Equivalently: scaling vectors in $M$ down by a factor of modulus $\le 1$ keeps you inside $M$.)
 

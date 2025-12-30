@@ -1,40 +1,49 @@
 ---
-title: "Prime Avoidance Lemma"
-description: "An ideal contained in a finite union of (mostly) prime ideals must lie in one of them."
+title: "Prime avoidance lemma"
+description: "If an ideal is contained in a finite union of prime ideals, then it is contained in one of them."
 ---
+
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}}. The **prime avoidance lemma** is a basic tool for producing elements outside finitely many prime ideals (and is used constantly in arguments about {{< knowl id="prime-spectrum" text="Spec(R)" >}}, localizations, and dimension theory).
 
 ## Statement
 
-Let \(R\) be a commutative ring and let \(I, J_1,\dots,J_n\) be {{< knowl id="ideal" section="algebra-rings" text="ideals" >}} of \(R\). Assume that \(J_2,\dots,J_n\) are {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideals" >}}. If
+Let $I,\mathfrak a_1,\dots,\mathfrak a_n$ be ideals of $R$. Assume that $\mathfrak a_2,\dots,\mathfrak a_n$ are prime ideals (no hypothesis on $\mathfrak a_1$). If
 \[
-I \subseteq J_1 \,\cup\, J_2 \,\cup\, \cdots \,\cup\, J_n,
+I \subseteq \mathfrak a_1 \cup \mathfrak a_2 \cup \cdots \cup \mathfrak a_n,
 \]
-then \(I \subseteq J_k\) for some \(k\in\{1,\dots,n\}\).
+then $I \subseteq \mathfrak a_j$ for some $j\in\{1,\dots,n\}$.
 
-Equivalently (the “avoidance” form): if \(I\not\subseteq J_i\) for every \(i\), then there exists an element
-\[
-x\in I \quad\text{with}\quad x\notin \bigcup_{i=1}^n J_i.
-\]
+A common special case (often the only one needed) is:
 
-This lemma is frequently used to choose elements that avoid finitely many primes, e.g. when forming a {{< knowl id="localization-ring" text="localization" >}} or proving existence of “good” elements in a {{< knowl id="noetherian-ring" text="Noetherian ring" >}}.
+> If $\mathfrak p_1,\dots,\mathfrak p_n$ are prime ideals and
+> \[
+> I \subseteq \mathfrak p_1\cup\cdots\cup \mathfrak p_n,
+> \]
+> then $I\subseteq \mathfrak p_i$ for some $i$.
+
+Equivalently (and often how it is used): if $I$ is an ideal **not** contained in any of the prime ideals $\mathfrak p_1,\dots,\mathfrak p_n$, then there exists an element $x\in I$ such that $x\notin \mathfrak p_1\cup\cdots\cup \mathfrak p_n$.
+
+This “element-choosing” form underlies many constructions, for example when passing to a {{< knowl id="localization-ring" text="localization" >}} to avoid certain primes or when proving facts about basic open sets in {{< knowl id="zariski-topology" text="the Zariski topology" >}}.
 
 ## Examples
 
-1. **Avoiding two coordinate primes.**  
-   Let \(R=k[x,y]\), \(J_1=(x)\), \(J_2=(y)\). Both are prime.  
-   Take \(I=(x,y)\). Then \(I\not\subseteq (x)\) and \(I\not\subseteq (y)\). Prime avoidance guarantees some \(f\in (x,y)\) is in neither \((x)\) nor \((y)\).  
-   Concretely, \(f=x+y\in (x,y)\), and \(x+y\notin (x)\), \(x+y\notin (y)\).
-
-2. **Why “finite union” matters (failure for infinite unions).**  
-   Let \(R=k[x_1,x_2,x_3,\dots]\) (infinitely many variables) and \(I=(x_1,x_2,x_3,\dots)\).  
-   For each \(n\ge 1\), set \(P_n=(x_1,\dots,x_n)\). Each \(P_n\) is prime, and
+1. **In $\mathbb Z$.**  
+   Take $R=\mathbb Z$, $I=(6)$, and $\mathfrak p_1=(2)$, $\mathfrak p_2=(3)$ (both prime ideals). Then
    \[
-   I=\bigcup_{n\ge 1} P_n
+   (6)\subseteq (2)\cup(3)
    \]
-   because any polynomial in \(I\) involves only finitely many variables.  
-   But \(I\not\subseteq P_n\) for any fixed \(n\) (since \(x_{n+1}\in I\setminus P_n\)).  
-   So prime avoidance can fail for **infinite** unions.
+   because every multiple of $6$ is divisible by $2$ (and also by $3$). Prime avoidance correctly concludes that $(6)\subseteq (2)$ or $(6)\subseteq (3)$ (in fact both hold).
 
-3. **Picking a non-nilpotent element.**  
-   If \(R\) has finitely many minimal prime ideals \(P_1,\dots,P_r\) and an ideal \(I\) is not contained in any \(P_i\), then prime avoidance yields \(x\in I\setminus \bigcup_i P_i\).  
-   In particular, \(x\) is not contained in every prime ideal, so \(x\) is not nilpotent (compare {{< knowl id="nilradical" section="algebra-rings" text="nilradical" >}}).
+2. **Choosing an element outside a finite union.**  
+   In $R=k[x,y]$ over a field $k$, let $\mathfrak p_1=(x)$ and $\mathfrak p_2=(y)$, both prime. The ideal $I=(x,y)$ is **not** contained in $\mathfrak p_1$ and is **not** contained in $\mathfrak p_2$. Prime avoidance therefore guarantees an element of $I$ outside $\mathfrak p_1\cup\mathfrak p_2$; concretely, $x+y\in (x,y)$ but $x+y\notin (x)$ and $x+y\notin (y)$.
+
+3. **Why finiteness matters (failure for infinite unions).**  
+   Let $R=k[x_1,x_2,\dots]$ be a polynomial ring in infinitely many variables over a field $k$, and let
+   \[
+   I=(x_1,x_2,\dots).
+   \]
+   For each $n$, the ideal $\mathfrak p_n=(x_1,\dots,x_n)$ is prime. Every element of $I$ involves only finitely many variables, so it belongs to $\mathfrak p_n$ for some $n$, hence
+   \[
+   I \subseteq \bigcup_{n\ge 1}\mathfrak p_n.
+   \]
+   But $I$ is not contained in any single $\mathfrak p_n$ (since $x_{n+1}\in I$ but $x_{n+1}\notin \mathfrak p_n$). This shows the lemma is genuinely a **finite**-union phenomenon.

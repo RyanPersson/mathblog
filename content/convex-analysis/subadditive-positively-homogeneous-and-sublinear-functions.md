@@ -3,7 +3,7 @@ title: "Subadditive, Positively Homogeneous, and Sublinear Functions"
 description: "Key algebraic properties for gauges and Hahn–Banach domination."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $p:X\to\mathbb{R}$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $p:X\to\mathbb{R}$.
 
 - $p$ is **subadditive** if
   $$

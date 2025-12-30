@@ -1,15 +1,21 @@
 ---
 title: "Inseparable extension"
-description: "An algebraic extension that is not separable; occurs only in characteristic p>0."
+description: "An algebraic extension that is not separable; it contains an element with a repeated-root minimal polynomial."
 ---
 
-**Definition.** An {{< knowl id="algebraic-extension" text="algebraic extension" >}} \(L/K\) is **inseparable** if it is not a {{< knowl id="separable-extension" text="separable extension" >}}, i.e. if some element of \(L\) is not {{< knowl id="separable-element" text="separable over K" >}}.
+Let \(K/F\) be an algebraic {{< knowl id="field-extension" text="field extension" >}}.
 
-Inseparability can occur only in characteristic \(p>0\) (see {{< knowl id="characteristic-zero-or-prime" section="algebra-rings" text="characteristic" >}}). A common special case is a **purely inseparable** extension, where every element \(\alpha\in L\) satisfies \(\alpha^{p^n}\in K\) for some \(n\).
+**Definition (inseparable extension).** The extension \(K/F\) is *inseparable* if it is not a {{< knowl id="separable-extension" text="separable extension" >}}; equivalently, there exists \(\alpha\in K\) whose minimal polynomial over \(F\) is not separable (has a repeated root in a splitting field). This can only occur when the {{< knowl id="characteristic" section="algebra-rings" text="characteristic" >}} of \(F\) is \(p>0\).
 
-**See also.** {{< knowl id="perfect-field" text="perfect field" >}}, {{< knowl id="frobenius-endomorphism" text="Frobenius endomorphism" >}}.
+A particularly important special case is:
+
+**Definition (purely inseparable).** Assume \(\mathrm{char}(F)=p>0\). The extension \(K/F\) is *purely inseparable* if for every \(\alpha\in K\) there exists \(n\ge 0\) such that
+\[
+\alpha^{p^n}\in F.
+\]
+Equivalently, every \(\alpha\in K\) is a root of a polynomial of the form \(x^{p^n}-a\) with \(a\in F\), whose derivative is \(0\), so no such element is {{< knowl id="separable-element" text="separable" >}} unless \(\alpha\in F\).
 
 **Examples.**
-1. Let \(K=\mathbb{F}_p(t)\) and \(L=\mathbb{F}_p(t^{1/p})\). Then \(L/K\) is inseparable: \(t^{1/p}\) has minimal polynomial \(x^p-t\) with repeated roots.
-2. More generally, \(\mathbb{F}_p(t^{1/p^n})/\mathbb{F}_p(t)\) is purely inseparable for any \(n\ge 1\).
-3. No nontrivial inseparable algebraic extension exists over \(\mathbb{Q}\) (characteristic \(0\)).
+1. \(K=\mathbb{F}_p(t^{1/p})\) over \(F=\mathbb{F}_p(t)\) is purely inseparable since \((t^{1/p})^p=t\in F\). The minimal polynomial \(x^p-t\) has a repeated root.
+2. More generally, \(\mathbb{F}_p(t^{1/p^n})/\mathbb{F}_p(t)\) is purely inseparable of degree \(p^n\), with \((t^{1/p^n})^{p^n}=t\).
+3. If \(F\) is an imperfect field of characteristic \(p\) (i.e. not {{< knowl id="perfect-field" text="perfect" >}}), then choosing \(a\in F\setminus F^p\) produces an inseparable extension \(F(a^{1/p})/F\).

@@ -3,7 +3,7 @@ title: "Automorphism Group"
 description: "The group of all isomorphisms from a group to itself"
 ---
 
-For a {{< knowl id="group" text="group" >}} $G$, the **automorphism group** of $G$, denoted $\operatorname{Aut}(G)$, is the set of all {{< knowl id="group-isomorphism" text="group isomorphisms" >}} $\varphi:G\to G$, with group operation given by {{< knowl id="composition" text="composition" >}}
+For a {{< knowl id="group" text="group" >}} $G$, the **automorphism group** of $G$, denoted $\operatorname{Aut}(G)$, is the set of all {{< knowl id="group-isomorphism" text="group isomorphisms" >}} $\varphi:G\to G$, with group operation given by {{< knowl id="composition" section="shared-foundations" text="composition" >}}
 $$
 (\varphi\psi)(x) := \varphi(\psi(x)).
 $$

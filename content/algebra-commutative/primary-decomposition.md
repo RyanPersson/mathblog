@@ -1,42 +1,48 @@
 ---
 title: "Primary decomposition"
-description: "Expressing an ideal as an intersection of primary ideals (guaranteed in Noetherian rings)."
+description: "Expressing an ideal as an intersection of primary ideals, with existence guaranteed in Noetherian rings."
 ---
 
-Let \(R\) be a commutative ring and \(I\subseteq R\) an {{< knowl id="ideal" section="algebra-rings" text="ideal" >}}.
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}} and let $I\subseteq R$ be an ideal.
 
-## Definition
-A **primary decomposition** of \(I\) is an expression
+## Definition (primary ideal)
+An ideal $Q\subsetneq R$ is **primary** if for all $a,b\in R$,
 \[
-I \;=\; Q_1 \cap \cdots \cap Q_r
+ab\in Q \;\Rightarrow\; \bigl(a\in Q \text{ or } b^n\in Q \text{ for some } n\ge 1\bigr).
 \]
-where each \(Q_i\) is a {{< knowl id="primary-ideal" section="algebra-rings" text="primary ideal" >}}. Typically one tracks the associated prime ideals
-\[
-P_i \;=\; \sqrt{Q_i},
-\]
-where \(\sqrt{Q_i}\) is the {{< knowl id="radical-of-ideal" section="algebra-rings" text="radical" >}} of \(Q_i\) (and each \(P_i\) is a {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}).
+Equivalently, $Q$ is primary if $R/Q$ has the property that every zero-divisor is nilpotent.
 
-## Theorem (existence in the Noetherian case)
-If \(R\) is a {{< knowl id="noetherian-ring" text="Noetherian ring" >}}, then every ideal \(I\) admits a primary decomposition. This is the content of the {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}} (see also {{< knowl id="noetherian-primary-decomposition" text="Noetherian primary decomposition" >}}).
+If $Q$ is primary, then its radical $\sqrt{Q}$ is a prime ideal; one often says that $Q$ is **$\mathfrak p$-primary** when $\sqrt{Q}=\mathfrak p$.
+
+## Definition (primary decomposition)
+A **primary decomposition** of $I$ is an expression
+\[
+I = Q_1\cap \cdots \cap Q_r
+\]
+where each $Q_i$ is a primary ideal of $R$.
+
+A primary decomposition is called *minimal* if (i) the radicals $\sqrt{Q_i}$ are pairwise distinct and (ii) no $Q_i$ can be omitted without changing the intersection. The primes $\sqrt{Q_i}$ that occur in a minimal decomposition are intrinsic invariants (the “associated primes” of $I$), even though the $Q_i$ themselves need not be unique.
+
+## Existence in Noetherian rings
+Primary decompositions do not exist in arbitrary rings. The fundamental existence theorem is the {{< knowl id="lasker-noether-theorem" text="Lasker–Noether theorem" >}}, often packaged as {{< knowl id="noetherian-primary-decomposition" text="primary decomposition in Noetherian rings" >}}: if $R$ is a {{< knowl id="noetherian-ring" text="Noetherian ring" >}}, then every ideal $I\subseteq R$ admits a primary decomposition.
 
 ## Examples
-1. **A squarefree monomial ideal.**  
-   In \(k[x,y]\),
+1. **In $\mathbb{Z}$.**  
+   In the PID $\mathbb{Z}$, primary ideals are exactly $(p^n)$ for primes $p$. Using $(a)\cap(b)=(\mathrm{lcm}(a,b))$, one gets
    \[
-   (xy) \;=\; (x)\cap (y).
+   (12) = (4)\cap(3),
    \]
-   Here \((x)\) and \((y)\) are prime (hence primary).
+   where $(4)$ is $(2)$-primary and $(3)$ is $(3)$-primary.
 
-2. **A slightly less trivial example.**  
-   In \(k[x,y]\),
+2. **A squarefree monomial ideal.**  
+   Over a field $k$, in $k[x,y]$ one has
    \[
-   (x^2,xy) \;=\; (x)\cap (x^2,y).
+   (xy) = (x)\cap(y).
    \]
-   The ideal \((x)\) is prime, and \((x^2,y)\) is \((x,y)\)-primary.
+   Here $(x)$ and $(y)$ are prime (hence primary), so this is a primary decomposition.
 
-3. **An integer ideal.**  
-   In \(\mathbb{Z}\),
+3. **A “one-piece” primary decomposition.**  
+   In $k[x,y]$, the ideal $Q=(x,y)^2=(x^2,xy,y^2)$ is $(x,y)$-primary. Thus it is already a primary decomposition of itself:
    \[
-   (12) \;=\; (4)\cap (3).
+   (x,y)^2 = Q.
    \]
-   Indeed \((4)\cap (3)=(\mathrm{lcm}(4,3))=(12)\); moreover \((4)=(2^2)\) is \((2)\)-primary and \((3)\) is prime.

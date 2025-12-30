@@ -3,7 +3,7 @@ title: "Line segments in a vector space"
 description: "Segments are sets of convex combinations of two points"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $a,b\in X$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $a,b\in X$.
 
 - The **closed line segment** joining $a$ and $b$ is
 $$

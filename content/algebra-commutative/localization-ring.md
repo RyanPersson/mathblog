@@ -1,64 +1,52 @@
 ---
 title: "Localization of a ring"
-description: "Given a multiplicative set S ⊆ R, the localization S^{-1}R is the universal ring in which every s ∈ S becomes a unit."
+description: "The ring S^{-1}R obtained from a ring R by inverting a multiplicative set S."
 ---
 
-Let $R$ be a commutative {{< knowl id="ring" section="algebra-rings" text="ring" >}} (with $1$) and let $S \subseteq R$ be a {{< knowl id="multiplicative-set" text="multiplicative set" >}}.
-
-## Definition (construction by fractions)
-
-Define an equivalence relation on $R\times S$ by
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}} and let $S\subseteq R$ be a {{< knowl id="multiplicative-set" text="multiplicative set" >}}. The **localization of $R$ at $S$** is a ring, denoted $S^{-1}R$, together with a ring map
 \[
-(r,s)\sim(r',s') \quad \Longleftrightarrow \quad \exists\, t\in S \text{ such that } t(rs'-r's)=0.
+\iota:R\longrightarrow S^{-1}R
 \]
-The **localization** of $R$ at $S$ is the set of equivalence classes
-\[
-S^{-1}R := (R\times S)/\sim,
-\]
-and the class of $(r,s)$ is written $\frac{r}{s}$.
+such that every element of $S$ becomes a unit in $S^{-1}R$ (see {{< knowl id="localization-inverts-multiplicative-set" text="localization inverts the multiplicative set" >}}).
 
-Addition and multiplication are defined by
+### Construction (fractions)
+As a set, $S^{-1}R$ can be constructed from pairs $(r,s)\in R\times S$ modulo the equivalence relation
+\[
+(r,s)\sim (r',s') \quad \Longleftrightarrow \quad \exists\,t\in S\text{ such that } t(rs'-r's)=0 \text{ in }R.
+\]
+Write the class of $(r,s)$ as $\frac{r}{s}$. Addition and multiplication are defined by
 \[
 \frac{r}{s}+\frac{r'}{s'}=\frac{rs'+r's}{ss'},\qquad
 \frac{r}{s}\cdot\frac{r'}{s'}=\frac{rr'}{ss'}.
 \]
-This makes $S^{-1}R$ into a commutative ring, and the map
+The canonical map is $\iota(r)=\frac{r}{1}$.
+
+If $0\in S$, then $\iota(0)$ is invertible, hence $1=0$ in $S^{-1}R$; in this case $S^{-1}R$ is the zero ring.
+
+### Universal property
+The localization is characterized by the following universal mapping property:
+
+If $A$ is any commutative ring and $\varphi:R\to A$ is a ring homomorphism such that $\varphi(s)$ is a unit of $A$ for every $s\in S$, then there exists a unique ring homomorphism $\widetilde\varphi:S^{-1}R\to A$ with $\widetilde\varphi\circ\iota=\varphi$. Explicitly,
 \[
-\iota:R\to S^{-1}R,\qquad r\mapsto \frac{r}{1}
+\widetilde\varphi\!\left(\frac{r}{s}\right)=\varphi(r)\,\varphi(s)^{-1}.
 \]
-is a ring homomorphism.
 
-## Universal property
+This same “invert $S$” idea for modules is treated in {{< knowl id="localization-module" text="localization of a module" >}}, and it can be viewed as a special case of {{< knowl id="extension-of-scalars" text="extension of scalars" >}}.
 
-In $S^{-1}R$, every $\iota(s)$ (with $s\in S$) is a {{< knowl id="unit" section="algebra-rings" text="unit" >}}. Moreover, $(S^{-1}R,\iota)$ is **universal** with this property:
+A basic structural fact is that primes of $S^{-1}R$ correspond to primes of $R$ disjoint from $S$; see {{< knowl id="localization-prime-correspondence" text="prime correspondence under localization" >}}.
 
-> For any commutative ring $T$ and any {{< knowl id="ring-homomorphism" section="algebra-rings" text="ring homomorphism" >}} $f:R\to T$ such that $f(s)$ is a unit in $T$ for all $s\in S$, there exists a unique ring homomorphism $\tilde f:S^{-1}R\to T$ with
-> \[
-> \tilde f\!\left(\frac{r}{s}\right)=f(r)\,f(s)^{-1}
-> \quad\text{and}\quad
-> \tilde f\circ\iota=f.
-> \]
+### Examples
 
-(See also {{< knowl id="localization-inverts-multiplicative-set" text="localization inverts a multiplicative set" >}}.)
-
-## Examples
-
-1. **Invert a prime (or any element) in $\mathbb Z$.**  
-   Let $R=\mathbb Z$ and $S=\{1,2,2^2,2^3,\dots\}$. Then
+1. **Inverting a prime number.** Take $R=\mathbb Z$ and $S=\{1,p,p^2,\dots\}$. Then
    \[
-   S^{-1}\mathbb Z \cong \mathbb Z\left[\tfrac12\right].
+   S^{-1}\mathbb Z \cong \mathbb Z\!\left[\frac{1}{p}\right]
+   =\left\{\frac{a}{p^n}:a\in\mathbb Z,\ n\ge 0\right\}\subseteq\mathbb Q.
    \]
 
-2. **Invert a polynomial.**  
-   Let $R=k[x]$ and $S=\{1,x,x^2,\dots\}$. Then
+2. **Laurent polynomials.** If $R=k[x]$ and $S=\{1,x,x^2,\dots\}$, then
    \[
-   S^{-1}k[x] \cong k[x,x^{-1}],
+   S^{-1}R \cong k[x,x^{-1}],
    \]
-   the {{< knowl id="laurent-polynomial-ring" section="algebra-rings" text="Laurent polynomial ring" >}} in one variable.
+   since $x$ becomes invertible.
 
-3. **Localization at a prime ideal.**  
-   If $\mathfrak p$ is a {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}} of $R$ and $S=R\setminus\mathfrak p$, then
-   \[
-   S^{-1}R = R_{\mathfrak p},
-   \]
-   the {{< knowl id="localization-at-prime" text="localization at a prime" >}}.
+3. **Localizing at a prime ideal.** If $\mathfrak p\subset R$ is prime and $S=R\setminus\mathfrak p$, then $S^{-1}R$ is the {{< knowl id="localization-at-prime" text="localization at the prime" >}} $R_{\mathfrak p}$, which is a {{< knowl id="local-ring" text="local ring" >}}.

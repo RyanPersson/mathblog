@@ -655,35 +655,35 @@ Representation theory of finite groups.
 *Depends on:* `algebra-groups`, `algebra-modules`, `shared-linear-algebra`
 
 **Definitions:**
-- (Linear) representation of a group → `group-representation.md`
-- Subrepresentation → `subrepresentation.md`
-- Irreducible representation → `irreducible-representation.md`
-- Completely reducible representation → `completely-reducible-representation.md`
-- Group algebra → `group-algebra.md`
-- Character of a representation → `character.md`
-- Irreducible character → `irreducible-character.md`
-- Induced representation → `induced-representation.md`
-- Restricted representation → `restricted-representation.md`
-- Regular representation → `regular-representation.md`
+- ✓ (Linear) representation of a group → `group-representation.md`
+- ✓ Subrepresentation → `subrepresentation.md`
+- ✓ Irreducible representation → `irreducible-representation.md`
+- ✓ Completely reducible representation → `completely-reducible-representation.md`
+- ✓ Group algebra → `group-algebra.md`
+- ✓ Character of a representation → `character.md`
+- ✓ Irreducible character → `irreducible-character.md`
+- ✓ Induced representation → `induced-representation.md`
+- ✓ Restricted representation → `restricted-representation.md`
+- ✓ Regular representation → `regular-representation.md`
 
 **Theorems:**
-- Maschke's theorem → `maschkes-theorem.md`
-- Character orthogonality relations → `character-orthogonality.md`
+- ✓ Maschke's theorem → `maschkes-theorem.md`
+- ✓ Character orthogonality relations → `character-orthogonality.md`
 
 **Lemmas:**
-- Schur's lemma → `schurs-lemma.md`
+- ✓ Schur's lemma → `schurs-lemma.md`
 
 **Propositions:**
-- Character of direct sum = sum of characters → `character-direct-sum.md`
-- Character of tensor product = product of characters → `character-tensor-product.md`
-- Number of irreducibles = number of conjugacy classes → `number-irreducibles-conjugacy-classes.md`
-- Sum of squares of degrees = |G| → `sum-squares-degrees.md`
+- ✓ Character of direct sum = sum of characters → `character-direct-sum.md`
+- ✓ Character of tensor product = product of characters → `character-tensor-product.md`
+- ✓ Number of irreducibles = number of conjugacy classes → `number-irreducibles-conjugacy-classes.md`
+- ✓ Sum of squares of degrees = |G| → `sum-squares-degrees.md`
 
 **Corollaries:**
-- Maschke corollary (group algebra semisimple when char ∤ |G|) → `maschke-corollary.md`
-- Complete reducibility over ℂ → `complete-reducibility-complex.md`
-- Schur corollary (End of irreducible over ℂ is ℂ) → `schur-corollary.md`
-- Orthogonality corollary (irreducible characters are orthonormal basis) → `character-orthonormality.md`
+- ✓ Maschke corollary (group algebra semisimple when char ∤ |G|) → `maschke-corollary.md`
+- ✓ Complete reducibility over ℂ → `complete-reducibility-complex.md`
+- ✓ Schur corollary (End of irreducible over ℂ is ℂ) → `schur-corollary.md`
+- ✓ Orthogonality corollary (irreducible characters are orthonormal basis) → `character-orthonormality.md`
 
 ---
 

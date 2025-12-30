@@ -3,7 +3,7 @@ title: "Convex combination"
 description: "A weighted average of finitely many points with nonnegative weights summing to one"
 ---
 
-Let $X$ be a real {{< knowl id="vector-space" text="vector space" >}}. A vector $x\in X$ is a **convex combination** of points $x_1,\dots,x_m\in X$ if there exist scalars $\lambda_1,\dots,\lambda_m\ge 0$ with
+Let $X$ be a real {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}. A vector $x\in X$ is a **convex combination** of points $x_1,\dots,x_m\in X$ if there exist scalars $\lambda_1,\dots,\lambda_m\ge 0$ with
 $$
 \lambda_1+\cdots+\lambda_m=1
 $$

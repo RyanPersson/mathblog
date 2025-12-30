@@ -3,7 +3,7 @@ title: "Line Connecting Two Points"
 description: "The affine line through a and b: {λa+(1−λ)b : λ∈R}."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $a,b\in X$. The **line connecting $a$ and $b$** is
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $a,b\in X$. The **line connecting $a$ and $b$** is
 $$
 L[a,b]:=\{\lambda a+(1-\lambda)b\mid \lambda\in\mathbb{R}\}.
 $$

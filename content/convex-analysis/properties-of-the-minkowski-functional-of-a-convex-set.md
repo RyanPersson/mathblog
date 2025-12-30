@@ -3,7 +3,7 @@ title: "Properties of the Minkowski Gauge of a Convex Set"
 description: "For absorbing convex Ω, pΩ is sublinear and its level sets describe core(Ω) and lin(Ω)."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="balanced-and-absorbing-sets" text="absorbing" >}} and {{< knowl id="convex-set" text="convex" >}}. Consider the {{< knowl id="minkowski-function-gauge-of-a-set" text="Minkowski gauge" >}} $p_\Omega$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} and let $\Omega\subset X$ be {{< knowl id="balanced-and-absorbing-sets" text="absorbing" >}} and {{< knowl id="convex-set" text="convex" >}}. Consider the {{< knowl id="minkowski-function-gauge-of-a-set" text="Minkowski gauge" >}} $p_\Omega$.
 
 **Theorem**:
 1. $p_\Omega$ is real-valued and {{< knowl id="subadditive-positively-homogeneous-and-sublinear-functions" text="sublinear" >}}.

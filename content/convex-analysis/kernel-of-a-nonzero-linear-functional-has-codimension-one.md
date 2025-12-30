@@ -3,7 +3,7 @@ title: "Kernel of a Nonzero Functional Has Codimension One"
 description: "If f≠0 is linear, then codim(ker f)=1."
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} over $\mathbb{R}$ or $\mathbb{C}$, and let $f:X\to\mathbb{K}$ be a nonzero linear functional with {{< knowl id="image-and-kernel-linear-isomorphism" text="kernel" >}} $\ker f$.
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} over $\mathbb{R}$ or $\mathbb{C}$, and let $f:X\to\mathbb{K}$ be a nonzero linear functional with {{< knowl id="image-and-kernel-linear-isomorphism" text="kernel" >}} $\ker f$.
 
 **Proposition**:
 $$

@@ -1,39 +1,37 @@
 ---
 title: "Height of a prime"
-description: "The length of the longest chain of prime ideals contained in a given prime."
+description: "The codimension of a prime ideal, measured by the maximum length of chains of primes ending at it."
 ---
 
-## Definition (height of a prime ideal)
-Let \(R\) be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}} and let \(\mathfrak p\in {{< knowl id="prime-spectrum" text="Spec(R)" >}}\).
+Let $R$ be a {{< knowl id="commutative-ring" section="algebra-rings" text="commutative ring" >}} and let $\mathfrak p\in {{< knowl id="prime-spectrum" text="\operatorname{Spec}(R)" >}}$.
 
-The **height** of \(\mathfrak p\), denoted \(\operatorname{ht}(\mathfrak p)\), is
+The **height** of $\mathfrak p$, denoted $\operatorname{ht}(\mathfrak p)$, is the supremum of integers $n\ge 0$ such that there exists a strictly increasing chain of prime ideals
 \[
-\operatorname{ht}(\mathfrak p)
-\;:=\;
-\sup\{\, n \mid \exists\ \mathfrak p_0 \subsetneq \mathfrak p_1 \subsetneq \cdots \subsetneq \mathfrak p_n=\mathfrak p \text{ in } \operatorname{Spec}(R)\,\}.
+\mathfrak p_0 \subsetneq \mathfrak p_1 \subsetneq \cdots \subsetneq \mathfrak p_n=\mathfrak p
 \]
+in $R$.
 
-### Equivalent characterization (via localization)
-Let \(R_{\mathfrak p}\) be the {{< knowl id="localization-at-prime" text="localization of R at \(\mathfrak p\)" >}}. Then
+Equivalently,
 \[
-\operatorname{ht}(\mathfrak p) \;=\; \dim(R_{\mathfrak p}) \;=\; {{< knowl id="krull-dimension" text="Krull dimension" >}} \text{ of the local ring } R_{\mathfrak p}.
+\operatorname{ht}(\mathfrak p)=\dim(R_{\mathfrak p}),
 \]
+where $R_{\mathfrak p}$ is the {{< knowl id="localization-at-prime" text="localization at \mathfrak p" >}} and $\dim$ denotes {{< knowl id="krull-dimension" text="Krull dimension" >}}. In particular, the dimension of $R$ is the supremum of the heights of its prime ideals.
 
-## Examples
-1. **In \(\mathbb Z\).**  
-   The prime ideals are \((0)\) and \((p)\) for primes \(p\).
-   - \(\operatorname{ht}((0))=0\).
-   - \(\operatorname{ht}((p))=1\), since \((0)\subsetneq(p)\) is a maximal chain.
+### Examples
 
-2. **In \(k[x,y]\).**  
-   Let \(k\) be a field.
-   - \(\operatorname{ht}((x))=1\) because \((0)\subsetneq(x)\) is a chain and \((x)\) is not maximal.
-   - \(\operatorname{ht}((x,y))=2\) because \((0)\subsetneq(x)\subsetneq(x,y)\) is a chain of length \(2\), and \((x,y)\) is maximal.
+1. **The ring of integers.**  
+   In $R=\mathbb{Z}$, one has $\operatorname{ht}((0))=0$, and for any prime number $p$,
+   \[
+   (0)\subsetneq (p)
+   \]
+   is a maximal chain, so $\operatorname{ht}((p))=1$.
 
-3. **Height of a maximal ideal in a polynomial ring.**  
-   In \(k[x_1,\dots,x_n]\), the “origin” maximal ideal \((x_1,\dots,x_n)\) has height \(n\) (matching \(\dim(k[x_1,\dots,x_n])=n\)).
+2. **A polynomial ring in two variables.**  
+   In $k[x,y]$ (for a field $k$), the prime ideals satisfy
+   \[
+   (0)\subsetneq (x)\subsetneq (x,y),
+   \]
+   so $\operatorname{ht}((0))=0$, $\operatorname{ht}((x))=1$, and $\operatorname{ht}((x,y))=2$.
 
-## Related knowls
-- Global dimension: {{< knowl id="krull-dimension" text="Krull dimension" >}}
-- Localization: {{< knowl id="localization-at-prime" text="localization at a prime" >}}, {{< knowl id="local-ring" text="local ring" >}}
-- Primes: {{< knowl id="prime-ideal" section="algebra-rings" text="prime ideal" >}}
+3. **Dedekind domains.**  
+   If $R$ is a {{< knowl id="dedekind-domain" text="Dedekind domain" >}} (for instance, the ring of integers in a number field), then every nonzero prime ideal has height $1$. In a {{< knowl id="dvr" text="DVR" >}}, the unique nonzero prime ideal also has height $1$, reflecting that these rings are “one-dimensional.”

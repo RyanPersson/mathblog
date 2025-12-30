@@ -3,7 +3,7 @@ title: "Convex set"
 description: "A set is convex if it contains the line segment between any two of its points"
 ---
 
-Let $X$ be a {{< knowl id="vector-space" text="vector space" >}} (typically over $\mathbb{R}$). A set $\Omega\subset X$ is **convex** if for all $x,y\in\Omega$ and all $\lambda\in[0,1]$ we have
+Let $X$ be a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}} (typically over $\mathbb{R}$). A set $\Omega\subset X$ is **convex** if for all $x,y\in\Omega$ and all $\lambda\in[0,1]$ we have
 $$
 \lambda x+(1-\lambda)y\in \Omega.
 $$

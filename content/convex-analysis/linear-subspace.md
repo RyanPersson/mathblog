@@ -11,7 +11,7 @@ The set $Y$ is a **linear subspace** of $X$ if:
 2. $a+b\in Y$ for all $a,b\in Y$,
 3. $\lambda a\in Y$ for all $\lambda\in K$ and $a\in Y$.
 
-With the inherited operations, $Y$ is itself a {{< knowl id="vector-space" text="vector space" >}}, and many constructions in analysis arise as subspaces (kernels, images, function spaces, etc.). Subspaces are also the building blocks for {{< knowl id="quotient-vector-space-codimension" text="quotient spaces" >}} and {{< knowl id="direct-sum-of-subspaces" text="direct sums" >}}.
+With the inherited operations, $Y$ is itself a {{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}, and many constructions in analysis arise as subspaces (kernels, images, function spaces, etc.). Subspaces are also the building blocks for {{< knowl id="quotient-vector-space-codimension" text="quotient spaces" >}} and {{< knowl id="direct-sum-of-subspaces" text="direct sums" >}}.
 
 **Examples:**
 - $\{0\}$ and $X$ are subspaces of $X$.
