@@ -607,6 +607,8 @@ Convex sets, convex functions, separation theorems, and Hahn–Banach theory in 
 - ✓ Codimension one subspaces yield direct sum decompositions → `codimension-one-subspaces-yield-direct-sum-decompositions.md`
 - ✓ Auxiliary separation lemma for disjoint convex sets with nonempty core → `auxiliary-separation-lemma-for-disjoint-convex-sets-with-nonempty-core.md`
 - ✓ Continuity of linear functionals via closed level sets → `continuity-of-linear-functionals-via-closed-level-sets.md`
+- ✓ Nonnegative real less than every ε > 0 must be zero → `nonnegative-real-less-than-every-0-must-be-zero.md`
+- ✓ Subsequence index bound (n_k ≥ k) → `subsequence-index-bound-n_k-k.md`
 
 **Propositions:**
 - ✓ Span equals the set of all finite linear combinations → `span-equals-the-set-of-all-finite-linear-combinations.md`
@@ -649,6 +651,8 @@ Convex sets, convex functions, separation theorems, and Hahn–Banach theory in 
 - ✓ Complex separation theorem (real parts) → `complex-separation-theorem-real-parts.md`
 - ✓ Separation by closed hyperplane under interior condition → `separation-by-closed-hyperplane-under-interior-condition.md`
 - ✓ Existence of a functional attaining its norm at a point → `existence-of-a-functional-attaining-its-norm-at-a-point.md`
+- ✓ Set operations: sum, scalar multiple, difference → `set-operations-sum-scalar-multiple-difference.md`
+- ✓ Closed sets characterized by sequences (version II) → `closed-sets-characterized-by-sequences-version-ii.md`
 
 **Corollaries:**
 - ✓ Young's inequality → `youngs-inequality.md`
@@ -1381,16 +1385,6 @@ These knowls exist in the content directories but are not listed in the module d
 - ✓ Term-by-term operations on series → `term-by-term-operations-series.md`
 - ✓ Change of variables (Jacobian corollary) → `change-of-variables-jacobian-corollary.md`
 
-### `convex-analysis` (additional)
-
-**Lemmas:**
-- ✓ Nonnegative real less than every ε > 0 must be zero → `nonnegative-real-less-than-every-0-must-be-zero.md`
-- ✓ Subsequence index bound (n_k ≥ k) → `subsequence-index-bound-n_k-k.md`
-
-**Propositions:**
-- ✓ Set operations: sum, scalar multiple, difference → `set-operations-sum-scalar-multiple-difference.md`
-- ✓ Closed sets characterized by sequences (version II) → `closed-sets-characterized-by-sequences-version-ii.md`
-
 ---
 
 ## Module Dependency Graph
@@ -1448,50 +1442,3 @@ shared-foundations
 ```
 
 ---
-
-## Usage
-
-To generate knowls for a specific course:
-
-**Baby Rudin Analysis:**
-```
-shared-foundations + shared-linear-algebra +
-analysis-order-completeness + analysis-metric-topology +
-analysis-sequences-series + analysis-continuity +
-analysis-compactness-connectedness + analysis-differentiation-1d +
-analysis-riemann-integration + analysis-function-sequences +
-analysis-multivariable
-```
-
-**Undergraduate Group Theory (300-level):**
-```
-shared-foundations + algebra-groups (core only, exclude Schur–Zassenhaus, Burnside p^a q^b, etc.)
-```
-
-**Graduate Algebra I (Groups + Rings):**
-```
-shared-foundations + algebra-groups + algebra-rings
-```
-
-**Graduate Algebra II (Modules + Fields):**
-```
-shared-foundations + shared-linear-algebra + algebra-groups +
-algebra-rings + algebra-modules + algebra-fields-galois
-```
-
-**Commutative Algebra:**
-```
-shared-foundations + algebra-rings + algebra-modules + algebra-commutative
-```
-
-**Homological Algebra:**
-```
-shared-foundations + algebra-category-theory + algebra-rings +
-algebra-modules + algebra-homological
-```
-
-**Convex Analysis / Functional Analysis Foundations:**
-```
-shared-foundations + shared-linear-algebra + analysis-metric-topology +
-convex-analysis
-```
