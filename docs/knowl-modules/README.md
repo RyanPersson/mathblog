@@ -16,7 +16,8 @@ A course's knowl set is constructed by combining the relevant shared pools with 
 ```
 knowl-modules/
 ├── README.md                         # This file
-├── decomposition.md                  # Full module decomposition with occurrence counts
+├── decomposition.md                  # Shared pools + algebra modules
+├── analysis-decomp.md                # Analysis modules + convex analysis
 ├── source-real-analysis-400.md       # Original enumeration (Baby Rudin)
 └── source-abstract-algebra-500.md    # Original enumeration (graduate algebra)
 ```
@@ -41,6 +42,7 @@ knowl-modules/
 | `analysis-riemann-integration` | differentiation-1d | Riemann integral, FTC |
 | `analysis-function-sequences` | riemann-integration | Uniform convergence, power series |
 | `analysis-multivariable` | linear-algebra, differentiation-1d | Partial derivatives, Jacobian, implicit function |
+| `convex-analysis` | linear-algebra, metric-topology | Convex sets/functions, separation, Hahn–Banach |
 
 ## Algebra Modules
 
@@ -57,7 +59,7 @@ knowl-modules/
 
 ## Occurrence Counts
 
-Items in `decomposition.md` are marked with occurrence counts like `(×2)`. This indicates how many modules use that concept:
+Items in the decomposition files are marked with occurrence counts like `(×2)`. This indicates how many modules use that concept:
 
 - **×1**: Appears in one module only (topic-specific)
 - **×2+**: Appears in multiple modules (candidate for shared pool)
@@ -130,6 +132,6 @@ To add a new subject (e.g., Topology, Number Theory):
 
 1. Generate the full enumeration using `knowl-generation/step-1-enumeration.md`
 2. Add it as `source-[subject]-[level].md`
-3. Decompose it in `decomposition.md`, marking overlaps with existing modules
+3. Decompose it in the appropriate decomposition file, marking overlaps with existing modules
 4. Create new focused modules as needed
 5. Identify new shared pool candidates (items with ×3+ occurrences)
