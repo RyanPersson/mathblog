@@ -259,14 +259,37 @@ This step is designed for parallel execution:
 - Each agent creates its assigned batch independently
 - No inter-batch dependencies (linking uses the manifest, not other agents' output)
 
+## Critical Formatting Rules
+
+**YAML Front Matter:**
+- `description` must be **plain text only** — no LaTeX, no math symbols
+- Bad: `description: "The map $f: X \to Y$ satisfying..."`
+- Good: `description: "A continuous map satisfying the universal property"`
+
+**Shortcode Braces:**
+- Use **exactly two** curly braces: `{{<` and `>}}`
+- Triple braces `{{{<` will cause Hugo errors
+- Single braces `{<` will not render
+
+**LaTeX Escaping:**
+- Do NOT escape asterisks in LaTeX: use `F^*` not `F^\*`
+- Do NOT escape underscores in LaTeX: use `x_1` not `x\_1`
+
+**No "Related" Sections:**
+- Do NOT include a "Related" or "Related knowls" section at the end
+- All cross-links must be woven naturally into the prose
+
 ## Verification
 
 Before submitting, verify:
 - [ ] No shortcodes appear inside `$...$` or `$$...$$` math blocks
+- [ ] No LaTeX or math symbols in YAML `description` field
+- [ ] Shortcodes use exactly double braces `{{<` and `>}}`
 - [ ] No term is linked more than once per knowl
 - [ ] Every slug in your shortcodes appears in the manifest
 - [ ] Display text reads naturally in context
 - [ ] The term being defined is NOT linked to itself
+- [ ] No "Related" section at the end
 
 ## After Completion
 

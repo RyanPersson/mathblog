@@ -63,6 +63,25 @@ Pattern like `foo={{< knowl ... >}}` in LaTeX context may break rendering.
 - `analysis/continuous-attains-max-min-compact.md` (line 8)
 - `analysis/basic-properties-of-lim-sup-and-lim-inf.md` (line 19)
 
+### 5. "Proof sketch" sections
+
+Found 281 files with "proof sketch" across knowl sections. May want to remove or standardize.
+
+| Section | Count |
+|---------|-------|
+| analysis | 136 |
+| algebra-groups | 59 |
+| convex-analysis | 58 |
+| algebra-rings | 12 |
+| algebra-modules | 10 |
+| shared-foundations | 3 |
+| shared-linear-algebra | 3 |
+| **Total** | **281** |
+
+Note: algebra-fields-galois and algebra-commutative (regenerated batches) have 0 files with proof sketches.
+
+---
+
 ### 4. Categorized "Related knowls" sub-bullets
 Some files organize related knowls by category (e.g., "Ideals:", "Topology:", "Primes:", "Modules:") which is overly structured.
 

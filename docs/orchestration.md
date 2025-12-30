@@ -211,6 +211,18 @@ for i, batch in enumerate(batches, 1):
 
 ### Step 4: Run Oracle Parallel
 
+**Config file mode (recommended for automation):**
+
+The prepare-batches.py script creates an `oracle-config.txt` file. Using config mode allows the same command to be run repeatedly without manual approval:
+
+```bash
+~/.oracle/oracle-parallel.sh \
+  --config /path/to/batches/oracle-config.txt \
+  --sessions-file /path/to/batches/sessions.txt
+```
+
+**Legacy mode (explicit batch files):**
+
 ```bash
 ~/.oracle/oracle-parallel.sh \
   -pf /tmp/batch1.md \
@@ -280,6 +292,31 @@ patterns = [
     r'## `([a-z0-9-]+\.md)`\s*\n+```markdown\n(---\n.*?)\n```',
 ]
 
+def fix_content(body):
+    """Fix common GPT output issues."""
+    # Fix triple braces to double braces
+    body = re.sub(r'\{\{\{<', r'{{<', body)
+    body = re.sub(r'>\}\}\}', r'>}}', body)
+    # Fix malformed shortcodes (GPT sometimes outputs {< instead of {{<)
+    body = re.sub(r'\{< knowl', r'{{< knowl', body)
+    body = re.sub(r' >\}', r' >}}', body)
+    body = re.sub(r'\{<\/\*', r'{{</*', body)
+    body = re.sub(r'\*\/>}}', r'*/>}}', body)
+    # Remove .md from knowl id references
+    body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
+    # Fix escaped asterisks in LaTeX
+    body = re.sub(r'\\\*', r'*', body)
+    # Clean LaTeX from YAML description (causes Hugo parse errors)
+    def clean_desc(match):
+        desc = match.group(1)
+        desc = re.sub(r'\\\\+[a-zA-Z]*', '', desc)
+        desc = re.sub(r'\\[a-zA-Z]+', '', desc)
+        desc = re.sub(r'\\[^a-zA-Z]', '', desc)
+        desc = re.sub(r'\s+', ' ', desc).strip()
+        return f'description: "{desc}"'
+    body = re.sub(r'^description:\s*"([^"]*)"', clean_desc, body, flags=re.MULTILINE)
+    return body
+
 created = []
 for session_file in session_files:
     with open(os.path.expanduser(session_file), 'r') as f:
@@ -288,14 +325,7 @@ for session_file in session_files:
     for pattern in patterns:
         matches = re.findall(pattern, content, re.DOTALL)
         for filename, body in matches:
-            # Fix malformed shortcodes (GPT sometimes outputs {< instead of {{<)
-            body = re.sub(r'\{< knowl', r'{{< knowl', body)
-            body = re.sub(r' >\}', r' >}}', body)
-            body = re.sub(r'\{<\/\*', r'{{</*', body)
-            body = re.sub(r'\*\/>}}', r'*/>}}', body)
-            # Remove .md from knowl id references
-            body = re.sub(r'knowl id="([a-z0-9-]+)\.md"', r'knowl id="\1"', body)
-
+            body = fix_content(body)
             with open(os.path.join(output_dir, filename), 'w') as f:
                 f.write(body + '\n')
             created.append(filename)
