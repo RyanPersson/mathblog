@@ -85,3 +85,15 @@ theme = 'PaperMod'
     url = "/algebra-fields-galois/"
     parent = "algebra"
     weight = 4
+  [[menu.main]]
+    identifier = "algebra-commutative"
+    name = "Commutative Algebra"
+    url = "/algebra-commutative/"
+    parent = "algebra"
+    weight = 5
+  [[menu.main]]
+    identifier = "algebra-category-theory"
+    name = "Category Theory"
+    url = "/algebra-category-theory/"
+    parent = "algebra"
+    weight = 6

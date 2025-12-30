@@ -608,44 +608,44 @@ Homological algebra: chain complexes, derived functors.
 *Depends on:* `algebra-modules`, `algebra-category-theory`
 
 **Definitions:**
-- Chain complex → `chain-complex.md`
-- Cochain complex → `cochain-complex.md`
-- Chain map → `chain-map.md`
-- Homotopy of chain maps → `chain-homotopy.md`
-- Exact complex → `exact-complex.md`
-- Homology module → `homology-module.md`
-- Cohomology module → `cohomology-module.md`
-- Projective resolution → `projective-resolution.md`
-- Injective resolution → `injective-resolution.md`
-- Derived functor → `derived-functor.md`
-- Ext^n → `ext.md`
-- Tor_n → `tor.md`
-- Long exact sequence (of derived functors) → `long-exact-sequence-derived.md`
+✓ - Chain complex → `chain-complex.md`
+✓ - Cochain complex → `cochain-complex.md`
+✓ - Chain map → `chain-map.md`
+✓ - Homotopy of chain maps → `chain-homotopy.md`
+✓ - Exact complex → `exact-complex.md`
+✓ - Homology module → `homology-module.md`
+✓ - Cohomology module → `cohomology-module.md`
+✓ - Projective resolution → `projective-resolution.md`
+✓ - Injective resolution → `injective-resolution.md`
+✓ - Derived functor → `derived-functor.md`
+✓ - Ext^n → `ext.md`
+✓ - Tor_n → `tor.md`
+✓ - Long exact sequence (of derived functors) → `long-exact-sequence-derived.md`
 
 **Theorems:**
-- Tensor product is right exact → `tensor-right-exact.md`
-- Hom functor is left exact → `hom-left-exact.md`
-- Long exact sequence of Tor → `long-exact-sequence-tor.md`
-- Long exact sequence of Ext → `long-exact-sequence-ext.md`
+✓ - Tensor product is right exact → `tensor-right-exact.md`
+✓ - Hom functor is left exact → `hom-left-exact.md`
+✓ - Long exact sequence of Tor → `long-exact-sequence-tor.md`
+✓ - Long exact sequence of Ext → `long-exact-sequence-ext.md`
 
 **Lemmas:**
-- Snake lemma → `snake-lemma.md`
-- Five lemma → `five-lemma.md`
-- Four lemma → `four-lemma.md`
-- Nine lemma (3×3 lemma) → `nine-lemma.md`
-- Horseshoe lemma → `horseshoe-lemma.md`
-- Connecting homomorphism yields long exact sequence → `connecting-homomorphism-lemma.md`
-- Ext and Tor are derived functors of Hom and ⊗ → `ext-tor-derived-functors.md`
+✓ - Snake lemma → `snake-lemma.md`
+✓ - Five lemma → `five-lemma.md`
+✓ - Four lemma → `four-lemma.md`
+✓ - Nine lemma (3×3 lemma) → `nine-lemma.md`
+✓ - Horseshoe lemma → `horseshoe-lemma.md`
+✓ - Connecting homomorphism yields long exact sequence → `connecting-homomorphism-lemma.md`
+✓ - Ext and Tor are derived functors of Hom and ⊗ → `ext-tor-derived-functors.md`
 
 **Propositions:**
-- Exactness of Hom and ⊗ in short exact sequences → `hom-tensor-exactness.md`
-- Projective resolutions exist → `projective-resolutions-exist.md`
-- Injective resolutions exist → `injective-resolutions-exist.md`
+✓ - Exactness of Hom and ⊗ in short exact sequences → `hom-tensor-exactness.md`
+✓ - Projective resolutions exist → `projective-resolutions-exist.md`
+✓ - Injective resolutions exist → `injective-resolutions-exist.md`
 
 **Corollaries:**
-- Snake lemma corollary (long exact sequence from s.e.s. of chain complexes) → `snake-lemma-corollary.md`
-- Five lemma corollary (isomorphism criterion) → `five-lemma-corollary.md`
-- Ext^1 classifies extensions → `ext1-classifies-extensions.md`
+✓ - Snake lemma corollary (long exact sequence from s.e.s. of chain complexes) → `snake-lemma-corollary.md`
+✓ - Five lemma corollary (isomorphism criterion) → `five-lemma-corollary.md`
+✓ - Ext^1 classifies extensions → `ext1-classifies-extensions.md`
 
 ---
 
