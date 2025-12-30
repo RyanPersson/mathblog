@@ -7,7 +7,7 @@ Let $T$ be a {{< knowl id="linear-operator" text="linear operator" >}} on a fini
 $$
 \chi_T(t)=\det(tI-T)\in F[t],
 $$
-where $\det$ is the {{< knowl id="determinant" text="determinant" >}} and $F[t]$ is the {{< knowl id="polynomial-ring" text="polynomial ring" >}} in one indeterminate $t$ over $F$. The polynomial $\chi_T(t)$ is monic of degree $n$.
+where $\det$ is the {{< knowl id="determinant" text="determinant" >}} and $F[t]$ is the {{< knowl id="polynomial-ring" section="algebra-rings" text="polynomial ring" >}} in one indeterminate $t$ over $F$. The polynomial $\chi_T(t)$ is monic of degree $n$.
 
 Over a field in which $\chi_T$ splits, the roots of $\chi_T$ are precisely the {{< knowl id="eigenvalue" text="eigenvalues" >}} (with multiplicities). The {{< knowl id="cayley-hamilton-theorem" text="Cayley-Hamilton theorem" >}} says that $T$ satisfies its own characteristic polynomial.
 

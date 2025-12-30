@@ -545,60 +545,60 @@ Commutative algebra: localization, Noetherian rings, primary decomposition.
 *Depends on:* `algebra-rings`, `algebra-modules`
 
 **Definitions:**
-- Localization of a ring → `localization-ring.md`
-- Multiplicative set → `multiplicative-set.md`
-- Localization at a prime ideal → `localization-at-prime.md`
-- Local ring → `local-ring.md`
-- Maximal ideal of a local ring → `maximal-ideal-local-ring.md`
-- Residue field → `residue-field.md`
-- Localization of a module → `localization-module.md`
-- Extension of scalars → `extension-of-scalars.md`
-- Restriction of scalars → `restriction-of-scalars.md`
-- Prime spectrum (Spec R) → `prime-spectrum.md`
-- Maximal spectrum (MaxSpec R) → `maximal-spectrum.md`
-- Zariski topology → `zariski-topology.md`
-- Krull dimension → `krull-dimension.md`
-- Height of a prime ideal → `height-of-prime.md`
-- Integral element (over a subring) → `integral-element.md`
-- Integral extension → `integral-extension.md`
-- Integral closure → `integral-closure.md`
-- Integrally closed domain → `integrally-closed-domain.md`
-- Primary decomposition (ideal-theoretic) → `primary-decomposition.md`
-- Noetherian ring (ACC on ideals) → `noetherian-ring.md`
-- Artinian ring (DCC on ideals) → `artinian-ring.md`
-- Dedekind domain → `dedekind-domain.md`
-- Discrete valuation ring (DVR) → `dvr.md`
+✓ - Localization of a ring → `localization-ring.md`
+✓ - Multiplicative set → `multiplicative-set.md`
+✓ - Localization at a prime ideal → `localization-at-prime.md`
+✓ - Local ring → `local-ring.md`
+✓ - Maximal ideal of a local ring → `maximal-ideal-local-ring.md`
+✓ - Residue field → `residue-field.md`
+✓ - Localization of a module → `localization-module.md`
+✓ - Extension of scalars → `extension-of-scalars.md`
+✓ - Restriction of scalars → `restriction-of-scalars.md`
+✓ - Prime spectrum (Spec R) → `prime-spectrum.md`
+✓ - Maximal spectrum (MaxSpec R) → `maximal-spectrum.md`
+✓ - Zariski topology → `zariski-topology.md`
+✓ - Krull dimension → `krull-dimension.md`
+✓ - Height of a prime ideal → `height-of-prime.md`
+✓ - Integral element (over a subring) → `integral-element.md`
+✓ - Integral extension → `integral-extension.md`
+✓ - Integral closure → `integral-closure.md`
+✓ - Integrally closed domain → `integrally-closed-domain.md`
+✓ - Primary decomposition (ideal-theoretic) → `primary-decomposition.md`
+✓ - Noetherian ring (ACC on ideals) → `noetherian-ring.md`
+✓ - Artinian ring (DCC on ideals) → `artinian-ring.md`
+✓ - Dedekind domain → `dedekind-domain.md`
+✓ - Discrete valuation ring (DVR) → `dvr.md`
 
 **Theorems:**
-- Correspondence of primes under localization → `localization-prime-correspondence.md`
-- Krull's principal ideal theorem → `krull-principal-ideal-theorem.md`
-- Lasker–Noether primary decomposition theorem → `lasker-noether-theorem.md`
-- Going-up theorem → `going-up-theorem.md`
-- Lying-over theorem → `lying-over-theorem.md`
-- Going-down theorem → `going-down-theorem.md`
-- Nullstellensatz (ideal–variety correspondence) → `nullstellensatz-variety-correspondence.md`
+✓ - Correspondence of primes under localization → `localization-prime-correspondence.md`
+✓ - Krull's principal ideal theorem → `krull-principal-ideal-theorem.md`
+✓ - Lasker–Noether primary decomposition theorem → `lasker-noether-theorem.md`
+✓ - Going-up theorem → `going-up-theorem.md`
+✓ - Lying-over theorem → `lying-over-theorem.md`
+✓ - Going-down theorem → `going-down-theorem.md`
+✓ - Nullstellensatz (ideal–variety correspondence) → `nullstellensatz-variety-correspondence.md`
 
 **Lemmas:**
-- Localization inverts precisely the multiplicative set → `localization-inverts-multiplicative-set.md`
-- Nakayama lemma → `nakayama-lemma.md`
-- Prime avoidance lemma → `prime-avoidance-lemma.md`
-- Noether normalization lemma → `noether-normalization-lemma.md`
-- Jacobson radical = intersection of maximal ideals → `jacobson-radical-intersection-maximals.md`
+✓ - Localization inverts precisely the multiplicative set → `localization-inverts-multiplicative-set.md`
+✓ - Nakayama lemma → `nakayama-lemma.md`
+✓ - Prime avoidance lemma → `prime-avoidance-lemma.md`
+✓ - Noether normalization lemma → `noether-normalization-lemma.md`
+✓ - Jacobson radical = intersection of maximal ideals → `jacobson-radical-intersection-maximals.md`
 
 **Propositions:**
-- Localization is exact (flatness) → `localization-exact.md`
-- Localization of Noetherian is Noetherian → `localization-noetherian.md`
-- Localization preserves primality/maximality → `localization-preserves-primality.md`
-- Jacobson radical annihilates simple modules → `jacobson-annihilates-simples.md`
-- Simple Artinian = matrix ring over division ring → `simple-artinian-matrix-ring.md`
-- Semisimple Artinian = product of matrix rings → `semisimple-artinian-product.md`
+✓ - Localization is exact (flatness) → `localization-exact.md`
+✓ - Localization of Noetherian is Noetherian → `localization-noetherian.md`
+✓ - Localization preserves primality/maximality → `localization-preserves-primality.md`
+✓ - Jacobson radical annihilates simple modules → `jacobson-annihilates-simples.md`
+✓ - Simple Artinian = matrix ring over division ring → `simple-artinian-matrix-ring.md`
+✓ - Semisimple Artinian = product of matrix rings → `semisimple-artinian-product.md`
 
 **Corollaries:**
-- Every ideal in Noetherian ring has primary decomposition → `noetherian-primary-decomposition.md`
-- Hilbert basis theorem corollary (k[x₁,...,x_n] Noetherian) → `hilbert-basis-corollary.md`
-- Nullstellensatz corollary (radical ideals ↔ affine algebraic sets) → `nullstellensatz-corollary.md`
-- Localization corollary (localizations of Noetherian are Noetherian) → `localization-noetherian-corollary.md`
-- Nakayama corollary (M f.g., IM = M, I ⊆ Jac(R) ⇒ M = 0) → `nakayama-corollary.md`
+✓ - Every ideal in Noetherian ring has primary decomposition → `noetherian-primary-decomposition.md`
+✓ - Hilbert basis theorem corollary (k[x₁,...,x_n] Noetherian) → `hilbert-basis-corollary.md`
+✓ - Nullstellensatz corollary (radical ideals ↔ affine algebraic sets) → `nullstellensatz-corollary.md`
+✓ - Localization corollary (localizations of Noetherian are Noetherian) → `localization-noetherian-corollary.md`
+✓ - Nakayama corollary (M f.g., IM = M, I ⊆ Jac(R) ⇒ M = 0) → `nakayama-corollary.md`
 
 ---
 
@@ -693,52 +693,52 @@ Category theory foundations.
 *Depends on:* `shared-foundations`
 
 **Definitions:**
-- Category → `category.md`
-- Object (of a category) → `object.md`
-- Morphism (arrow) → `morphism.md`
-- Composition (in a category) → `composition-category.md`
-- Identity morphism → `identity-morphism.md`
-- Isomorphism (in a category) → `isomorphism-category.md`
-- Monomorphism → `monomorphism-category.md`
-- Epimorphism → `epimorphism-category.md`
-- Endomorphism (categorical) → `endomorphism-category.md`
-- Automorphism (categorical) → `automorphism-category.md`
-- Subcategory → `subcategory.md`
-- Full subcategory → `full-subcategory.md`
-- Opposite category → `opposite-category.md`
-- Functor (covariant) → `functor.md`
-- Contravariant functor → `contravariant-functor.md`
-- Natural transformation → `natural-transformation.md`
-- Natural isomorphism → `natural-isomorphism.md`
-- Equivalence of categories → `equivalence-of-categories.md`
-- Product (categorical) → `categorical-product.md`
-- Coproduct → `coproduct.md`
-- Equalizer → `equalizer.md`
-- Coequalizer → `coequalizer.md`
-- Pullback (fiber product) → `pullback.md`
-- Pushout → `pushout.md`
-- Limit → `limit.md`
-- Colimit → `colimit.md`
-- Representable functor → `representable-functor.md`
-- Yoneda embedding → `yoneda-embedding.md`
-- Adjoint functors → `adjoint-functors.md`
-- Unit of an adjunction → `unit-adjunction.md`
-- Counit of an adjunction → `counit-adjunction.md`
-- Additive category → `additive-category.md`
-- Kernel (categorical) → `kernel-categorical.md`
-- Cokernel (categorical) → `cokernel-categorical.md`
-- Exact sequence (in an additive/abelian category) → `exact-sequence-categorical.md`
-- Abelian category → `abelian-category.md`
-- Left exact functor → `left-exact-functor.md`
-- Right exact functor → `right-exact-functor.md`
-- Exact functor → `exact-functor.md`
+✓ - Category → `category.md`
+✓ - Object (of a category) → `object.md`
+✓ - Morphism (arrow) → `morphism.md`
+✓ - Composition (in a category) → `composition-category.md`
+✓ - Identity morphism → `identity-morphism.md`
+✓ - Isomorphism (in a category) → `isomorphism-category.md`
+✓ - Monomorphism → `monomorphism-category.md`
+✓ - Epimorphism → `epimorphism-category.md`
+✓ - Endomorphism (categorical) → `endomorphism-category.md`
+✓ - Automorphism (categorical) → `automorphism-category.md`
+✓ - Subcategory → `subcategory.md`
+✓ - Full subcategory → `full-subcategory.md`
+✓ - Opposite category → `opposite-category.md`
+✓ - Functor (covariant) → `functor.md`
+✓ - Contravariant functor → `contravariant-functor.md`
+✓ - Natural transformation → `natural-transformation.md`
+✓ - Natural isomorphism → `natural-isomorphism.md`
+✓ - Equivalence of categories → `equivalence-of-categories.md`
+✓ - Product (categorical) → `categorical-product.md`
+✓ - Coproduct → `coproduct.md`
+✓ - Equalizer → `equalizer.md`
+✓ - Coequalizer → `coequalizer.md`
+✓ - Pullback (fiber product) → `pullback.md`
+✓ - Pushout → `pushout.md`
+✓ - Limit → `limit.md`
+✓ - Colimit → `colimit.md`
+✓ - Representable functor → `representable-functor.md`
+✓ - Yoneda embedding → `yoneda-embedding.md`
+✓ - Adjoint functors → `adjoint-functors.md`
+✓ - Unit of an adjunction → `unit-adjunction.md`
+✓ - Counit of an adjunction → `counit-adjunction.md`
+✓ - Additive category → `additive-category.md`
+✓ - Kernel (categorical) → `kernel-categorical.md`
+✓ - Cokernel (categorical) → `cokernel-categorical.md`
+✓ - Exact sequence (in an additive/abelian category) → `exact-sequence-categorical.md`
+✓ - Abelian category → `abelian-category.md`
+✓ - Left exact functor → `left-exact-functor.md`
+✓ - Right exact functor → `right-exact-functor.md`
+✓ - Exact functor → `exact-functor.md`
 
 **Axioms:**
-- Category axioms → `category-axioms.md`
-- Axioms of an abelian category → `abelian-category-axioms.md`
+✓ - Category axioms → `category-axioms.md`
+✓ - Axioms of an abelian category → `abelian-category-axioms.md`
 
 **Lemmas:**
-- Yoneda lemma → `yoneda-lemma.md`
+✓ - Yoneda lemma → `yoneda-lemma.md`
 
 ---
 

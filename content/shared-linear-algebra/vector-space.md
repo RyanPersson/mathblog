@@ -3,7 +3,7 @@ title: "Vector Space"
 description: "A set with addition and scalar multiplication over a field satisfying the vector space axioms"
 ---
 
-A **vector space** over a {{< knowl id="field" text="field" >}} $F$ is a set $V$ equipped with
+A **vector space** over a {{< knowl id="field" section="algebra-rings" text="field" >}} $F$ is a set $V$ equipped with
 
 - an **addition** operation $+:V\times V\to V$, and
 - a **scalar multiplication** operation $\cdot:F\times V\to V$,
@@ -23,5 +23,5 @@ Vector spaces are the basic objects of linear algebra; {{< knowl id="linear-map"
 
 **Examples:**
 - For any $k\in\mathbb{N}$, the set $\mathbb{R}^k$ of $k$-tuples of {{< knowl id="real-numbers" text="real numbers" >}} is a vector space over $\mathbb{R}$ with coordinatewise addition and scalar multiplication.
-- The {{< knowl id="polynomial-ring" text="polynomial ring" >}} $F[t]$ (viewed only with its addition and scalar multiplication by $F$) is a vector space over $F$.
+- The {{< knowl id="polynomial-ring" section="algebra-rings" text="polynomial ring" >}} $F[t]$ (viewed only with its addition and scalar multiplication by $F$) is a vector space over $F$.
 - If $X$ is any set, then the set of all functions $X\to F$ is a vector space over $F$ under pointwise operations.

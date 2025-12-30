@@ -1,156 +1,148 @@
-# Step 1: Enumerate Definitions, Theorems, and Lemmas
+# Step 1: Enumerate Knowl Candidates (Atomic Definitions + Results)
 
 ## Your Task
 
-Generate a **complete and exhaustive** list of all definitions, theorems, lemmas, propositions, and corollaries that would appear in a university course on the specified subject at the specified level.
+Produce an **over-complete, high-granularity** enumeration of all items that should become separate knowls for a standard course on the given subject/level. The output is meant to seed a dependency graph and then a linked knowlset. Therefore:
 
-## Input Parameters
+- Prefer **more** items at **finer** granularity.
+- Use **atomic** units: one definition/result per knowl-candidate.
+- Explicitly include **equivalence packages** (TFAE lists) as their own knowl objects.
+
+
+## Inputs
 
 You will be given:
-- **Subject**: The mathematical topic (e.g., "Real Analysis", "Abstract Algebra", "Topology")
-- **Level**: Course level indicator, one of:
-  - `200-level`: Introductory undergraduate (e.g., Calculus-based, computational focus)
-  - `300-level`: Intermediate undergraduate (e.g., first proofs course, introductory rigor)
-  - `400-level`: Advanced undergraduate (e.g., Rudin-style analysis, Dummit & Foote algebra)
-  - `500-level`: Beginning graduate (e.g., qualifying exam preparation, Folland, Lang)
-  - `600-level`: Advanced graduate (e.g., research preparation, specialized monographs)
-- **Scope constraints** (optional): Any specific inclusions or exclusions
+
+- **Subject**: e.g. "Real Analysis", "Abstract Algebra", "Principal Bundles and Connections"
+- **Level**: one of 200-level | 300-level | 400-level | 500-level | 600-level
+- **Scope constraints** (optional): inclusions/exclusions, emphasis (e.g. "geometry-heavy", "physics-gauge-theory flavor"), and any forbidden topics
+
+
+## Atomicity / Granularity Rules (strict)
+
+A. **Atomic definition** = a definition that introduces exactly one new predicate/structure/property on top of already-listed data.
+
+   Examples (each should be separate items):
+   - "bundle" vs "vector bundle" vs "principal G-bundle" vs "associated bundle"
+   - "connection" vs "principal connection" vs "connection 1-form" vs "covariant derivative" vs "curvature" vs "holonomy"
+   - "compact" vs "sequentially compact" vs "totally bounded" vs "complete"
+
+B. If a notion has **standard variants**, list each variant as its own knowl:
+   - left/right versions, local/global versions, smooth/topological versions, based/pointed versions, equivariant versions, etc.
+
+C. If a concept is usually taught as a **cluster** (e.g., connections), do *not* collapse it into one bullet. List all standard components separately.
+
+D. Avoid "mega-items" like "Gauge theory" unless you also decompose them into the concrete definitions/results that actually appear.
+
+
+## Equivalences (TFAE) Rule
+
+Whenever a course proves multiple conditions equivalent:
+
+1. Create a separate item in a dedicated section:
+   - TFAE: [Concept] — [Setting]
+
+2. Also list each individual condition as its own knowl-candidate in the appropriate section (Definitions / Theorems / Propositions), using short canonical names.
+
+3. The TFAE item should be written so it can link out to each condition-item.
+
+
+## Scope Discipline (but biased toward inclusion)
+
+- Include everything that is **commonly** encountered in a standard course at that level.
+- If you are uncertain whether something belongs in the "core", include it anyway but place it under **Common Extensions** (see below).
+- Do not include highly specialized research-only material unless explicitly requested.
+
 
 ## Output Format
 
-Produce a single markdown code block containing the complete list. Use the following format:
+Return a single markdown code block. Use bullet points only (no numbering). You may use nested bullets to express families, but every *leaf bullet* must be a valid standalone knowl-candidate name.
 
 ```markdown
-# [Subject] — [Level] Enumeration
+# [Subject] — [Level] Knowl Enumeration (High Granularity)
 
-## Definitions
-- [Name of definition]
-- [Name of definition]
-...
+## Core Definitions (atomic)
 
-## Axioms
-- [Name of axiom or axiomatic system]
-...
+- ...
+- ... (optional nested family)
+  - ...
 
-## Theorems
-- [Name of theorem]
-- [Name of theorem]
-...
+## Core Axioms / Conventions
 
-## Lemmas
-- [Name of lemma]
-...
+- ...
 
-## Propositions
-- [Name of proposition]
-...
+## Core Constructions / Objects
 
-## Corollaries
-- [Name of corollary]
-...
+(standard constructions that are not best phrased as "definitions", but will be referenced as objects)
+
+- ...
+
+## Core Theorems
+
+- ...
+
+## Core Lemmas
+
+- ...
+
+## Core Propositions
+
+- ...
+
+## Core Corollaries
+
+- ...
+
+## Core Equivalences (TFAE packages)
+
+- TFAE: ...
+  - Condition: ...
+  - Condition: ...
+- ...
+
+## Standard Examples / Counterexamples
+
+(if typically used in the course)
+
+- ...
+
+## Common Extensions
+
+(often taught, instructor-dependent; include aggressively)
+
+### Definitions
+
+- ...
+
+### Theorems / Results
+
+- ...
+
+### TFAE packages
+
+- ...
 ```
 
-## Requirements
 
-1. **Do NOT number the items.** Use simple bullet points only.
+## Naming Requirements
 
-2. **Be exhaustive for the level.** Include everything a student would encounter in a standard course at this level. When in doubt, include it.
+Use the most canonical/common names. If multiple names are genuinely standard, choose one canonical name and include aliases in parentheses:
 
-3. **Use standard mathematical names.** Use the most common/canonical name for each item:
-   - Prefer "Heine-Borel Theorem" over "Theorem 2.41"
-   - Prefer "Bolzano-Weierstrass Theorem" over "Sequential Compactness Theorem"
-   - For unnamed results, use a descriptive name (e.g., "Continuity of monotone functions on intervals")
-
-4. **Distinguish item types correctly:**
-   - **Definition**: Introduces a new concept or object
-   - **Axiom**: A foundational assumption (e.g., field axioms, ZFC axioms, group axioms)
-   - **Theorem**: A major result, often named
-   - **Lemma**: A helper result used to prove theorems
-   - **Proposition**: A result of moderate importance
-   - **Corollary**: A direct consequence of a theorem
-
-5. **Include foundational prerequisites** that are explicitly used in the course, even if they come from earlier courses. For example, a 400-level real analysis course should include "Completeness of the real numbers" even though students learned it earlier.
-
-6. **Scope by level appropriately:**
-   - 300-level Real Analysis: ε-δ limits, continuity, basic differentiation/integration, sequences, series
-   - 400-level Real Analysis: Metric spaces, compactness, connectedness, uniform convergence, Riemann integration, basic measure theory introduction
-   - 500-level Real Analysis: Lebesgue measure and integration, L^p spaces, modes of convergence, Fubini/Tonelli, Radon-Nikodym
-
-## Example
-
-For input: **Subject**: Group Theory, **Level**: 300-level
-
-```markdown
-# Group Theory — 300-level Enumeration
-
-## Definitions
-- Group
-- Abelian group
-- Subgroup
-- Trivial subgroup
-- Proper subgroup
-- Order of a group
-- Order of an element
-- Cyclic group
-- Generator
-- Symmetric group
-- Alternating group
-- Dihedral group
-- Coset (left and right)
-- Index of a subgroup
-- Normal subgroup
-- Quotient group
-- Group homomorphism
-- Group isomorphism
-- Kernel of a homomorphism
-- Image of a homomorphism
-- Direct product of groups
-- Simple group
-- Center of a group
-- Centralizer
-- Normalizer
-- Conjugacy class
-- Group action
-- Orbit
-- Stabilizer
-
-## Axioms
-- Group axioms (closure, associativity, identity, inverses)
-
-## Theorems
-- Lagrange's Theorem
-- Cayley's Theorem
-- First Isomorphism Theorem
-- Second Isomorphism Theorem
-- Third Isomorphism Theorem
-- Cauchy's Theorem (for finite groups)
-- Sylow's First Theorem
-- Sylow's Second Theorem
-- Sylow's Third Theorem
-- Fundamental Theorem of Finite Abelian Groups
-- Orbit-Stabilizer Theorem
-- Class Equation
-
-## Lemmas
-- Subgroup criterion (two-step subgroup test)
-- Normal subgroup criterion
-- Properties of cosets
-- Homomorphism preserves identity and inverses
-
-## Propositions
-- Cyclic groups are abelian
-- Subgroups of cyclic groups are cyclic
-- Order of element divides order of group
-- Groups of prime order are cyclic
-- Center is a normal subgroup
-- Kernel is a normal subgroup
-
-## Corollaries
-- Fermat's Little Theorem (as corollary of Lagrange)
-- Euler's Theorem (as corollary of Lagrange)
-- Groups of order p² are abelian
+```
+Arzelà–Ascoli Theorem (Arzela–Ascoli)
 ```
 
-## After Completion
+For unnamed-but-standard results, use stable descriptive names:
 
-Once you have produced this list, it will be passed to Step 2 for dependency sorting. Do not proceed to Step 2 yourself—output only the enumeration.
+```
+Uniqueness of lift for covering maps (example style)
+```
+
+
+## Completeness Sanity Checks (required)
+
+Before outputting, ensure:
+
+1. No category is silently omitted; if empty, write `(none)`.
+2. Every theorem/lemma/proposition you list uses only concepts that appear somewhere in the enumeration.
+3. Equivalent formulations are handled via both individual items and a TFAE package item.

@@ -3,7 +3,7 @@ title: "Minimal Polynomial"
 description: "The monic polynomial of least degree that annihilates a linear operator"
 ---
 
-Let $T$ be a {{< knowl id="linear-operator" text="linear operator" >}} on a vector space $V$ over a field $F$. The **minimal polynomial** of $T$ is the unique monic polynomial $m_T(t)\in F[t]$ (in the {{< knowl id="polynomial-ring" text="polynomial ring" >}} over $F$) of least degree such that
+Let $T$ be a {{< knowl id="linear-operator" text="linear operator" >}} on a vector space $V$ over a field $F$. The **minimal polynomial** of $T$ is the unique monic polynomial $m_T(t)\in F[t]$ (in the {{< knowl id="polynomial-ring" section="algebra-rings" text="polynomial ring" >}} over $F$) of least degree such that
 $$
 m_T(T)=0,
 $$

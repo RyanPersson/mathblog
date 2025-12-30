@@ -3,7 +3,7 @@ title: "Determinant"
 description: "A scalar invariant of a square matrix or linear operator measuring invertibility and volume scaling"
 ---
 
-Let $F$ be a {{< knowl id="field" text="field" >}} and let $A=(a_{ij})$ be an $n\times n$ matrix with entries in $F$. The **determinant** of $A$ is the scalar
+Let $F$ be a {{< knowl id="field" section="algebra-rings" text="field" >}} and let $A=(a_{ij})$ be an $n\times n$ matrix with entries in $F$. The **determinant** of $A$ is the scalar
 $$
 \det(A)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{i=1}^n a_{i,\sigma(i)},
 $$

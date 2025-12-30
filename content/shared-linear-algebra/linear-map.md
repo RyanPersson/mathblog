@@ -3,7 +3,7 @@ title: "Linear Map"
 description: "A function between vector spaces that preserves addition and scalar multiplication"
 ---
 
-Let $V$ and $W$ be {{< knowl id="vector-space" text="vector spaces" >}} over the same {{< knowl id="field" text="field" >}} $F$. A **linear map** (or **linear transformation**) is a {{< knowl id="function" text="function" >}} $T:V\to W$ such that for all $u,v\in V$ and all $a\in F$,
+Let $V$ and $W$ be {{< knowl id="vector-space" text="vector spaces" >}} over the same {{< knowl id="field" section="algebra-rings" text="field" >}} $F$. A **linear map** (or **linear transformation**) is a {{< knowl id="function" text="function" >}} $T:V\to W$ such that for all $u,v\in V$ and all $a\in F$,
 $$
 T(u+v)=T(u)+T(v),\qquad T(a\cdot v)=a\cdot T(v).
 $$
