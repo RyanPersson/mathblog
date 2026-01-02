@@ -8,6 +8,43 @@
   const cache = new Map();
 
   /**
+   * Send vote feedback to localhost API (exposed on window for onclick handlers)
+   */
+  window.voteKnowl = function(btn, vote) {
+    const content = btn.closest('.knowl-content');
+    if (!content) return;
+
+    const knowlId = content.dataset.knowlId;
+    const section = content.dataset.section;
+    const noteInput = content.querySelector('.knowl-vote-note');
+    const note = noteInput ? noteInput.value : '';
+
+    const original = btn.textContent;
+    btn.textContent = '⏳';
+    btn.disabled = true;
+
+    fetch('http://localhost:3001/vote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ section, knowlId, vote, note })
+    })
+    .then(res => {
+      if (res.ok) {
+        btn.textContent = '✓';
+        if (noteInput) noteInput.value = '';
+        setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1500);
+      } else {
+        throw new Error('Vote failed');
+      }
+    })
+    .catch(err => {
+      console.error('Vote error:', err);
+      btn.textContent = '✗';
+      setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1500);
+    });
+  };
+
+  /**
    * Copy knowl content to clipboard in specified format
    * @param {HTMLElement} panel - The knowl panel element
    * @param {string} format - 'markdown' or 'latex'
@@ -246,9 +283,10 @@
     document.querySelectorAll('.knowl').forEach(el => observer.observe(el));
   }
 
-  // Event delegation
+  // Event delegation for knowl triggers
   document.addEventListener('mouseover', preloadOnHover);
   document.addEventListener('click', toggleKnowl);
+
 
   // Start visibility preloading when DOM is ready
   if (document.readyState === 'loading') {
