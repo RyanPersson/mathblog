@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="post-single glossary-entry">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{/* This div is extracted by knowls.js for inline display */}}
+  <div class="knowl-content" data-knowl-id="{{ .File.ContentBaseName }}" data-section="{{ .Section }}">
+    <div class="knowl-header">
+      <strong>{{ .Title }}</strong>
+      <div class="knowl-vote-group">
+        <input type="text" class="knowl-vote-note" placeholder="Note..." aria-label="Feedback note">
+        <button class="knowl-upvote" aria-label="Upvote" title="Good example">👍</button>
+        <button class="knowl-downvote" aria-label="Downvote" title="Needs review">👎</button>
+      </div>
+      <button class="knowl-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="knowl-body">
+      {{ .Content }}
+    </div>
+    <div class="knowl-footer">
+      <button class="knowl-close" aria-label="Close">&times;</button>
+    </div>
+  </div>
+
+  <footer class="post-footer">
+    <p><a href="/geometry-lie-groups/">← Back to Lie Groups and Lie Algebras</a></p>
+  </footer>
+</article>
+{{ end }}
