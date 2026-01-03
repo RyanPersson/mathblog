@@ -2,7 +2,7 @@
 
 This module covers the theory of Lie groups and Lie algebras at a first graduate course level. Content is extracted from fiber-decomp.md and expanded for completeness.
 
-*Depends on:* `shared-foundations`, `shared-linear-algebra`
+*Depends on:* `shared-foundations`, `linear-algebra`
 
 ---
 
@@ -254,7 +254,7 @@ This module covers the theory of Lie groups and Lie algebras at a first graduate
 
 ## Notes
 
-This module is a prerequisite for `geometry-bundles` (fiber bundle and connections theory). The Lie group content in `geometry-bundles` assumes familiarity with the definitions and basic theorems listed here.
+This module is a prerequisite for `fiber-bundles` (fiber bundle and connections theory). The Lie group content in `fiber-bundles` assumes familiarity with the definitions and basic theorems listed here.
 
 Key items moved from fiber-decomp.md to this module:
 - Lie group, Lie subgroup, Lie algebra, Lie bracket

@@ -84,14 +84,14 @@ See `content/algebra-modules/_index.md` for a good example.
 
 **Different section** (section parameter REQUIRED):
 ```markdown
-{{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}
+{{< knowl id="vector-space" section="linear-algebra" text="vector space" >}}
 {{< knowl id="ring" section="algebra-rings" text="ring" >}}
 {{< knowl id="group" section="algebra-groups" text="group" >}}
 ```
 
 **Section directory mapping:**
 - `shared-foundations` - basic set theory, logic, functions
-- `shared-linear-algebra` - vector spaces, linear maps, matrices, eigenvalues
+- `linear-algebra` - vector spaces, linear maps, matrices, eigenvalues
 - `algebra-groups` - groups, subgroups, homomorphisms, actions
 - `algebra-rings` - rings, ideals, fields, polynomials
 - `algebra-modules` - modules, exact sequences, tensor products
@@ -127,7 +127,7 @@ The *Depends on* line in decomposition.md tells you which modules to include. **
 # Build slug -> section mapping for all prerequisites
 prereq_sections = {
     "shared-foundations": [],
-    "shared-linear-algebra": [],
+    "linear-algebra": [],
     "algebra-groups": [],
     "algebra-rings": [],
     "algebra-modules": [],

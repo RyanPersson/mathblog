@@ -318,7 +318,7 @@ knowlpedia-content/                ← Separate repo (generated knowls)
 ├── algebra-groups/
 ├── algebra-modules/
 ├── analysis/
-├── geometry-bundles/
+├── fiber-bundles/
 └── ... (~1,500 knowl files)
 ```
 

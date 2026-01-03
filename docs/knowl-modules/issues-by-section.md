@@ -5,8 +5,8 @@ Generated: 2026-01-02 (updated)
 | Section | Files | Knowl Refs | Proof Sketch | `={{<` | `\in {{<` | Related | Related Notions | Sub-bullets | Has "definition" |
 |---------|------:|-------:|-------------:|-------:|----------:|--------:|----------------:|------------:|-----------------:|
 | **analysis** | 338 | 951 | 0 | 0 | 0 | 0 | 0 | 2 | 33 |
-| **geometry-bundles** | 278 | 1033 | 0 | 0 | 0 | 0 | 0 | 0 | 126 |
-| **geometry-lie-groups** | 146 | 716 | 0 | 0 | 0 | 0 | 0 | 0 | 76 |
+| **fiber-bundles** | 278 | 1033 | 0 | 0 | 0 | 0 | 0 | 0 | 126 |
+| **lie-groups** | 146 | 716 | 0 | 0 | 0 | 0 | 0 | 0 | 76 |
 | **convex-analysis** | 155 | 477 | 58 | 0 | 0 | 0 | 1 | 0 | 18 |
 | **algebra-groups** | 136 | 471 | 0 | 0 | 0 | 0 | 0 | 0 | 9 |
 | **algebra-rings** | 109 | 318 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -16,7 +16,7 @@ Generated: 2026-01-02 (updated)
 | **algebra-category-theory** | 43 | 287 | 0 | 0 | 0 | 1 | 2 | 0 | 39 |
 | **shared-foundations** | 41 | 138 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 | **algebra-homological** | 31 | 232 | 0 | 0 | 0 | 0 | 0 | 0 | 14 |
-| **shared-linear-algebra** | 25 | 76 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
+| **linear-algebra** | 25 | 76 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
 | **algebra-representation-theory** | 22 | 146 | 0 | 0 | 0 | 0 | 0 | 0 | 11 |
 | **posts** | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
 | **langlands-letter** | 1 | 43 | 0 | 0 | 0 | 0 | 0 | 2 | 3 |
@@ -40,7 +40,7 @@ Generated: 2026-01-02 (updated)
 
 2. **Knowl-in-LaTeX issues**: All 14 instances fixed - knowls moved to prose, plain LaTeX in equations
 
-3. **"definition" keyword**: geometry-bundles has 126 files with "definition" - likely needs consistency review per `docs/needs-review.md`
+3. **"definition" keyword**: fiber-bundles has 126 files with "definition" - likely needs consistency review per `docs/needs-review.md`
 
 4. **Related/Related Notions**: The antipattern is **low-information vague lists** of related concepts. Files that construct explicit, meaningful relationships are acceptable. Remaining instances (functor.md, isomorphism-category.md, convex-lecture-notes.md) are fine - removed yoneda-lemma.md's "Related knowls" section.
 
@@ -50,4 +50,3 @@ Generated: 2026-01-02 (updated)
 ## Related Files
 
 - `needs-review.md` - Detailed issue descriptions and file lists
-- `../needs-review.md` - Geometry-bundles specific review items

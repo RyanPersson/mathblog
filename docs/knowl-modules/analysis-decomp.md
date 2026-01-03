@@ -341,7 +341,7 @@ Sequences and series of functions, uniform convergence, power series.
 ### `analysis-multivariable`
 Multivariable differentiation and integration.
 
-*Depends on:* `shared-linear-algebra`, `analysis-differentiation-1d`, `analysis-riemann-integration`
+*Depends on:* `linear-algebra`, `analysis-differentiation-1d`, `analysis-riemann-integration`
 
 **Definitions:**
 - ✓ Partial derivative → `partial-derivative.md`
@@ -391,7 +391,7 @@ Multivariable differentiation and integration.
 ### `convex-analysis`
 Convex sets, convex functions, separation theorems, and Hahn–Banach theory in normed spaces.
 
-*Depends on:* `shared-foundations`, `shared-linear-algebra`, `analysis-metric-topology`
+*Depends on:* `shared-foundations`, `linear-algebra`, `analysis-metric-topology`
 
 **Definitions (Vector Spaces & Operators):**
 - ✓ Vector space → `vector-space.md`

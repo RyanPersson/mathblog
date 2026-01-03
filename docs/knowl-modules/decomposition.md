@@ -59,7 +59,7 @@ Basic set theory, logic, and function concepts used across all mathematics.
 
 ---
 
-### `shared-linear-algebra` (×2)
+### `linear-algebra` (×2)
 Vector spaces, linear maps, and matrix theory used in both analysis and algebra.
 
 **Definitions:**
@@ -366,7 +366,7 @@ Ring theory and ideal structure.
 ### `algebra-modules`
 Module theory over rings.
 
-*Depends on:* `algebra-rings`, `shared-linear-algebra`
+*Depends on:* `algebra-rings`, `linear-algebra`
 
 **Definitions:**
 ✓ - Module (left/right) → `module.md`
@@ -652,7 +652,7 @@ Homological algebra: chain complexes, derived functors.
 ### `algebra-representation-theory`
 Representation theory of finite groups.
 
-*Depends on:* `algebra-groups`, `algebra-modules`, `shared-linear-algebra`
+*Depends on:* `algebra-groups`, `algebra-modules`, `linear-algebra`
 
 **Definitions:**
 - ✓ (Linear) representation of a group → `group-representation.md`
@@ -747,7 +747,7 @@ Category theory foundations.
 ```
 shared-foundations
     │
-    ├── shared-linear-algebra
+    ├── linear-algebra
     │       │
     │       ├── analysis-multivariable
     │       ├── convex-analysis

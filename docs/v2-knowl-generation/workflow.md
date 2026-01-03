@@ -98,7 +98,7 @@ import os
 
 prereq_sections = {
     "shared-foundations": [],
-    "shared-linear-algebra": [],
+    "linear-algebra": [],
     "algebra-groups": [],
     "algebra-rings": [],
     # Add as needed

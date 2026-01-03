@@ -13,7 +13,7 @@
   {{/* This div is extracted by knowls.js for inline display */}}
   <div class="knowl-content" data-knowl-id="{{ .File.ContentBaseName }}" data-section="{{ .Section }}">
     <div class="knowl-header">
-      <strong>{{ .Title }}</strong>
+      <strong>{{ .Title | markdownify }}</strong>
       {{- if hugo.IsServer }}
       <div class="knowl-vote-group">
         <input type="text" class="knowl-vote-note" placeholder="Note..." aria-label="Feedback note">

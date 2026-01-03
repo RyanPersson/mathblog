@@ -222,8 +222,8 @@ Based on `docs/knowl-modules/issues-by-section.md`:
 | Section | Files | Issues |
 |---------|-------|--------|
 | analysis | 338 | 136 proof sketches, 10 knowl-in-math |
-| geometry-bundles | 278 | Clean |
-| geometry-lie-groups | 146 | 2 proof sketches |
+| fiber-bundles | 278 | Clean |
+| lie-groups | 146 | 2 proof sketches |
 | convex-analysis | 155 | 58 proof sketches, 2 knowl-in-math |
 | algebra-groups | 136 | 59 proof sketches |
 | algebra-rings | 109 | 12 proof sketches |
@@ -233,7 +233,7 @@ Based on `docs/knowl-modules/issues-by-section.md`:
 | algebra-category-theory | 43 | 3 related sections |
 | shared-foundations | 41 | 3 proof sketches |
 | algebra-homological | 31 | Clean |
-| shared-linear-algebra | 25 | 3 proof sketches |
+| linear-algebra | 25 | 3 proof sketches |
 | algebra-representation-theory | 22 | 1 knowl-in-math |
 
 **"Clean" sections** (no issues): Use these as reference for style/format.

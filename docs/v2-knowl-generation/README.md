@@ -88,7 +88,7 @@ content/ (submodule)
 
 **Different section** (section parameter REQUIRED):
 ```markdown
-{{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}
+{{< knowl id="vector-space" section="linear-algebra" text="vector space" >}}
 {{< knowl id="ring" section="algebra-rings" text="ring" >}}
 ```
 
@@ -97,7 +97,7 @@ content/ (submodule)
 | Section | Content |
 |---------|---------|
 | `shared-foundations` | Set theory, logic, functions, relations |
-| `shared-linear-algebra` | Vector spaces, linear maps, matrices, eigenvalues |
+| `linear-algebra` | Vector spaces, linear maps, matrices, eigenvalues |
 | `algebra-groups` | Groups, subgroups, homomorphisms, actions |
 | `algebra-rings` | Rings, ideals, fields, polynomials |
 | `algebra-modules` | Modules, exact sequences, tensor products |
@@ -108,5 +108,5 @@ content/ (submodule)
 | `algebra-representation-theory` | Group representations, characters |
 | `analysis` | Real analysis, metric spaces, convergence |
 | `convex-analysis` | Convex sets, functions, optimization |
-| `geometry-bundles` | Fiber bundles, connections, curvature |
-| `geometry-lie-groups` | Lie groups, Lie algebras |
+| `fiber-bundles` | Fiber bundles, connections, curvature |
+| `lie-groups` | Lie groups, Lie algebras |

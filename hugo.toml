@@ -48,9 +48,9 @@ theme = 'PaperMod'
     url = "/shared-foundations/"
     weight = 30
   [[menu.main]]
-    identifier = "shared-linear-algebra"
+    identifier = "linear-algebra"
     name = "Linear Algebra"
-    url = "/shared-linear-algebra/"
+    url = "/linear-algebra/"
     weight = 31
   [[menu.main]]
     identifier = "algebra"

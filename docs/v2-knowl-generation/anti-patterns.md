@@ -169,7 +169,7 @@ python3 scripts/validate-knowls.py
 - algebra-groups: 59 files
 - convex-analysis: 58 files
 - algebra-fields-galois: 0 files
-- geometry-bundles: 0 files
+- fiber-bundles: 0 files
 
 **Decision for v2:** Remove proof sketches for consistency. Knowls should be concise reference cards, not proof outlines.
 

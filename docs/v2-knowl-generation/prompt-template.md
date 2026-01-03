@@ -55,7 +55,7 @@ Same section (no section param needed):
 
 Different section (section param REQUIRED):
 `{{< knowl id="ring" section="algebra-rings" text="ring" >}}`
-`{{< knowl id="vector-space" section="shared-linear-algebra" text="vector space" >}}`
+`{{< knowl id="vector-space" section="linear-algebra" text="vector space" >}}`
 
 ### 4. Plain-Text Description
 The `description` field in YAML must be plain text only. NO LaTeX.
@@ -132,7 +132,7 @@ Use these exact section names for cross-links:
 | Section | Content |
 |---------|---------|
 | `shared-foundations` | Set theory, logic, functions, relations |
-| `shared-linear-algebra` | Vector spaces, linear maps, matrices |
+| `linear-algebra` | Vector spaces, linear maps, matrices |
 | `algebra-groups` | Groups, subgroups, actions |
 | `algebra-rings` | Rings, ideals, fields |
 | `algebra-modules` | Modules, exact sequences, tensor products |
@@ -143,8 +143,8 @@ Use these exact section names for cross-links:
 | `algebra-representation-theory` | Representations, characters |
 | `analysis` | Real analysis, metric spaces |
 | `convex-analysis` | Convex sets, functions |
-| `geometry-bundles` | Fiber bundles, connections |
-| `geometry-lie-groups` | Lie groups, Lie algebras |
+| `fiber-bundles` | Fiber bundles, connections |
+| `lie-groups` | Lie groups, Lie algebras |
 
 ---
 
@@ -157,7 +157,7 @@ Use these exact section names for cross-links:
 
 **shared-foundations:** {SHARED_FOUNDATIONS_SLUGS}
 
-**shared-linear-algebra:** {SHARED_LINEAR_ALGEBRA_SLUGS}
+**linear-algebra:** {SHARED_LINEAR_ALGEBRA_SLUGS}
 
 **algebra-groups:** {ALGEBRA_GROUPS_SLUGS}
 

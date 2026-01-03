@@ -27,7 +27,7 @@ knowl-modules/
 | Pool | Description | Used By |
 |------|-------------|---------|
 | `shared-foundations` | Sets, functions, relations, orders | Everything |
-| `shared-linear-algebra` | Vector spaces, linear maps, eigenvalues | Analysis, Algebra, many others |
+| `linear-algebra` | Vector spaces, linear maps, eigenvalues | Analysis, Algebra, many others |
 
 ## Analysis Modules
 
@@ -73,7 +73,7 @@ To generate knowls for a specific course, combine modules:
 **Example: Baby Rudin Analysis**
 ```
 shared-foundations
-+ shared-linear-algebra
++ linear-algebra
 + analysis-order-completeness
 + analysis-metric-topology
 + analysis-sequences-series
@@ -95,7 +95,7 @@ shared-foundations
 **Example: Second Graduate Algebra Course**
 ```
 shared-foundations
-+ shared-linear-algebra
++ linear-algebra
 + algebra-groups (already have, skip)
 + algebra-rings (already have, skip)
 + algebra-modules
